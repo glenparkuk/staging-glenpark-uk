@@ -19,8 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Glen Park is a highly esteemed Alexander Technique and Psychophysical Integration practitioner
   and tutor based in West Sussex, UK. Glen Park provides workshops and courses
   and is the author of The Art of Changing and Touching the Soul
-baseurl: "/glenpark-uk" # the subpath of your site, e.g. /blog
-url: "https://glenparkuk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 #google_tag_manager: GTM-TP6H8BZ

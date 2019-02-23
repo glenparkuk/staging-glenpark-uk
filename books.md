@@ -26,7 +26,7 @@ id: books
     <div class="paypalbtn">
         <h4 style="float:left"><strong>Buy <em>The Art of Changing</em></strong></h4>
         <div style="float:left;padding:10px 0 0 20px;">
-            <input class="submit-btn scroll-buy-now" id="buynowAOCPaperback" type="submit" value="Buy Now"></input>
+            <input class="submit-btn scroll-buy-now" id="buynowAOCPaperback" type="submit" value="Buy Now" />
         </div>
     </div>
 </div>
@@ -65,7 +65,7 @@ id: books
     <div class="paypalbtn">
         <h4 style="float:left"><strong>Buy <em>The Art of Changing CD</em></strong></h4>
         <div style="float:left;padding:10px 0 0 20px;">
-            <input class="submit-btn scroll-buy-now" id="buynowAOCAudioCD" type="submit" value="Buy Now"></input>
+            <input class="submit-btn scroll-buy-now" id="buynowAOCAudioCD" type="submit" value="Buy Now" />
         </div>
         <br />
         <br />

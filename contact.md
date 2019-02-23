@@ -22,7 +22,3 @@ id: contact
 <div class="clear"></div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-</div>
-<!-- content .wrapper ends -->
-</div>
-<!-- content ends -->

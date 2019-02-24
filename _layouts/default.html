@@ -3,8 +3,8 @@
 
   {%- include head.html -%}
 
-  {%- if page.layout -%}
-    <body class="{{ page.layout }}">
+  {%- if page.id -%}
+    <body class="{{ page.id }}">
   {%- else -%}
     <body class="home">
   {%- endif -%}
@@ -18,7 +18,7 @@
     <div id="content" aria-label="Content">
 
         <!-- TODO: make testimonials conform standard structure of all other pages -->
-        {%- if page.layout == 'testimonials' -%}
+        {%- if page.id == 'testimonials' -%}
           <div class="testimonialswrapper">
         {%- else -%}
           <div class="wrapper">
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    {%- if page.layout == 'work' -%}
+    {%- if page.id == 'work' -%}
       {%- include mailchimp-signup.html -%}
     {%- endif -%}
 

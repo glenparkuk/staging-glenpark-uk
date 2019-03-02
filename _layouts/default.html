@@ -35,6 +35,10 @@
 
     {%- include footer.html -%}
 
+    {%- if page.id == 'books' -%}
+      {% include initialize-cart.html %}
+    {%- endif -%}
+
   </body>
 
 </html>

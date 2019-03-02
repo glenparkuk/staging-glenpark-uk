@@ -49,7 +49,8 @@ const siteRoot = '_site';
             // bower: 'bower_components'
         },
         ts: {
-		            src: basepaths.src + '/js/ts'
+		        src: basepaths.src + '/js/ts',
+            dest: basepaths.src + '/js/vendor'
 		        },
         css: {
             src: basepaths.src + '/sass',
@@ -159,8 +160,8 @@ gulp.task('typescript', function () {
         .pipe(ts({
             noImplicitAny: true
         }))
-
-        .pipe(gulp.dest(paths.ts.src));
+        // JS Cart compiles to vendor to not include in scripts.js
+        .pipe(gulp.dest(paths.ts.dest));
 });
 
 

@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+Gemfile.lock
 
 # known large file types
 *.hqx
@@ -41,7 +42,6 @@ _site
 *.gz
 
 # custom
-
 bower_components
 bower_components/*
 node_modules

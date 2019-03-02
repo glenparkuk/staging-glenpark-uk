@@ -3,6 +3,8 @@ layout: default
 title: Testimonials&hellip;
 permalink: /testimonials/
 id: testimonials
+redirect_from:
+  - testimonials.html
 ---
 
 <!-- .content-block 1 begins -->

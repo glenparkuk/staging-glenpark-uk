@@ -3,6 +3,8 @@ layout: default
 title: Books and CD&#39;s&hellip;
 permalink: /books/
 id: books
+redirect_from:
+  - books.html
 ---
 
 <!-- .content-block 1 begins -->

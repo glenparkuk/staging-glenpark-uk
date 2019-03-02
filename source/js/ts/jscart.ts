@@ -388,8 +388,8 @@ function Cart(items: Array<CartItemInput>): void {
 				return false;
 			}
 		}
-			return true;
-		}
+		return true;
+	}
 	this.isShippingRegionValid = function():boolean {
 		if(this.shippingRegion != 1 && this.shippingRegion != 2 && this.shippingRegion != 3 && this.shippingRegion != 4 ) {
 			console.log("Please select a shipping country");
@@ -414,28 +414,46 @@ function Cart(items: Array<CartItemInput>): void {
 	}
 
 	this.sendNanErrorEvent = function(variableName:string):void {
+
+		if (typeof(ga) == 'undefined') { 
+			return;
+		}
+
 		let gaObject:object = {
 		  'eventCategory': 'jsCart: NaN Error',
 		  'eventAction': 'Update ' + variableName
 		}
+
 		//console.log(gaObject)
 		ga('send', 'event', gaObject);
 	}
 
 	this.sendIsCartValidErrorEvent = function(variableName:string):void {
+		
+		if (typeof(ga) == 'undefined') { 
+			return;
+		}
+
 		let gaObject:object = {
 		  'eventCategory': 'jsCart: isCartValid Error',
 		  'eventAction': 'Unexpected validity checking ' + variableName + ' dependencies'
 		}
+
 		//console.log(gaObject)
 		ga('send', 'event', gaObject);
 	}
 
 	this.sendBuyNowButtonOnClickEvent = function(variableName:string):void {
+		
+		if (typeof(ga) == 'undefined') { 
+			return;
+		}
+
 		let gaObject:object = {
 		  'eventCategory': 'jsCart: Buy Now onClick event',
 		  'eventAction': variableName + ' Buy Now button onClick'
 		}
+
 		//console.log(gaObject)
 		ga('send', 'event', gaObject);
 	}
@@ -545,7 +563,7 @@ function Cart(items: Array<CartItemInput>): void {
 		let el:HTMLElement = document.getElementById('paymentSuccessful');
 		el.classList.remove("disabled");
 	}
-}
+};
 /*
 let i1 = { id:'AOCPaperback', price: 12.5 };
 let i2 = { id: 'AOCAudioCD', price: 10 };

@@ -12,7 +12,7 @@
     <!-- header .wrapper begins -->
     <div class="wrapper">
         <!-- logo container begins -->
-        <div id="logopurple"><a href="index.html"><img src="/images/chakraslogopurple.png" alt="" /></a></div>
+        <div id="logopurple"><a href="{% link index.md %}"><img src="/images/chakraslogopurple.png" alt="" /></a></div>
         <!-- logo container ends -->
         <!-- header-slider-content begins -->
         <div id="header-slider-content">
@@ -38,14 +38,14 @@
         <!-- menu begins -->
 
         <ul id="menu">
-            <li {% if page.layout == 'home' %} class="current" {% endif %}><a href="{% link index.md %}">Welcome</a></li>
-            <li {% if page.layout == 'work' %} class="current" {% endif %}><a href="{% link work.md %}">Individual<br />&amp; Group Work</a>
+            <li {% if page.id == 'home' %} class="current" {% endif %}><a href="{% link index.md %}">Welcome</a></li>
+            <li {% if page.id == 'work' %} class="current" {% endif %}><a href="{% link work.md %}">Individual<br />&amp; Group Work</a>
                 <ul>
                     <li><a href="{% link work.md %}#sessions">Individual Sessions</a></li>
                     <li><a href="{% link work.md %}#workshops">Workshops &amp; Courses</a></li>
                 </ul>
             </li>
-            <li {% if page.layout == 'books' %} class="current" {% endif %}><a href="{% link books.md %}">Books &amp; CD&#39;s</a>
+            <li {% if page.id == 'books' %} class="current" {% endif %}><a href="{% link books.md %}">Books &amp; CD&#39;s</a>
                 <ul>
                     <li><a href="{% link books.md %}#theartofchanging">The Art of Changing</a></li>
                     <li><a href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a></li>
@@ -53,8 +53,8 @@
                     <li><a href="{% link books.md %}#touchingthesoul">Touching The Soul</a></li>
                 </ul>
             </li>
-            <li {% if page.layout == 'testimonials' %} class="current" {% endif %}><a href="{% link testimonials.md %}">Testimonials</a></li>
-            <li {% if page.layout == 'contact' %} class="current" {% endif %}><a href="{% link contact.md %}">Contact Glen</a></li>
+            <li {% if page.id == 'testimonials' %} class="current" {% endif %}><a href="{% link testimonials.md %}">Testimonials</a></li>
+            <li {% if page.id == 'contact' %} class="current" {% endif %}><a href="{% link contact.md %}">Contact Glen</a></li>
         </ul>
         <!-- menu ends -->
     </div>
@@ -67,7 +67,7 @@
         <a href="mailto:glenpark@glenpark.org.uk" class="tooltip" title="Send a direct email to Glen">
             <div class="emailicon"></div>
         </a>
-        <a href="popups/aboutalexander.html" target="_blank" class="tooltip" title="About Alexander Technique">
+        <a href="{% link popups/about-alexander.md %}?lightbox[iframe]=true&amp;lightbox[width]=600&amp;lightbox[height]=580" target="_blank" class="tooltip" title="About Alexander Technique">
             <div class="infoicon"></div>
         </a>
         <a href="{% link index.md %}" class="tooltip" title="Back to Homepage" target="_self">

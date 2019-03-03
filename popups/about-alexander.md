@@ -1,0 +1,14 @@
+---
+layout: popups
+title: About Alexander Technique
+sitemap: false
+---
+
+<p><img src="/images/fmalexander.png" alt="FM Alexander" width="177" height="224" border="0" align="left" /><a href="http://en.wikipedia.org/wiki/FM_Alexander" title="Read more information about FM Alexander at Wikipedia..." target="_blank">FM Alexander</a> discovered principles about the body, which we share with all vertebrate animals. Working consciously with these principles enabled him to regain a quality of balance and poise in his body and to make deep and lasting changes in the way he used his voice, which as an actor was vitally important to him.</p>
+<img src="/images/meercat.png" alt="Meercat" width="206" height="475" border="0" align="right" />
+<blockquote class="blockquotepurple">&ldquo;&hellip; every single thing we are doing in the work is exactly what is being done in Nature&hellip; the difference being that we are learning to do it consciously&rdquo;<br />
+<span class="quotecreditpopup">&#126; FM Alexander</span></blockquote>
+<p><span class="boldp">The Alexander Technique&hellip;</span> is a valuable system for bringing lasting change to the way we move and use our bodies and minds. Simple activities like sitting, standing, bending and walking can be done with greater ease and poise. Many people have received lasting relief from back, neck or shoulder pain, joint and muscle problems, mental and emotional stress and other health problems as a result of taking a course of lessons. Its effectiveness is well documented and has been the subject of a <a href="http://www.bmj.com/content/337/bmj.a884.full" title="thebmj" target="_blank">scientific study</a> which was reported in the British Medical Journal. For more information visit <a href="http://www.alexandertechnique.com/" title="The Complete Guide to the Alexander Technique" target="_blank">The Complete Guide to the Alexander Technique</a>.</p>
+<p>Musicians, actors, dancers, singers and athletes have learnt the technique in order to improve the way they perform. Students of yoga, tai chi, meditation and other disciplines have applied it to their spiritual practice as it teaches the skills of being self-aware and present in the moment.</p>
+<p>Alexander teachers work with their hands, sometimes guiding you during movement such as walking, sitting and standing, playing an instrument, or other activities and sometimes during stillness while you are lying down on a therapy table. Touch is central to the work, and a large part of an Alexander teacher&#39;s training is learning how to use their hands in a way that will bring about the changes that they want to create in the musculature and the nervous system.</p>
+<img src="/images/baby.png" alt="A child learns to walk" width="529" height="223" border="0" align="left" />

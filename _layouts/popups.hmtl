@@ -6,7 +6,9 @@
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% if page.title? %}
+  <title>{{ page.title | escape }}</title>
+{% endif %}
 
 
 
@@ -18,7 +20,6 @@
 
 
 <style type="text/css">
-<!--
 
 
 * {
@@ -105,7 +106,7 @@ padding: 0;
 outline: 0;
 }
 
--->
+
 </style>
 
 

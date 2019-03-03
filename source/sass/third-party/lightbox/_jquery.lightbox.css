@@ -22,14 +22,14 @@
 
 .jquery-lightbox-border-top-left
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat 0 0;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat 0 0;
   top:0;
   left:0;
 }
 
 .jquery-lightbox-border-top-right
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat right 0;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat right 0;
   top:0;
   right:0;
 }
@@ -48,14 +48,14 @@
 
 .jquery-lightbox-border-bottom-left
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat 0 bottom;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat 0 bottom;
   bottom:0;
   left:0;
 }
 
 .jquery-lightbox-border-bottom-right
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat right bottom;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat right bottom;
   bottom:0;
   right:0;
 }
@@ -146,12 +146,12 @@
 
 .jquery-lightbox-loading
 {
-  background:#FFFFFF url(images/loading.gif) no-repeat center center;
+  background:#FFFFFF url(/images/loading.gif) no-repeat center center;
 }
 
 .jquery-lightbox-button-close
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -190px -115px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -190px -115px;
   position:absolute;
   top:12px;
   right:-26px;
@@ -161,7 +161,7 @@
 
 .jquery-lightbox-button-close:hover
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -220px -115px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -220px -115px;
 }
 
 .jquery-lightbox-button-close span,
@@ -197,19 +197,19 @@
 
 .jquery-lightbox-buttons .jquery-lightbox-buttons-init
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -151px -153px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -151px -153px;
   margin:7px 0 0 7px;
 }
 
 .jquery-lightbox-buttons .jquery-lightbox-buttons-end
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -244px -153px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -244px -153px;
   margin:7px 0 0 0;
 }
 
 .jquery-lightbox-buttons .jquery-lightbox-button-left
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -156px -153px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -156px -153px;
   width:24px;
   height:39px;
   float:left;
@@ -219,13 +219,13 @@
 
 .jquery-lightbox-buttons .jquery-lightbox-button-left:hover
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -156px -194px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -156px -194px;
 }
 
 
 .jquery-lightbox-buttons .jquery-lightbox-button-right
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -220px -153px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -220px -153px;
   width:24px;
   height:39px;
   float:left;
@@ -235,13 +235,13 @@
 
 .jquery-lightbox-buttons .jquery-lightbox-button-right:hover
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -220px -194px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -220px -194px;
 }
 
 
 .jquery-lightbox-buttons .jquery-lightbox-button-max
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -182px -153px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -182px -153px;
   width:36px;
   height:39px;
   float:left;
@@ -251,13 +251,13 @@
 
 .jquery-lightbox-buttons .jquery-lightbox-button-max:hover
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -182px -194px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -182px -194px;
 }
 
 
 .jquery-lightbox-buttons .jquery-lightbox-button-min
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -162px -235px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -162px -235px;
   width:36px;
   height:39px;
   float:left;
@@ -267,7 +267,7 @@
 
 .jquery-lightbox-buttons .jquery-lightbox-button-min:hover
 {
-  background: url(images/jquery-lightbox-theme.png) no-repeat -207px -235px;
+  background: url(/images/jquery-lightbox-theme.png) no-repeat -207px -235px;
 }
 
 

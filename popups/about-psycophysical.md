@@ -1,6 +1,7 @@
 ---
 layout: popups
 title: About Psycophysical Integration
+permalink: about-psycophysical
 sitemap: false
 ---
 

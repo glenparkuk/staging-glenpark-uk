@@ -1,6 +1,7 @@
 ---
 layout: popups
 title: About Alexander Technique
+permalink: about-alexander
 sitemap: false
 ---
 

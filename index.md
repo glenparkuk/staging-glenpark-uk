@@ -15,7 +15,7 @@ id: home
     <!-- sidebar item 1 ends -->
     <!-- sidebar item 2 begins -->
     <div class="sidebar-itempurple">
-        <img src="{{ '/images/chakrasidebartitle.png' | relative_url }}" alt="About Chakra Therapy" width="154" height="57" class="sidebartitleimagespurple" />
+        <img src='{{ "/images/chakrasidebartitle.png" | relative_url }}' alt="About Chakra Therapy" width="154" height="57" class="sidebartitleimagespurple" />
         <p class="pwhite">Chakra is a Sanskrit word meaning &lsquo;a wheel, a disc, or any arrangement in circular form or organisation&rsquo;. In the ancient Hindu spiritual philosophy there are seven major chakras&hellip;</p>
         <p><a href="{% link popups/about-chakras.md %}?lightbox[iframe]=true&amp;lightbox[width]=700&amp;lightbox[height]=460" class="lightbox">Read more&hellip;</a></p>
     </div>

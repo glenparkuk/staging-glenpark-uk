@@ -1,6 +1,7 @@
 ---
 layout: popups
 title: Glen Park
+permalink: about-glen
 sitemap: false
 ---
 

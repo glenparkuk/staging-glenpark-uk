@@ -1,6 +1,7 @@
 ---
 layout: popups
 title: About Chakra Therapy
+permalink: about-chakras
 sitemap: false
 ---
 

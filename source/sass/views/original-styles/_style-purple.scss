@@ -1,5 +1,5 @@
 .home {
-  background-image: url(../images/bodybgimagepurple.jpg);
+  background-image: url($site-url + $images + 'bodybgimagepurple.jpg');
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -32,7 +32,7 @@
   	padding: 3px 5px;
   	text-decoration: none;
   	background-color: transparent;
-  	background-image: url(../images/textlinkbg.png);
+  	background-image: url($site-url + $images + 'textlinkbg.png');
   	background-repeat: repeat;
   	-moz-border-radius:4px;
   	-khtml-border-radius:4px;
@@ -46,7 +46,7 @@
   	padding: 3px 5px;
   	text-decoration: none;
   	background-color: transparent;
-  	background-image: url(../images/textlinkbghover.png);
+  	background-image: url($site-url + $images + 'textlinkbghover.png');
   	background-repeat: repeat;
   	-moz-border-radius:4px;
   	-khtml-border-radius:4px;
@@ -111,7 +111,7 @@
   h1 a:hover, .anchor-title:hover { color: #54388c !important; }
 
   #header-border {
-  background: #000000 url(../images/purple/header-border.gif) repeat top left;
+  background: #000000 url($site-url + $images + 'purple/header-border.gif') repeat top left;
   }
 
 
@@ -144,7 +144,7 @@
   	width: 230px;
   	margin-bottom: 20px;
   	padding: 20px 35px 20px 35px;
-  	background-image: url(../images/sidebarpurplebg.png);
+  	background-image: url($site-url + $images + 'sidebarpurplebg.png');
   	background-repeat: repeat-y;
   	-moz-border-radius:5px;
   	-khtml-border-radius:5px;
@@ -177,7 +177,7 @@
   	height: 70px;
   	width: 250px;
   	padding-top: 10px;
-  	background-image: url(../images/socialmediacontainerbg.png);
+  	background-image: url($site-url + $images + 'socialmediacontainerbg.png');
   	background-repeat: repeat-y;
   	background-position: left top;
   	padding-left: 10px;

@@ -58,4 +58,4 @@ redirect_from:
 </div>
 <!-- .content-block 2 ends -->
 <div class="clear"></div>
-<img src="/images/bottomquotes.png" width="150" height="105" border="0" align="right" />
+<img src="{{ '/images/bottomquotes.png' | relative_url }}" width="150" height="105" border="0" align="right" />

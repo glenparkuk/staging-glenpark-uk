@@ -23,7 +23,7 @@ redirect_from:
     <p>Part Two of <span class="pitalic">The Art of Changing</span> Glen Park looks at how the Alexander principles can be applied to our psychological habits, our patterns of thoughts and feelings. It then goes on to look at the body as an energy system, working with the Hindu philosophy of the <a href="{% link popups/about-chakras.md %}?lightbox[iframe]=true&amp;lightbox[width]=600&amp;lightbox[height]=460" class="lightbox">Chakras</a> which explores the relationship between mind and body in some depth. Combining this wisdom with the Alexander principles can help us gain new insights into our psychological make-up with the potential to identify and transform unwanted patterns.</p>
     <br>
     <p><strong>Price: £12.50</strong></p>
-    <!-- <p><em>If purchasing from outside the UK please email <a href="mailto:glenpark@glenpark.org.uk" target="_blank">glenpark@glenpark.org.uk</a> for details of oversees postage</em></p> -->
+    <!-- <p><em>If purchasing from outside the UK please email <a href="mailto:contact@glenpark.uk" target="_blank">contact@glenpark.uk</a> for details of oversees postage</em></p> -->
     <!--<a href="http://www.amazon.co.uk/Art-Changing-Exploring-Alexander-Relationship/dp/1853981303/ref=sr_1_12?s=books&ie=UTF8&qid=1302001289&sr=1-12" target="_blank" class="tooltip" title="Buy The Art of Changing<br />online from Amazon.co.uk"><div class="buybookbtn"></div></a>-->
     <div class="paypalbtn">
         <h4 style="float:left"><strong>Buy <em>The Art of Changing</em></strong></h4>
@@ -35,7 +35,7 @@ redirect_from:
 <div class="clear"></div>
 <br>
 <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils
-    <br>please <a href="mailto:glenpark@glenpark.org.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+    <br>please <a href="mailto:contact@glenpark.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
 <!-- <p>Buy multiple items and save on postage - <a href="#multiple-items">see below</a></p> -->
 <!-- .content-block 1 ends -->
 <a name="theartofchangingcd" id="theartofchangingcd"></a>
@@ -73,7 +73,7 @@ redirect_from:
         <br />
         <br />
         <!-- <p>Buy multiple items and save on postage - <a href="#multiple-items">see below</a></p> -->
-        <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils please <a href="mailto:glenpark@glenpark.org.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+        <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils please <a href="mailto:contact@glenpark.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
     </div>
     <!-- .content-block 2 ends -->
     <a name="peggywilliams" id="peggywilliams"></a>
@@ -101,7 +101,7 @@ redirect_from:
                 <div class="clear"></div>
                 <br>
                 <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils
-                    <br>please <a href="mailto:glenpark@glenpark.org.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+                    <br>please <a href="mailto:contact@glenpark.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
                 <br />
                 <br />
                 <br />
@@ -234,7 +234,7 @@ Select Country
 
 </div> -->
         <div class="clear"></div>
-        <p class="form-error-contact">Having trouble using this form? Please <a href="mailto: glenpark@glenpark.org.uk" title="Let us know">let us know</a>.</p>
+        <p class="form-error-contact">Having trouble using this form? Please <a href="mailto: contact@glenpark.uk" title="Let us know">let us know</a>.</p>
         <hr>
         <div class="clear"></div>
         <a name="touchingthesoul" id="touchingthesoul"></a>
@@ -252,7 +252,7 @@ Select Country
             <p>In this book Glen explains how the chakras can be understood as a developmental map of the psyche, covering stages of development including infancy, childhood, adulthood and maturity. She looks in depth at these developmental stages and how they are paralleled in the findings of western developmental psychology and neuroscience. Using this understanding of the multi-layered psyche as expressed through the chakras, she offers practical exercises which can help to bring awareness to each of our individual ‘small minds’ so that they can be integrated and in harmony with each other.</p>
             <p>She then explains her system of Chakra Therapy which combines the practical exercises used in the book with the deep healing hands-on work offered by practitioners of the Alexander Technique who have also completed an additional training in Chakra Therapy. Bringing healing touch together with increased self-awareness of the rich multi-faceted nature of who we are creates a potent combination which can facilitate deep change. By creating a synthesis between Eastern traditions and Western research we gain a richer understanding of ourselves both mentally and physically and by working with conscious healing touch there is the potential for deep soul growth and transformation.</p>
             <p>Touching The Soul is not yet available. If you would like to be notified of its publication please click the button below to email Glen Park:</p>
-            <a href="mailto:glenpark@glenpark.org.uk" target="_blank" class="tooltip" title="Click here to request email notification<br />of the publication of Touching The Soul">
+            <a href="mailto:contact@glenpark.uk" target="_blank" class="tooltip" title="Click here to request email notification<br />of the publication of Touching The Soul">
                 <div class="notificationbtn"></div> 
             </a>
         </div>

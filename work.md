@@ -4,7 +4,7 @@ title: Individual Sessions, Group Work and Courses&hellip;
 permalink: /work/
 id: work
 redirect_from:
-  - work.html
+  - work.html/
 ---
 
 <!-- .content-block 1 begins -->

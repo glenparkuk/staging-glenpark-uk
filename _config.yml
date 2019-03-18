@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Welcome to The Art of Changing... Glen Park, practitioner of Alexander Technique and Psychophysical Integration...
-email: glenpark@glenpark.org.uk
+email: contact@glenpark.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Glen Park is a highly esteemed Alexander Technique and Psychophysical Integration practitioner
   and tutor based in West Sussex, UK. Glen Park provides workshops and courses

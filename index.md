@@ -1,7 +1,6 @@
 ---
 layout: default
 id: home
-
 ---
 
 <!-- sidebar begins -->

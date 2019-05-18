@@ -20,10 +20,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   and tutor based in West Sussex, UK. Glen Park provides workshops and courses
   and is the author of The Art of Changing and Touching the Soul
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://glenpark.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://staging.glenpark.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-google_tag_manager: GTM-TP6H8BZ
+#google_tag_manager: GTM-TP6H8BZ
 keywords: Glen Park, The Art of Changing, Touching the Soul, Psychophysical Integration, Alexander Technique, books, courses, CDs, workshops
 author: Glen Park
 # Unnsupported meta tags

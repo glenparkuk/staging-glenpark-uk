@@ -2,6 +2,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% comment %}<meta name="viewport" content="width=device-width, initial-scale=1">{% endcomment %}
+    {%- if jekyll.environment == 'production' and site.url != site.production_url -%}
+        <meta name="robots" content="noindex, nofollow">
+    {%- endif -%}
     {%- seo -%}
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
     <!-- js calls begin -->
@@ -33,5 +36,5 @@
 	  <script type="text/javascript" src="js/unitpngfix.js"></script>
 	<![endif]-->
     <!-- TODO End of Code to review -->
-    {%- feed_meta -%} {%- if jekyll.environment == 'production' and site.google_tag_manager -%} {%- include google-tag-manager.html -%} {%- endif -%}
+    {%- feed_meta -%} {%- if jekyll.environment == 'production' and site.url == site.production_url and site.google_tag_manager -%} {%- include google-tag-manager.html -%} {%- endif -%}
 </head>

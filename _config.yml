@@ -20,7 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   and tutor based in West Sussex, UK. Glen Park provides workshops and courses
   and is the author of The Art of Changing and Touching the Soul
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://glenpark.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url: # intentionally left blank (Github Pages and Jekyll Serve overwrite this value)
+production_url: "https://glenpark.uk" # where the production version of this site is accessed
 twitter_username: jekyllrb
 github_username:  jekyll
 google_tag_manager: GTM-TP6H8BZ

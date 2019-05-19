@@ -533,6 +533,7 @@ jQuery.cookie = function(name, value, options) {
 			autoplay: true
 		});
 
+		$('.lightbox').lightbox()
 		menuHovers();
 
 	});

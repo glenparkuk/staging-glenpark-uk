@@ -4,7 +4,7 @@ title: Testimonials&hellip;
 permalink: /testimonials/
 id: testimonials
 redirect_from:
-  - testimonials.html
+  - testimonials.html/
 ---
 
 <!-- .content-block 1 begins -->

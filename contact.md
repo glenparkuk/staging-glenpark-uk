@@ -4,7 +4,7 @@ title: Get in touch with Glen&hellip;
 permalink: /contact/
 id: contact
 redirect_from:
-  - contact.html
+  - contact.html/
 ---
 
 <!-- .content-block 1 begins -->

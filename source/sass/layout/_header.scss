@@ -1,1 +1,36 @@
+.header {
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
+.header-carousel {
+  background-color: black;
+  height: auto;
+
+    &__track {
+      height: auto;
+    }
+
+    &__slides {
+      height: auto;
+    }
+
+    &__slide {
+      height: auto;
+      position: relative;
+    }
+    &__slide-content {
+      position: absolute;
+      top: 0;
+      display: flex;
+    }
+    &__slide-quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+}

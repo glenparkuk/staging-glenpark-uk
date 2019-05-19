@@ -31,7 +31,7 @@ const	imageminJpegcompress = require('imagemin-jpeg-recompress');
 
 // Live Reload Tools
 const browserSync = require('browser-sync').create();
-const siteRoot = '_site';
+const siteRoot = '_site',
 // const cssFiles = '_css/**/*.?(s)css';
 
   basepaths = {
@@ -95,7 +95,15 @@ gulp.task('styles', ['clean-styles'], function() {
         }))
 
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass(
+            {
+            includePaths: [
+                //'./source/sass',
+                './node_modules'
+
+            ]
+        }
+        ))
         .pipe(autoprefixer('last 2 version'))
         .pipe(cssnano())
         .pipe(sourcemaps.write('./'))
@@ -170,6 +178,8 @@ gulp.task('typescript', function () {
  */
 gulp.task('scripts', ['hint','vendor'],  function() {
     gulp.src([
+            paths.js.node + '/jquery/dist/jquery.min.js',
+            paths.js.node + '/slick-carousel/slick/slick.js',
             paths.js.node + '/svg4everybody/dist/svg4everybody.min.js',
             paths.js.node + '/picturefill/dist/picturefill.min.js',
             paths.js.src + '/**/*.js',

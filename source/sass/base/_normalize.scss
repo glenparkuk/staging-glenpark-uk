@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7a7a7a;
+  font-weight: normal;
+  background-color: #ffffff;
+
+}
+
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+
+p {
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: lighter;
+  letter-spacing:normal;
+}
+
+
+.pflat {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing:normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7a7a7a;
+  line-height: 100%;
+}
+
+
+
+
+
+
+
+.pitalic {
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: bold;
+  letter-spacing:normal;
+  font-style: italic;
+  color: #595959;
+}
+
+
+
+.pwhite {
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: lighter;
+  color: #ffffff;
+  letter-spacing:normal;
+}
+
+
+
+
+
+
+
+.pwhiteitalic {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #ffffff;
+  letter-spacing:normal;
+}
+
+
+.pindent {
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: lighter;
+  padding-left:190px;
+  letter-spacing:normal;
+}
+
+.boldp{
+  font-size: 15px;
+  font-weight: bold;
+  color: #595959;
+  letter-spacing:normal;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.content-block li {
+  list-style: none;
+  font-size: 13px;
+  line-height:150%;
+}
+
+
+
+.italicsubtitle{
+  font-size: 14px;
+  font-weight: normal;
+  color: #7a7a7a;
+  letter-spacing:normal;
+  font-style: italic;
+  line-height: 110%;
+}
+
+
+.boldsubtitle{
+  font-size: 20px;
+  font-weight: bold;
+  color: #595959;
+  letter-spacing:normal;
+  line-height: 110%;
+}
+
+
+
+
+.boldpindent{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #595959;
+  padding-left:190px
+}
+
+
+
+p, ul, ol, blockquote { margin: 1em 0; }
+
+a:link, a:visited, a { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
+
+
+
+a img, a:active, a:focus, a:hover, a img.preview {
+  border: none;
+  text-decoration: none;
+  padding: 0;
+  outline:none;
+}
+
+blockquote {
+  display: block;
+  padding: 10px 30px 10px 15px;
+  border-left: 5px solid #745ba7;
+  margin: 30px 30px 30px 30px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+
+img {
+  border:none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}

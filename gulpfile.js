@@ -179,7 +179,7 @@ gulp.task('typescript', function () {
 gulp.task('scripts', ['hint','vendor'],  function() {
     gulp.src([
             paths.js.node + '/jquery/dist/jquery.min.js',
-            paths.js.node + '/slick-carousel/slick/slick.js',
+            paths.js.node + '/simple-slideshow/src/slideshow.js',
             paths.js.node + '/featherlight/src/featherlight.js',
             paths.js.node + '/svg4everybody/dist/svg4everybody.min.js',
             paths.js.node + '/picturefill/dist/picturefill.min.js',

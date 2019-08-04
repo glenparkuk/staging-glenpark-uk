@@ -527,7 +527,8 @@ function initialisePaypalExpressCheckout() {
 
 		$(".js-slick-carousel").slick({
 			fade: true,
-			autoplay: true
+			autoplay: true,
+			arrows: false
 		});
 
 		menuHovers();

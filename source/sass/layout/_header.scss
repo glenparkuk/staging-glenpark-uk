@@ -8,24 +8,25 @@
 
 .header-carousel {
   background-color: black;
+  height: auto;
+
+    &__track {
+      height: auto;
+    }
 
     &__slides {
-      width: 100%;
       height: auto;
     }
 
     &__slide {
       height: auto;
-      width: 100%;
       position: relative;
     }
-
     &__slide-content {
       position: absolute;
       top: 0;
       display: flex;
     }
-
     &__slide-quote {
       display: flex;
       flex-direction: column;

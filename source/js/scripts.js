@@ -528,9 +528,10 @@ jQuery.cookie = function(name, value, options) {
 		  });
 
 
-		  // Instantiate Slideshows
-		// <ui> and <li> markup must be used
-		new SlideShow('.js-slideshow', {timeout: 4000});
+		$(".js-slick-carousel").slick({
+			fade: true,
+			autoplay: true
+		});
 
 		menuHovers();
 

@@ -179,7 +179,7 @@ gulp.task('typescript', function () {
 gulp.task('scripts', ['hint','vendor'],  function() {
     gulp.src([
             paths.js.node + '/jquery/dist/jquery.min.js',
-            paths.js.node + '/simple-slideshow/src/slideshow.js',
+            paths.js.node + '/slick-carousel/slick/slick.js',
             paths.js.node + '/featherlight/src/featherlight.js',
             paths.js.node + '/svg4everybody/dist/svg4everybody.min.js',
             paths.js.node + '/picturefill/dist/picturefill.min.js',
@@ -252,9 +252,9 @@ gulp.task('svg', function() {
 
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('bundle', ['exec', 'jekyll', 'build',
-    //'--watch',
-    //'--incremental',
-    //'--drafts'
+    '--watch',
+    '--incremental',
+    '--drafts'
   ]);
 
   const jekyllLogger = (buffer) => {
@@ -284,14 +284,14 @@ gulp.task('serve', () => {
 
 gulp.task("default",
   [
-    //'jekyll',
+    'jekyll',
     'images',
     'styles',
     'typescript',
     'hint',
     'scripts',
     'svg',
-    //'serve'
+    'serve'
   ], function() {
 
 	gulp.watch(paths.css.src + '/**/*.scss', ['styles']);

@@ -104,214 +104,211 @@ function initialisePaypalExpressCheckout() {
 }
 
 
-
-
-
-
-
-function menuHovers() {
-
-	//wrap H6 with spans
-	jQuery('#content h6').each(function() {
-
-		jQuery(this).html('<span>'+jQuery(this).text()+'</span>');
-
-	});
-
-	//main vars
-	var liLen = jQuery('#menu li:not(#menu li ul li)').length;
-	var startOpacity = (10 - liLen);
-
-	//sets the initial opacity and adds a class to them to indicate the initial opacity so we can access it later
-	var i = startOpacity;
-	var i2 = 1;
-
-	jQuery('#menu li:not(#menu li ul li)').each(function() {
-
-		jQuery(this).attr('id', 'menu_'+i2);
-		jQuery(this).prepend('<span></span><span class="hover"></span>');
-		jQuery(this).children('span').css({ opacity: '.'+i }).addClass(''+i);
-		i++; i2++;
-
-	});
-
-	jQuery('#menu li ul li').each(function() {
-
-		jQuery(this).prepend('<span></span>');
-
-	});
-
-	//hover effects
-	jQuery('#menu li:not(#menu li ul li)').hover(function() {
-
-		jQuery('#menu li.current span').stop().animate({ opacity: 0 }, 200);
-
-		var curTemp = jQuery(this).attr('id').split('_');
-		var current = curTemp[1];
-		var current1 = (current-1)+2;
-
-		var pos = (liLen - current);
-		var initialOp = ((startOpacity - 1) + pos);
-		var initOp = null;
-
-		if(current > 1) {
-
-			initOp = (startOpacity-2);
-
-			for(i=current1; i<=liLen; i++) {
-
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
-				initOp++;
-
-			}
-
-			var pos2 = (pos-1)+2;
-			var initOp2 = (startOpacity-2)+pos2;
-
-			for(i=1;i<current;i++) {
-
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp2 }, 200);
-				initOp2++;
-
-			}
-
-		} else {
-
-			initOp = (startOpacity-2);
-
-			for(i=current1; i<=liLen; i++) {
-
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
-				initOp++;
-
-			}
-
-		}
-
-		jQuery(this).children('.hover').css({ display: 'block', opacity: 0 });
-		jQuery(this).children('.hover').stop().animate({ opacity: 1 }, 200);
-
-	}, function() {
-
-		jQuery('#menu li span.hover').stop().animate({ opacity: 0 }, 200);
-		var backOp2 = jQuery('#menu li.current span').attr('class');
-		jQuery('#menu li.current span').stop().animate({ opacity: '.'+backOp2 }, 400);
-
-	});
-
-	jQuery('#menu li ul li').hover(function() {
-
-		jQuery(this).children('span').css({ display: 'block', opacity: 0 }).stop().animate({ opacity: 1 }, 200);
-
-	}, function() {
-
-		jQuery(this).children('span').stop().animate({ opacity: 0 }, 200, function() {
-
-			jQuery(this).hide();
-
-		});
-
-	});
-
-	jQuery('#menu').children('li').hover(function() {
-
-		jQuery(this).children('ul:first').stop().css({ display: 'block', opacity: 0 }).animate({ opacity: 1 }, 400);
-
-	}, function() {
-
-		jQuery(this).children('ul:first').stop().animate({ opacity: 0 }, 400, function() {
-
-			jQuery(this).hide();
-
-		});
-
-	});
-
-}
-
-function hideShowSubmenu() {
-
-	if($.cookie('show-submenu') == null) { $.cookie("show-submenu", true); }
-
-	if($.cookie('show-submenu') == 'false') { jQuery('#submenu').hide(); jQuery('#show-hide-submenu').addClass('show-submenu'); }
-
-	jQuery('#show-hide-submenu').click(function() {
-
-		if(jQuery(this).attr('class') == '') {
-
-			jQuery('#submenu').fadeOut(200);
-			jQuery(this).addClass('show-submenu');
-
-			$.cookie("show-submenu", false);
-
-		} else {
-
-			jQuery('#submenu').fadeIn(200);
-			jQuery(this).removeClass('show-submenu');
-
-			$.cookie("show-submenu", true);
-
-		}
-
-	});
-
-}
-
-
-
-
-
-
-/* COOKIES PLUGIN */
-
-jQuery.cookie = function(name, value, options) {
-	if (typeof value != 'undefined') { // name and value given, set cookie
-		options = options || {};
-		if (value === null) {
-			value = '';
-			options.expires = -1;
-		}
-		var expires = '';
-		if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-			var date;
-			if (typeof options.expires == 'number') {
-				date = new Date();
-				date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
-			} else {
-				date = options.expires;
-			}
-			expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
-		}
-		// CAUTION: Needed to parenthesize options.path and options.domain
-		// in the following expressions, otherwise they evaluate to undefined
-		// in the packed version for some reason...
-		var path = options.path ? '; path=' + (options.path) : '';
-		var domain = options.domain ? '; domain=' + (options.domain) : '';
-		var secure = options.secure ? '; secure' : '';
-		document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
-	} else { // only name given, get cookie
-		var cookieValue = null;
-		if (document.cookie && document.cookie != '') {
-			var cookies = document.cookie.split(';');
-			for (var i = 0; i < cookies.length; i++) {
-				var cookie = jQuery.trim(cookies[i]);
-				// Does this cookie string begin with the name we want?
-				if (cookie.substring(0, name.length + 1) == (name + '=')) {
-					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-					break;
-				}
-			}
-		}
-		return cookieValue;
-	}
-};
-
-
-
 (function($) { // reference query
 	$(function() { // shorthand for onLoad()
 
-		$.fn.extend({
+
+		/* COOKIES PLUGIN */
+
+		$.cookie = function(name, value, options) {
+			if (typeof value != 'undefined') { // name and value given, set cookie
+				options = options || {};
+				if (value === null) {
+					value = '';
+					options.expires = -1;
+				}
+				var expires = '';
+				if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+					var date;
+					if (typeof options.expires == 'number') {
+						date = new Date();
+						date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+					} else {
+						date = options.expires;
+					}
+					expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+				}
+				// CAUTION: Needed to parenthesize options.path and options.domain
+				// in the following expressions, otherwise they evaluate to undefined
+				// in the packed version for some reason...
+				var path = options.path ? '; path=' + (options.path) : '';
+				var domain = options.domain ? '; domain=' + (options.domain) : '';
+				var secure = options.secure ? '; secure' : '';
+				document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+			} else { // only name given, get cookie
+				var cookieValue = null;
+				if (document.cookie && document.cookie != '') {
+					var cookies = document.cookie.split(';');
+					for (var i = 0; i < cookies.length; i++) {
+						var cookie = $.trim(cookies[i]);
+						// Does this cookie string begin with the name we want?
+						if (cookie.substring(0, name.length + 1) == (name + '=')) {
+							cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+							break;
+						}
+					}
+				}
+				return cookieValue;
+			}
+		};
+
+
+
+
+		function menuHovers() {
+
+            //wrap H6 with spans
+            $('#content h6').each(function() {
+
+                $(this).html('<span>'+$(this).text()+'</span>');
+
+            });
+
+            //main vars
+            var liLen = $('#menu li:not(#menu li ul li)').length;
+            var startOpacity = (10 - liLen);
+
+            //sets the initial opacity and adds a class to them to indicate the initial opacity so we can access it later
+            var i = startOpacity;
+            var i2 = 1;
+
+            $('#menu li:not(#menu li ul li)').each(function() {
+
+                $(this).attr('id', 'menu_'+i2);
+                $(this).prepend('<span></span><span class="hover"></span>');
+                $(this).children('span').css({ opacity: '.'+i }).addClass(''+i);
+                i++; i2++;
+
+            });
+
+            $('#menu li ul li').each(function() {
+
+                $(this).prepend('<span></span>');
+
+            });
+
+            //hover effects
+            $('#menu li:not(#menu li ul li)').hover(function() {
+
+                $('#menu li.current span').stop().animate({ opacity: 0 }, 200);
+
+                var curTemp = $(this).attr('id').split('_');
+                var current = curTemp[1];
+                var current1 = (current-1)+2;
+
+                var pos = (liLen - current);
+                var initialOp = ((startOpacity - 1) + pos);
+                var initOp = null;
+
+                if(current > 1) {
+
+                    initOp = (startOpacity-2);
+
+                    for(i=current1; i<=liLen; i++) {
+
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
+                        initOp++;
+
+                    }
+
+                    var pos2 = (pos-1)+2;
+                    var initOp2 = (startOpacity-2)+pos2;
+
+                    for(i=1;i<current;i++) {
+
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp2 }, 200);
+                        initOp2++;
+
+                    }
+
+                } else {
+
+                    initOp = (startOpacity-2);
+
+                    for(i=current1; i<=liLen; i++) {
+
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
+                        initOp++;
+
+                    }
+
+                }
+
+                $(this).children('.hover').css({ display: 'block', opacity: 0 });
+                $(this).children('.hover').stop().animate({ opacity: 1 }, 200);
+
+            }, function() {
+
+                $('#menu li span.hover').stop().animate({ opacity: 0 }, 200);
+                var backOp2 = $('#menu li.current span').attr('class');
+                $('#menu li.current span').stop().animate({ opacity: '.'+backOp2 }, 400);
+
+            });
+
+            $('#menu li ul li').hover(function() {
+
+                $(this).children('span').css({ display: 'block', opacity: 0 }).stop().animate({ opacity: 1 }, 200);
+
+            }, function() {
+
+                $(this).children('span').stop().animate({ opacity: 0 }, 200, function() {
+
+                    $(this).hide();
+
+                });
+
+            });
+
+            $('#menu').children('li').hover(function() {
+
+                $(this).children('ul:first').stop().css({ display: 'block', opacity: 0 }).animate({ opacity: 1 }, 400);
+
+            }, function() {
+
+                $(this).children('ul:first').stop().animate({ opacity: 0 }, 400, function() {
+
+                    $(this).hide();
+
+                });
+
+            });
+
+        }
+
+        function hideShowSubmenu() {
+
+            if($.cookie('show-submenu') == null) { $.cookie("show-submenu", true); }
+
+            if($.cookie('show-submenu') == 'false') { $('#submenu').hide(); $('#show-hide-submenu').addClass('show-submenu'); }
+
+            $('#show-hide-submenu').click(function() {
+
+                if($(this).attr('class') == '') {
+
+                    $('#submenu').fadeOut(200);
+                    $(this).addClass('show-submenu');
+
+                    $.cookie("show-submenu", false);
+
+                } else {
+
+                    $('#submenu').fadeIn(200);
+                    $(this).removeClass('show-submenu');
+
+                    $.cookie("show-submenu", true);
+
+                }
+
+            });
+
+        }
+
+
+
+
+
+
+        $.fn.extend({
 
 		portfolioSlide: function() {
 
@@ -325,7 +322,7 @@ jQuery.cookie = function(name, value, options) {
 			var totalWidth = 0;
 			ulCont.children('li').each(function() {
 
-				totalWidth = (totalWidth + jQuery(this).width()) - 30;
+				totalWidth = (totalWidth + $(this).width()) - 30;
 
 			});
 
@@ -345,7 +342,7 @@ jQuery.cookie = function(name, value, options) {
 				var currentGone = 0;
 				ulCont.children('li').each(function() {
 
-					if(jQuery(this).attr('class') == 'next') {
+					if($(this).attr('class') == 'next') {
 
 						currentGone = 1;
 
@@ -363,7 +360,7 @@ jQuery.cookie = function(name, value, options) {
 				var scrollWidth = 0;
 				ulCont.children('li:lt('+i+')').each(function() {
 
-					scrollWidth = (scrollWidth - jQuery(this).width()) - 30;
+					scrollWidth = (scrollWidth - $(this).width()) - 30;
 
 				});
 
@@ -396,7 +393,7 @@ jQuery.cookie = function(name, value, options) {
 				var currentGone = 0;
 				ulCont.children('li').each(function() {
 
-					if(jQuery(this).attr('class') == 'prev') {
+					if($(this).attr('class') == 'prev') {
 
 						currentGone = 1;
 
@@ -414,7 +411,7 @@ jQuery.cookie = function(name, value, options) {
 				var scrollWidth = 0;
 				ulCont.children('li:lt('+i+')').each(function() {
 
-					scrollWidth = (scrollWidth - jQuery(this).width()) - 30;
+					scrollWidth = (scrollWidth - $(this).width()) - 30;
 
 				});
 
@@ -473,7 +470,7 @@ jQuery.cookie = function(name, value, options) {
 			mainCont.children('ul').children('li').click(function() {
 
 				//gets our class
-				var classTemp = jQuery(this).attr('class').split(' ');
+				var classTemp = $(this).attr('class').split(' ');
 
 				if(classTemp[1] != 'currentSel') {
 
@@ -481,7 +478,7 @@ jQuery.cookie = function(name, value, options) {
 
 					//changes the selector
 					mainCont.children('ul').children('li.currentSel').removeClass('currentSel');
-					jQuery(this).addClass('currentSel');
+					$(this).addClass('currentSel');
 
 					//animates the image
 					if(mainCont.children('a').children('img:eq('+(classTemp - 1)+')').attr('class') == 'first') {
@@ -528,9 +525,11 @@ jQuery.cookie = function(name, value, options) {
 		  });
 
 
-		  // Instantiate Slideshows
-		// <ui> and <li> markup must be used
-		new SlideShow('.js-slideshow', {timeout: 4000});
+		$(".js-slick-carousel").slick({
+			fade: true,
+			autoplay: true,
+			arrows: false
+		});
 
 		menuHovers();
 

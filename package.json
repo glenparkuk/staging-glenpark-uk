@@ -4,7 +4,8 @@
   "description": "Responsive Website for Glen Park",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
   },
   "author": "Park-Kennaby",
   "license": "ISC",
@@ -36,7 +37,7 @@
     "jshint": "^2.10.1",
     "jshint-stylish": "^2.1.0",
     "picturefill": "^3.0.3",
-    "simple-slideshow": "^2.0.0",
+    "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
     "typescript": "^2.9.2"
   },

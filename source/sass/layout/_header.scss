@@ -52,6 +52,8 @@
 
 .header-carousel {
   height: auto;
+  max-height: 500px;
+  overflow: hidden;
 
     &__track {
       height: auto;
@@ -64,6 +66,9 @@
     &__slide {
       height: auto;
       position: relative;
+    }
+    &__slide-background-image {
+      width: 100%;
     }
     &__slide-content {
       position: absolute;

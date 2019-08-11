@@ -5,12 +5,15 @@ header_slider:
 - quote: "&hellip; every single thing we are doing in the work is exactly what is being done in Nature&hellip; the difference being that we are learning to do it consciously"
   credit: FM Alexander
   img: bg14.jpg
+  credit_class: quotecreditwhite
 - quote: Because things are the way they are,<br />things will not stay the way they are
   credit: Berthold Brecht
   img: bg1.jpg
+  credit_class: quotecreditblack
 - quote: People do not decide their futures, they decide their habits and their habits decide their futures
   credit: FM Alexander
   img: bg2.jpg
+  credit_class: quotecreditblack
 ---
 
 <!-- sidebar begins -->

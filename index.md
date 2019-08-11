@@ -1,6 +1,16 @@
 ---
 layout: default
 id: home
+header_slider:
+- quote: "Because things are the way they are, things will not stay the way they are"
+  quotee: "~ Berthold Brecht"
+  img: "bg14.jpg"
+- quote: "Because things are the way they are, things will not stay the way they are"
+  quotee: "~ Berthold Brecht"
+  img: "bg1.jpg"
+- quote: “People do not decide their futures, they decide their habits and their habits decide their futures”
+  quotee: "~ FM Alexander"
+  img: "bg2.jpg"
 ---
 
 <!-- sidebar begins -->

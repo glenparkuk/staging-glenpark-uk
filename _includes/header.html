@@ -2,26 +2,24 @@
 
 <div id="header-border"></div>
 
-    <!--<div id="header-slider-bg" style=""><img src="/images/" alt="" /></div>-->
 <div class="header" id="header">
+
+    {% if site.header_slider.size > 1 or page.header_slider.size > 1 %}
+    
+    {% if page.header_slider.size > 1 %}
+        {% assign slider = page.header_slider %}
+    {% else %}
+        {% assign slider = site.header_slider %}
+    {%- endif -%}
 
     <div class="header-carousel">
             <div class="header-carousel__slides js-slick-carousel">
 
-                {% if page.header_slider == null or page.header_slider.size < 1 %}
-                    
-                    {%- if jekyll.environment != 'production' -%}
-                        <p>Jekyll environment != production: Fallback header slider (page.header_slider.size={{page.header_slider.size}})</p>
-                    {%- endif -%}
-
-                    {%- include header-slider-fallback.html -%}
-
-                {%- else -%}
-                    {%- for header_image in page.header_slider -%}
+                    {%- for slide in slider -%}
 
                         <div class="header-carousel-slide">
                             <div class="header-carousel-slide__wrapper">
-                                <img class="header-carousel-slide__background-image" src="{{ header_image.img | prepend: '/images/' | relative_url }}" title="{{ header_image.quote }}">
+                                <img class="header-carousel-slide__background-image" src="{{ slide.img | prepend: '/images/' | relative_url }}" title="{{ slide.quote }}">
                                 <div class="header-carousel-slide__content">
                                     <div class="header-carousel-slide__site-logo">
                                         <a href="{% link index.md %}">
@@ -29,19 +27,19 @@
                                         </a>
                                     </div>
                                     <div class="header-carousel-slide__quote">
-                                        <h2>&ldquo;{{ header_image.quote }}&rdquo;</h2>
-                                        <p class="{{ header_image.credit_class }}">&#126; {{ header_image.credit }}</p>
+                                        <h2>&ldquo;{{ slide.quote }}&rdquo;</h2>
+                                        <p class="{{ slide.credit_class }}">&#126; {{ slide.credit }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     {%- endfor -%}
-                {%- endif -%}
 
             </div>
 
     </div>
+    {%- endif -%}
 
     <div class="header__menu">
         <ul id="menu">

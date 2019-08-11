@@ -8,20 +8,34 @@
     <div class="header-carousel">
             <div class="header-carousel__slides js-slick-carousel">
 
-                {%- if post.header_slider == true or post.header_slider.size == 0 -%}
+                {% if page.header_slider == null or page.header_slider.size < 1 %}
+                    
+                    {%- if jekyll.environment != 'production' -%}
+                        <p>Jekyll environment != production: Fallback header slider (page.header_slider.size={{page.header_slider.size}})</p>
+                    {%- endif -%}
+
                     {%- include header-slider-fallback.html -%}
+
                 {%- else -%}
-                    {%- for header_image in post.header_slider -%}
-                        <div class="header-carousel__slide glide__slide">
-                            <img src="{{ header_image.img | prepend: '/images/' | relative_url }}" title="{{ header_image.quote }}">
-                            <div class="header-carousel__slide-content">
-                                <div class="site-logo"><a href="{% link index.md %}"><img src="{{ '/images/chakraslogopurple.png' | relative_url }}" alt="" /></a></div>
-                                <div class="header-carousel__slide-quote">
-                                    <h2>&ldquo;{{ header_image.quote }}&rdquo;</h2>
-                                    <p class="quotecreditblack">&#126; {{ header_image.quotee }}</p>
+                    {%- for header_image in page.header_slider -%}
+
+                        <div class="header-carousel-slide">
+                            <div class="header-carousel-slide__wrapper">
+                                <img class="header-carousel-slide__background-image" src="{{ header_image.img | prepend: '/images/' | relative_url }}" title="{{ header_image.quote }}">
+                                <div class="header-carousel-slide__content">
+                                    <div class="header-carousel-slide__site-logo">
+                                        <a href="{% link index.md %}">
+                                            <img src="{{ '/images/chakraslogopurple.png' | relative_url }}" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="header-carousel-slide__quote">
+                                        <h2>&ldquo;{{ header_image.quote | replace: ",", ",<br />" }}&rdquo;</h2>
+                                        <p class="quotecreditblack">&#126; {{ header_image.quotee }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     {%- endfor -%}
                 {%- endif -%}
 

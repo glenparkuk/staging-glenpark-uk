@@ -5,6 +5,16 @@ permalink: /work/
 id: work
 redirect_from:
   - work.html/
+header_slider:
+- quote: "&hellip; we must come to a full stop, and return to conscious simple living, believing in the unity of all things"
+  credit: FM Alexander
+  img: bg3.jpg
+- quote: It is not necessary to change.  Survival is not mandatory
+  credit: W. Edwards Deming
+  img: bg11.jpg
+- quote: the right thing does itself
+  credit: FM Alexander
+  img: bg8.jpg
 ---
 
 <!-- .content-block 1 begins -->

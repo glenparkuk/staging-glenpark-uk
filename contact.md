@@ -5,6 +5,16 @@ permalink: /contact/
 id: contact
 redirect_from:
   - contact.html/
+header_slider:
+- quote: It is what man does that brings the wrong thing about, first within himself and then in his activities in the outside world, and it is only by preventing this doing that he can ever begin to make any real change
+  credit: FM Alexander
+  img: bg6.jpg
+- quote: They must often change, who would be constant in happiness or wisdom
+  credit: Confucius
+  img: bg9.jpg
+- quote: Everyone thinks of changing the world, but no one thinks of changing himself
+  credit: Leo Tolstoy
+  img: bg16.jpg
 ---
 
 <!-- .content-block 1 begins -->

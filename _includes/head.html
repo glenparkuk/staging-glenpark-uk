@@ -8,7 +8,7 @@
     {%- seo -%}
 
 
-    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url | append: '?0.001' }}">
 
     {% comment %}
         <script type="text/javascript" src="{{ '/assets/js/jquery.color.js' | relative_url }}"></script>

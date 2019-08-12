@@ -5,6 +5,19 @@ permalink: /books/
 id: books
 redirect_from:
   - books.html/
+header_slider:
+- quote: If nothing ever changed there'd be no butterflies
+  credit: Glen Beaman
+  img: bg4.jpg
+  credit_class: quotecreditblack
+- quote: Change always comes bearing gifts
+  credit: Price Pritchett
+  img: bg12.jpg
+  credit_class: quotecreditblack
+- quote: You translate everything–whether physical, mental or spiritual into muscular tension
+  credit: FM Alexander
+  img: bg13.jpg
+  credit_class: quotecreditwhite
 ---
 
 <!-- .content-block 1 begins -->

@@ -6,35 +6,29 @@
         <meta name="robots" content="noindex, nofollow">
     {%- endif -%}
     {%- seo -%}
+
+
     <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-    <!-- js calls begin -->
-    <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/assets/js/jquery.color.js' | relative_url }}"></script>
+
+    {% comment %}
+        <script type="text/javascript" src="{{ '/assets/js/jquery.color.js' | relative_url }}"></script>
+    {% endcomment %}
     <script type="text/javascript" src="{{ '/assets/js/all.min.js' | relative_url }}"></script>
-    <!-- js calls end -->
-    <!-- menu and sliderscripts begin -->
-    <script type="text/javascript">
-    jQuery(document).ready(function() {
-        menuHovers();
-        headerSlider();
-    });
-    </script>
-    <!-- menu and sliderscripts end -->
-    <!-- TODO Code to review -->
-    <!-- popup modal script begins -->
-    <script type="text/javascript" src="{{ '/assets/js/lightbox/jquery.lightbox.js' | relative_url }}"></script>
-    <script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('.lightbox').lightbox();
-    });
-    </script>
-    <!-- popup modal script ends -->
-    <!-- tooltip script call begins -->
+
+
+
+
+
+    {% comment %}
+        <script type="text/javascript" src="{{ '/assets/js/lightbox/jquery.lightbox.js' | relative_url }}"></script>
+    {% endcomment %}
+
     <script src="{{ '/assets/js/tooltip.js' | relative_url }}" type="text/javascript"></script>
-    <!-- tooltip script call ends -->
+
     <!--[if lt IE 7]>
 	  <script type="text/javascript" src="js/unitpngfix.js"></script>
 	<![endif]-->
-    <!-- TODO End of Code to review -->
+
+
     {%- feed_meta -%} {%- if jekyll.environment == 'production' and site.url == site.production_url and site.google_tag_manager -%} {%- include google-tag-manager.html -%} {%- endif -%}
 </head>

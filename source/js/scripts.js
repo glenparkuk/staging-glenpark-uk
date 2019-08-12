@@ -103,216 +103,212 @@ function initialisePaypalExpressCheckout() {
 	}, '#paynowButton');
 }
 
-function menuHovers() {
 
-	//wrap H6 with spans
-	jQuery('#content h6').each(function() {
+(function($) { // reference query
+	$(function() { // shorthand for onLoad()
 
-		jQuery(this).html('<span>'+jQuery(this).text()+'</span>');
 
-	});
+		/* COOKIES PLUGIN */
 
-	//main vars
-	var liLen = jQuery('#menu li:not(#menu li ul li)').length;
-	var startOpacity = (10 - liLen);
-
-	//sets the initial opacity and adds a class to them to indicate the initial opacity so we can access it later
-	var i = startOpacity;
-	var i2 = 1;
-
-	jQuery('#menu li:not(#menu li ul li)').each(function() {
-
-		jQuery(this).attr('id', 'menu_'+i2);
-		jQuery(this).prepend('<span></span><span class="hover"></span>');
-		jQuery(this).children('span').css({ opacity: '.'+i }).addClass(''+i);
-		i++; i2++;
-
-	});
-
-	jQuery('#menu li ul li').each(function() {
-
-		jQuery(this).prepend('<span></span>');
-
-	});
-
-	//hover effects
-	jQuery('#menu li:not(#menu li ul li)').hover(function() {
-
-		jQuery('#menu li.current span').stop().animate({ opacity: 0 }, 200);
-
-		var curTemp = jQuery(this).attr('id').split('_');
-		var current = curTemp[1];
-		var current1 = (current-1)+2;
-
-		var pos = (liLen - current);
-		var initialOp = ((startOpacity - 1) + pos);
-		var initOp = null;
-
-		if(current > 1) {
-
-			initOp = (startOpacity-2);
-
-			for(i=current1; i<=liLen; i++) {
-
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
-				initOp++;
-
+		$.cookie = function(name, value, options) {
+			if (typeof value != 'undefined') { // name and value given, set cookie
+				options = options || {};
+				if (value === null) {
+					value = '';
+					options.expires = -1;
+				}
+				var expires = '';
+				if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+					var date;
+					if (typeof options.expires == 'number') {
+						date = new Date();
+						date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+					} else {
+						date = options.expires;
+					}
+					expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+				}
+				// CAUTION: Needed to parenthesize options.path and options.domain
+				// in the following expressions, otherwise they evaluate to undefined
+				// in the packed version for some reason...
+				var path = options.path ? '; path=' + (options.path) : '';
+				var domain = options.domain ? '; domain=' + (options.domain) : '';
+				var secure = options.secure ? '; secure' : '';
+				document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+			} else { // only name given, get cookie
+				var cookieValue = null;
+				if (document.cookie && document.cookie != '') {
+					var cookies = document.cookie.split(';');
+					for (var i = 0; i < cookies.length; i++) {
+						var cookie = $.trim(cookies[i]);
+						// Does this cookie string begin with the name we want?
+						if (cookie.substring(0, name.length + 1) == (name + '=')) {
+							cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+							break;
+						}
+					}
+				}
+				return cookieValue;
 			}
+		};
 
-			var pos2 = (pos-1)+2;
-			var initOp2 = (startOpacity-2)+pos2;
 
-			for(i=1;i<current;i++) {
 
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp2 }, 200);
-				initOp2++;
 
-			}
+		function menuHovers() {
 
-		} else {
+            //wrap H6 with spans
+            $('#content h6').each(function() {
 
-			initOp = (startOpacity-2);
+                $(this).html('<span>'+$(this).text()+'</span>');
 
-			for(i=current1; i<=liLen; i++) {
+            });
 
-				jQuery('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
-				initOp++;
+            //main vars
+            var liLen = $('#menu li:not(#menu li ul li)').length;
+            var startOpacity = (10 - liLen);
 
-			}
+            //sets the initial opacity and adds a class to them to indicate the initial opacity so we can access it later
+            var i = startOpacity;
+            var i2 = 1;
 
-		}
+            $('#menu li:not(#menu li ul li)').each(function() {
 
-		jQuery(this).children('.hover').css({ display: 'block', opacity: 0 });
-		jQuery(this).children('.hover').stop().animate({ opacity: 1 }, 200);
+                $(this).attr('id', 'menu_'+i2);
+                $(this).prepend('<span></span><span class="hover"></span>');
+                $(this).children('span').css({ opacity: '.'+i }).addClass(''+i);
+                i++; i2++;
 
-	}, function() {
+            });
 
-		jQuery('#menu li span.hover').stop().animate({ opacity: 0 }, 200);
-		var backOp2 = jQuery('#menu li.current span').attr('class');
-		jQuery('#menu li.current span').stop().animate({ opacity: '.'+backOp2 }, 400);
+            $('#menu li ul li').each(function() {
 
-	});
+                $(this).prepend('<span></span>');
 
-	jQuery('#menu li ul li').hover(function() {
+            });
 
-		jQuery(this).children('span').css({ display: 'block', opacity: 0 }).stop().animate({ opacity: 1 }, 200);
+            //hover effects
+            $('#menu li:not(#menu li ul li)').hover(function() {
 
-	}, function() {
+                $('#menu li.current span').stop().animate({ opacity: 0 }, 200);
 
-		jQuery(this).children('span').stop().animate({ opacity: 0 }, 200, function() {
+                var curTemp = $(this).attr('id').split('_');
+                var current = curTemp[1];
+                var current1 = (current-1)+2;
 
-			jQuery(this).hide();
+                var pos = (liLen - current);
+                var initialOp = ((startOpacity - 1) + pos);
+                var initOp = null;
 
-		});
+                if(current > 1) {
 
-	});
+                    initOp = (startOpacity-2);
 
-	jQuery('#menu').children('li').hover(function() {
+                    for(i=current1; i<=liLen; i++) {
 
-		jQuery(this).children('ul:first').stop().css({ display: 'block', opacity: 0 }).animate({ opacity: 1 }, 400);
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
+                        initOp++;
 
-	}, function() {
+                    }
 
-		jQuery(this).children('ul:first').stop().animate({ opacity: 0 }, 400, function() {
+                    var pos2 = (pos-1)+2;
+                    var initOp2 = (startOpacity-2)+pos2;
 
-			jQuery(this).hide();
+                    for(i=1;i<current;i++) {
 
-		});
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp2 }, 200);
+                        initOp2++;
 
-	});
+                    }
 
-}
+                } else {
 
-function headerSlider() {
+                    initOp = (startOpacity-2);
 
-	//first item is current
-	jQuery('#header-slider-content ul li:first').addClass('current');
+                    for(i=current1; i<=liLen; i++) {
 
-	headerHeight = jQuery('#header').height();
-	jQuery('#header-slider-bg').css({ height: headerHeight });
+                        $('#menu_'+i).children('span:not(.hover)').stop().animate({ opacity: '.'+initOp }, 200);
+                        initOp++;
 
-	//first background images
-	var bgImg = jQuery('#header-slider-content ul li.current').children('.header-bg').text().split(',');
-	jQuery('#header-slider-bg').css({ background: '#'+bgImg[0] }).children('img').attr('src', bgImg[1]).addClass('current');
+                    }
 
-	var intSlide = 	setInterval( callNextHeaderSlide(), 10000);
+                }
 
-}
+                $(this).children('.hover').css({ display: 'block', opacity: 0 });
+                $(this).children('.hover').stop().animate({ opacity: 1 }, 200);
 
-function callNextHeaderSlide() {
+            }, function() {
 
-	var next = jQuery('#header-slider-content ul li.current').next();
-	var current = jQuery('#header-slider-content ul li.current');
+                $('#menu li span.hover').stop().animate({ opacity: 0 }, 200);
+                var backOp2 = $('#menu li.current span').attr('class');
+                $('#menu li.current span').stop().animate({ opacity: '.'+backOp2 }, 400);
 
-	if(next.length === 0) {
+            });
 
-		next = jQuery('#header-slider-content ul li:first');
+            $('#menu li ul li').hover(function() {
 
-	}
+                $(this).children('span').css({ display: 'block', opacity: 0 }).stop().animate({ opacity: 1 }, 200);
 
-	current.stop().animate({ opacity: 0 }, 200, function() {
+            }, function() {
 
-		current.removeClass('current').hide();
+                $(this).children('span').stop().animate({ opacity: 0 }, 200, function() {
 
-		next.css({ display: 'block', opacity: 0 }).stop().animate({ opacity: 1 }, 800, function() {
+                    $(this).hide();
 
-			next.addClass('current');
+                });
 
-		});
+            });
 
-		headerHeight = jQuery('#header').height();
-		jQuery('#header-slider-bg').css({ height: headerHeight });
+            $('#menu').children('li').hover(function() {
 
-	});
+                $(this).children('ul:first').stop().css({ display: 'block', opacity: 0 }).animate({ opacity: 1 }, 400);
 
-	var bgImg = next.children('.header-bg').text().split(',');
-	jQuery('#header-slider-bg').append('<img src="'+bgImg[1]+'" alt="" style="display: none;" />');
-	jQuery('#header-slider-bg img.current').stop().animate({ opacity: 0 }, 400 );
+            }, function() {
 
-	jQuery('#header-slider-bg').stop().animate({ 'backgroundColor': '#'+bgImg[0] }, 400);
+                $(this).children('ul:first').stop().animate({ opacity: 0 }, 400, function() {
 
-	jQuery('#header-slider-bg img:not(.current)').fadeIn(800, function() {
+                    $(this).hide();
 
-		jQuery(this).addClass('current');
+                });
 
-	});
+            });
 
-	jQuery('#header-slider-bg img.current').remove();	
+        }
 
+        function hideShowSubmenu() {
 
+            if($.cookie('show-submenu') == null) { $.cookie("show-submenu", true); }
 
-}
+            if($.cookie('show-submenu') == 'false') { $('#submenu').hide(); $('#show-hide-submenu').addClass('show-submenu'); }
 
-function hideShowSubmenu() {
+            $('#show-hide-submenu').click(function() {
 
-	if($.cookie('show-submenu') == null) { $.cookie("show-submenu", true); }
+                if($(this).attr('class') == '') {
 
-	if($.cookie('show-submenu') == 'false') { jQuery('#submenu').hide(); jQuery('#show-hide-submenu').addClass('show-submenu'); }
+                    $('#submenu').fadeOut(200);
+                    $(this).addClass('show-submenu');
 
-	jQuery('#show-hide-submenu').click(function() {
+                    $.cookie("show-submenu", false);
 
-		if(jQuery(this).attr('class') == '') {
+                } else {
 
-			jQuery('#submenu').fadeOut(200);
-			jQuery(this).addClass('show-submenu');
+                    $('#submenu').fadeIn(200);
+                    $(this).removeClass('show-submenu');
 
-			$.cookie("show-submenu", false);
+                    $.cookie("show-submenu", true);
 
-		} else {
+                }
 
-			jQuery('#submenu').fadeIn(200);
-			jQuery(this).removeClass('show-submenu');
+            });
 
-			$.cookie("show-submenu", true);
+        }
 
-		}
 
-	});
 
-}
 
-(function($){
-	$.fn.extend({
+
+
+        $.fn.extend({
 
 		portfolioSlide: function() {
 
@@ -326,7 +322,7 @@ function hideShowSubmenu() {
 			var totalWidth = 0;
 			ulCont.children('li').each(function() {
 
-				totalWidth = (totalWidth + jQuery(this).width()) - 30;
+				totalWidth = (totalWidth + $(this).width()) - 30;
 
 			});
 
@@ -346,7 +342,7 @@ function hideShowSubmenu() {
 				var currentGone = 0;
 				ulCont.children('li').each(function() {
 
-					if(jQuery(this).attr('class') == 'next') {
+					if($(this).attr('class') == 'next') {
 
 						currentGone = 1;
 
@@ -364,7 +360,7 @@ function hideShowSubmenu() {
 				var scrollWidth = 0;
 				ulCont.children('li:lt('+i+')').each(function() {
 
-					scrollWidth = (scrollWidth - jQuery(this).width()) - 30;
+					scrollWidth = (scrollWidth - $(this).width()) - 30;
 
 				});
 
@@ -397,7 +393,7 @@ function hideShowSubmenu() {
 				var currentGone = 0;
 				ulCont.children('li').each(function() {
 
-					if(jQuery(this).attr('class') == 'prev') {
+					if($(this).attr('class') == 'prev') {
 
 						currentGone = 1;
 
@@ -415,7 +411,7 @@ function hideShowSubmenu() {
 				var scrollWidth = 0;
 				ulCont.children('li:lt('+i+')').each(function() {
 
-					scrollWidth = (scrollWidth - jQuery(this).width()) - 30;
+					scrollWidth = (scrollWidth - $(this).width()) - 30;
 
 				});
 
@@ -474,7 +470,7 @@ function hideShowSubmenu() {
 			mainCont.children('ul').children('li').click(function() {
 
 				//gets our class
-				var classTemp = jQuery(this).attr('class').split(' ');
+				var classTemp = $(this).attr('class').split(' ');
 
 				if(classTemp[1] != 'currentSel') {
 
@@ -482,7 +478,7 @@ function hideShowSubmenu() {
 
 					//changes the selector
 					mainCont.children('ul').children('li.currentSel').removeClass('currentSel');
-					jQuery(this).addClass('currentSel');
+					$(this).addClass('currentSel');
 
 					//animates the image
 					if(mainCont.children('a').children('img:eq('+(classTemp - 1)+')').attr('class') == 'first') {
@@ -504,76 +500,39 @@ function hideShowSubmenu() {
 
 	});
 
-})(jQuery);
+		$(".scroll").click(function(event){
+				//prevent the default action for the click event
+				event.preventDefault();
+				//get the full url - like mysitecom/index.htm#home
+				var full_url = this.href;
+				//split the url by # and get the anchor target name - home in mysitecom/index.htm#home
+				var parts = full_url.split("#");
+				var trgt = parts[1];
+				//get the top offset of the target anchor
+				var target_offset = $("#"+trgt).offset();
+				var target_top = target_offset.top;
+				//goto that anchor by setting the body scroll top to anchor top
+				$('html, body').animate({scrollTop:target_top}, 500);
+			});
+		  $(".scroll-buy-now").click(function(event){
+		    //prevent the default action for the click event
+		    event.preventDefault();
+		    //get the top offset of the target anchor
+		    var target_offset = $("#buyNow").offset();
+		    var target_top = target_offset.top;
+		    //goto that anchor by setting the body scroll top to anchor top
+		    $('html, body').animate({scrollTop:target_top}, 1000);
+		  });
 
 
+		$(".js-slick-carousel").slick({
+			fade: true,
+			autoplay: true,
+			arrows: false,
+			autoplaySpeed: 5000
+		});
 
+		menuHovers();
 
-/* COOKIES PLUGIN */
-
-jQuery.cookie = function(name, value, options) {
-	if (typeof value != 'undefined') { // name and value given, set cookie
-		options = options || {};
-		if (value === null) {
-			value = '';
-			options.expires = -1;
-		}
-		var expires = '';
-		if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
-			var date;
-			if (typeof options.expires == 'number') {
-				date = new Date();
-				date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
-			} else {
-				date = options.expires;
-			}
-			expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
-		}
-		// CAUTION: Needed to parenthesize options.path and options.domain
-		// in the following expressions, otherwise they evaluate to undefined
-		// in the packed version for some reason...
-		var path = options.path ? '; path=' + (options.path) : '';
-		var domain = options.domain ? '; domain=' + (options.domain) : '';
-		var secure = options.secure ? '; secure' : '';
-		document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
-	} else { // only name given, get cookie
-		var cookieValue = null;
-		if (document.cookie && document.cookie != '') {
-			var cookies = document.cookie.split(';');
-			for (var i = 0; i < cookies.length; i++) {
-				var cookie = jQuery.trim(cookies[i]);
-				// Does this cookie string begin with the name we want?
-				if (cookie.substring(0, name.length + 1) == (name + '=')) {
-					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-					break;
-				}
-			}
-		}
-		return cookieValue;
-	}
-};
-$(document).ready(function(){
-	$(".scroll").click(function(event){
-		//prevent the default action for the click event
-		event.preventDefault();
-		//get the full url - like mysitecom/index.htm#home
-		var full_url = this.href;
-		//split the url by # and get the anchor target name - home in mysitecom/index.htm#home
-		var parts = full_url.split("#");
-		var trgt = parts[1];
-		//get the top offset of the target anchor
-		var target_offset = $("#"+trgt).offset();
-		var target_top = target_offset.top;
-		//goto that anchor by setting the body scroll top to anchor top
-		$('html, body').animate({scrollTop:target_top}, 500);
 	});
-  $(".scroll-buy-now").click(function(event){
-    //prevent the default action for the click event
-    event.preventDefault();
-    //get the top offset of the target anchor
-    var target_offset = $("#buyNow").offset();
-    var target_top = target_offset.top;
-    //goto that anchor by setting the body scroll top to anchor top
-    $('html, body').animate({scrollTop:target_top}, 1000);
-  });
-});
+})(jQuery);

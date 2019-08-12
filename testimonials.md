@@ -5,6 +5,19 @@ permalink: /testimonials/
 id: testimonials
 redirect_from:
   - testimonials.html/
+header_slider:
+- quote: There is no such thing as a right position but there is such a thing as a right direction
+  credit: FM Alexander
+  img: bg10.jpg
+  credit_class: quotecreditblack
+- quote: Faced with the choice between changing one's mind and proving that there is no need to do so, almost everyone gets busy on the proof
+  credit: John Kenneth Galbraith
+  img: bg5.jpg
+  credit_class: quotecreditwhite
+- quote: If you’ve got it be prepared to throw it away
+  credit: FM Alexander
+  img: bg7.jpg
+  credit_class: quotecreditwhite
 ---
 
 <!-- .content-block 1 begins -->

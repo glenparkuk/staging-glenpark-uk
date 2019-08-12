@@ -63,10 +63,7 @@ header_slider:
 </div>
 <!-- main-content begins -->
 
-
-
 <div class="popups" style="display: none;">
-
     <div id="about-alexander">
         <p><img src="/images/fmalexander.png" alt="FM Alexander" width="177" height="224" border="0" align="left" /><a href="http://en.wikipedia.org/wiki/FM_Alexander" title="Read more information about FM Alexander at Wikipedia..." target="_blank">FM Alexander</a> discovered principles about the body, which we share with all vertebrate animals. Working consciously with these principles enabled him to regain a quality of balance and poise in his body and to make deep and lasting changes in the way he used his voice, which as an actor was vitally important to him.</p>
         <img src="/images/meercat.png" alt="Meercat" width="206" height="475" border="0" align="right" />
@@ -77,14 +74,12 @@ header_slider:
         <p>Alexander teachers work with their hands, sometimes guiding you during movement such as walking, sitting and standing, playing an instrument, or other activities and sometimes during stillness while you are lying down on a therapy table. Touch is central to the work, and a large part of an Alexander teacher&#39;s training is learning how to use their hands in a way that will bring about the changes that they want to create in the musculature and the nervous system.</p>
         <img src="/images/baby.png" alt="A child learns to walk" width="529" height="223" border="0" align="left" />
     </div>
-
     <div id="about-chakras">
         <img src="/images/chakras.jpg" alt="The Chakras" width="85" height="400" border="0" align="right" />
         <img src="/images/chakra1.png" alt="Chakras and the human body" width="285" height="348" border="0" align="left" />
         <p><span class="boldp">Chakra Therapy&hellip;</span> Chakra is a Sanskrit word meaning &lsquo;a wheel, a disc, or any arrangement in circular form or organization&rsquo;.  In the ancient Hindu spiritual philosophy there are seven major chakras which are located at critical turning points in the spine. Each chakra is connected with a critical turning point in our psychological and spiritual development from birth through to maturity.</p>
         <p>By learning about these different stages of our psychological development we have a framework for understanding ourselves, and we can work consciously to transform those parts of us that are wounded or stuck in unhelpful patterns of behaviour. Chakra Therapists are trained to work with gentle non-doing hands on the body, in addition to guiding clients in the process of understanding and working with the chakras, to bring about healing and spiritual growth. Chakra Therapy can be taught in workshops and courses or through individual sessions.</p>
     </div>
-        
     <div id="about-glen">
         <p><img src="/images/glenprofileimage.png" alt="Glen Park" width="239" height="254" border="0" align="right" /><span class="boldp">Glen Park &#126; <em>Author, Teacher and Therapist</em>&hellip;</span><br />
         I left University with an honours degree in Philosophy and worked in the Professional Theatre for eleven years, In my mid-thirties, suffering from recurring back pain, I left the theatre and began training in the Alexander Technique.</p>
@@ -94,13 +89,10 @@ header_slider:
         <p>I call my work <a href="/popups/about-psycophysical">Psychophysical Integration</a> because I work with the physical, emotional, mental and spiritual aspects of the Self. I base my work on the Alexander Technique and on a philosophy of the chakras in which they represent the developmental unfolding of consciousness from the infant, through to maturity. This body centred work combined with meditation has formed the basis of my spiritual practice.</p>
         <p>I have recently moved from Devon to Haywards Heath in Sussex, where I am writing my latest book, running workshops in Psychophysical Integration, and seeing people individually.</p>
     </div>
-    
     <div id="about-psycophysical">
         <p><span class="boldp">Psychophysical Integration&hellip;</span> This combines the Alexander Technique and Chakra Therapy. The Alexander Technique works with unhelpful patterns of physical behaviour and with Chakra Therapy we can complement that process by working with unhelpful psychological patterns that we have developed.</p>
         <img src="/images/glenworking.png" alt="Glen Park" width="275" height="204" border="0" align="center" />
         <p>This work can bring about expansion and growth at physical, psychological and spiritual levels. Certified Alexander Teachers who have trained in Chakra Therapy and combine the two disciplines may call their work Psychophysical Integration.</p>
         <img src="/images/grouppsyco.png" alt="Glen Working" width="275" height="204" border="0" align="center" />
     </div>
-    
-
 </div>

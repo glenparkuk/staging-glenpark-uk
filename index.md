@@ -65,10 +65,14 @@ header_slider:
 
 <div class="popups" style="display: none;">
     <div id="about-alexander">
-        <p><img src="/images/fmalexander.png" alt="FM Alexander" width="177" height="224" border="0" align="left" /><a href="http://en.wikipedia.org/wiki/FM_Alexander" title="Read more information about FM Alexander at Wikipedia..." target="_blank">FM Alexander</a> discovered principles about the body, which we share with all vertebrate animals. Working consciously with these principles enabled him to regain a quality of balance and poise in his body and to make deep and lasting changes in the way he used his voice, which as an actor was vitally important to him.</p>
-        <img src="/images/meercat.png" alt="Meercat" width="206" height="475" border="0" align="right" />
+        <p>
+            <img src="{{ '/images/fmalexander.png' | relative_url }}" alt="FM Alexander" width="177" height="224" border="0" align="left" />
+            <a href="http://en.wikipedia.org/wiki/FM_Alexander" title="Read more information about FM Alexander at Wikipedia..." target="_blank">FM Alexander</a> discovered principles about the body, which we share with all vertebrate animals. Working consciously with these principles enabled him to regain a quality of balance and poise in his body and to make deep and lasting changes in the way he used his voice, which as an actor was vitally important to him.
+        </p>
+        <img src="{{ '/images/meercat.png' | relative_url }}" alt="Meercat" width="206" height="475" border="0" align="right" />
         <blockquote class="blockquotepurple">&ldquo;&hellip; every single thing we are doing in the work is exactly what is being done in Nature&hellip; the difference being that we are learning to do it consciously&rdquo;<br />
-        <span class="quotecreditpopup">&#126; FM Alexander</span></blockquote>
+            <span class="quotecreditpopup">&#126; FM Alexander</span>
+        </blockquote>
         <p><span class="boldp">The Alexander Technique&hellip;</span> is a valuable system for bringing lasting change to the way we move and use our bodies and minds. Simple activities like sitting, standing, bending and walking can be done with greater ease and poise. Many people have received lasting relief from back, neck or shoulder pain, joint and muscle problems, mental and emotional stress and other health problems as a result of taking a course of lessons. Its effectiveness is well documented and has been the subject of a <a href="http://www.bmj.com/content/337/bmj.a884.full" title="thebmj" target="_blank">scientific study</a> which was reported in the British Medical Journal. For more information visit <a href="http://www.alexandertechnique.com/" title="The Complete Guide to the Alexander Technique" target="_blank">The Complete Guide to the Alexander Technique</a>.</p>
         <p>Musicians, actors, dancers, singers and athletes have learnt the technique in order to improve the way they perform. Students of yoga, tai chi, meditation and other disciplines have applied it to their spiritual practice as it teaches the skills of being self-aware and present in the moment.</p>
         <p>Alexander teachers work with their hands, sometimes guiding you during movement such as walking, sitting and standing, playing an instrument, or other activities and sometimes during stillness while you are lying down on a therapy table. Touch is central to the work, and a large part of an Alexander teacher&#39;s training is learning how to use their hands in a way that will bring about the changes that they want to create in the musculature and the nervous system.</p>
@@ -81,8 +85,10 @@ header_slider:
         <p>By learning about these different stages of our psychological development we have a framework for understanding ourselves, and we can work consciously to transform those parts of us that are wounded or stuck in unhelpful patterns of behaviour. Chakra Therapists are trained to work with gentle non-doing hands on the body, in addition to guiding clients in the process of understanding and working with the chakras, to bring about healing and spiritual growth. Chakra Therapy can be taught in workshops and courses or through individual sessions.</p>
     </div>
     <div id="about-glen">
-        <p><img src="/images/glenprofileimage.png" alt="Glen Park" width="239" height="254" border="0" align="right" /><span class="boldp">Glen Park &#126; <em>Author, Teacher and Therapist</em>&hellip;</span><br />
-        I left University with an honours degree in Philosophy and worked in the Professional Theatre for eleven years, In my mid-thirties, suffering from recurring back pain, I left the theatre and began training in the Alexander Technique.</p>
+        <p>
+            <img src="/images/glenprofileimage.png" alt="Glen Park" width="239" height="254" border="0" align="right" />
+            <span class="boldp">Glen Park &#126; <em>Author, Teacher and Therapist</em>&hellip;</span><br />I left University with an honours degree in Philosophy and worked in the Professional Theatre for eleven years, In my mid-thirties, suffering from recurring back pain, I left the theatre and began training in the Alexander Technique.
+        </p>
         <img src="/images/glenprofileimage2.png" alt="Glen working during a treatment session" width="251" height="372" border="0" align="left" />
         <p>Fairly early on in my training I began to see auras and energy and was advised to train in psychic development in order to gain an understanding of what I was experiencing. I trained in England and then in California, at the same time as completing my training as an Alexander Teacher. Together, these were my first steps on a journey of spiritual development.
         I found the two disciplines worked very well together and this prompted me to write my first book <a href="../books.html">The Art of Changing</a>.</p>
@@ -91,8 +97,8 @@ header_slider:
     </div>
     <div id="about-psycophysical">
         <p><span class="boldp">Psychophysical Integration&hellip;</span> This combines the Alexander Technique and Chakra Therapy. The Alexander Technique works with unhelpful patterns of physical behaviour and with Chakra Therapy we can complement that process by working with unhelpful psychological patterns that we have developed.</p>
-        <img src="/images/glenworking.png" alt="Glen Park" width="275" height="204" border="0" align="center" />
+        <img src="{{ /images/glenworking.png | relative_url }}" alt="Glen Park" width="275" height="204" border="0" align="center" />
         <p>This work can bring about expansion and growth at physical, psychological and spiritual levels. Certified Alexander Teachers who have trained in Chakra Therapy and combine the two disciplines may call their work Psychophysical Integration.</p>
-        <img src="/images/grouppsyco.png" alt="Glen Working" width="275" height="204" border="0" align="center" />
+        <img src="{{ /images/grouppsyco.png | relative_url }}" alt="Glen Working" width="275" height="204" border="0" align="center" />
     </div>
 </div>

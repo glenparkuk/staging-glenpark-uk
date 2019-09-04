@@ -68,14 +68,10 @@ exclude:
    - Gemfile
    - Gemfile.lock
    - node_modules
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
    - source
    - gulpfile.js
-   - gitignore
    - package.json
    - package-lock.json
-   - package.lock
-   - server
+   - git_submodules
+   - README.md
+   - CNAME

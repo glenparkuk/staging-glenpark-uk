@@ -36,7 +36,7 @@ header_slider:
     </div>
     <div class="one-third last">
         <p class="subheadingblue">Psychophysical Integration</p>
-        <p>This combines the <a href="{% link popups/about-alexander.md %}?lightbox[iframe]=true&amp;lightbox[width]=600&amp;lightbox[height]=580" class="lightbox">Alexander Technique</a> and <a href="{% link popups/about-chakras.md %}?lightbox[iframe]=true&amp;lightbox[width]=600&amp;lightbox[height]=460" class="lightbox">Chakra Therapy</a>. The Alexander Technique works with unhelpful patterns of physical behaviour and with Chakra Therapy we can complement that process by working with unhelpful psychological patterns that we have developed. This work can bring about expansion and growth at physical, psychological and spiritual levels. In these sessions I work with whatever seems most appropriate for each specific situation.</p>
+        <p>This combines the <a href="#" data-featherlight="#about-alexander" class="lightbox">Alexander Technique</a> and <a href="#" data-featherlight="#about-chakras" class="lightbox">Chakra Therapy</a>. The Alexander Technique works with unhelpful patterns of physical behaviour and with Chakra Therapy we can complement that process by working with unhelpful psychological patterns that we have developed. This work can bring about expansion and growth at physical, psychological and spiritual levels. In these sessions I work with whatever seems most appropriate for each specific situation.</p>
     </div>
 </div>
 <!-- .content-block 1 ends -->

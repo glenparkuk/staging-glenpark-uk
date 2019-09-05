@@ -1,0 +1,13 @@
+<div class="popups" style="display: none;">
+    
+    {% include popups-about-alexander.html %}
+
+    {% if page.id == 'home' or page.id == 'books' or page.id == 'work' %}
+        {% include popups-about-chakras.html %}
+    {% endif %}
+
+    {% if page.id == 'home' %}{% include popups-about-glen.html %}{% endif %}
+
+    {% if page.id == 'home' %}{% include popups-about-psycophysical.html %}{% endif %}
+    
+</div>

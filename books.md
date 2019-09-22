@@ -3,8 +3,6 @@ layout: default
 title: Books and CD&#39;s&hellip;
 permalink: /books/
 id: books
-redirect_from:
-  - books.html/
 header_slider:
 - quote: If nothing ever changed there'd be no butterflies
   credit: Glen Beaman

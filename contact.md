@@ -3,8 +3,6 @@ layout: default
 title: Get in touch with Glen&hellip;
 permalink: /contact/
 id: contact
-redirect_from:
-  - contact.html/
 header_slider:
 - quote: It is what man does that brings the wrong thing about, first within himself and then in his activities in the outside world, and it is only by preventing this doing that he can ever begin to make any real change
   credit: FM Alexander

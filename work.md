@@ -3,8 +3,6 @@ layout: default
 title: Individual Sessions, Group Work and Courses&hellip;
 permalink: /work/
 id: work
-redirect_from:
-  - work.html/
 header_slider:
 - quote: "&hellip; we must come to a full stop, and return to conscious simple living, believing in the unity of all things"
   credit: FM Alexander

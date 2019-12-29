@@ -24,6 +24,7 @@ url: # intentionally left blank (Github Pages and Jekyll Serve overwrite this va
 production_url: "https://glenpark.uk" # where the production version of this site is accessed
 twitter_username: jekyllrb
 github_username:  jekyll
+facebook_username: "glenpark.alexanderteacher"
 google_tag_manager: GTM-TP6H8BZ
 keywords: Glen Park, The Art of Changing, Touching the Soul, Psychophysical Integration, Alexander Technique, books, courses, CDs, workshops
 author: Glen Park

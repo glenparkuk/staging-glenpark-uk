@@ -68,18 +68,22 @@
 <!-- submenustrip begins -->
 <div id="submenustrip">
     <div id="smalliconscontainer">
+        {% if site.email %}
         <a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">
             <div class="emailicon"></div>
         </a>
+        {% endif %}
         <a href="#" data-featherlight="#about-alexander" class="lightbox tooltip" title="About Alexander Technique">
             <div class="infoicon"></div>
         </a>
         <a href="{% link index.md %}" class="tooltip" title="Back to Homepage" target="_self">
             <div class="homeicon"></div>
         </a>
-        <a href="http://www.facebook.com/profile.php?id=100000862192767" class="tooltip" title="Visit Glen on Facebook" target="_blank">
+        {% if site.facebook_username %}
+        <a href="https://www.facebook.com/{{ site.facebook_username }}" class="tooltip" title="Visit Glen on Facebook" target="_blank">
             <div class="facebookicon"></div>
         </a>
+        {% endif %}
     </div>
     <p class="submenutextitalic">&hellip; bringing together the Alexander Technique and Chakra Therapy</p>
 </div>

@@ -22,7 +22,7 @@ header_slider:
     <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
     <p>&nbsp;</p>
     <div class="clear"></div>
-    <img src="{{ '/images/aocbookmodel.png' | relative_url }}" alt="Chakra Healing Therapy by Glen Park" width="332" height="461" border="0" align="left" />
+    <img src="{{ '/images/chakra-healing-therapy-cover.jpg' | relative_url }}" alt="Chakra Healing Therapy by Glen Park" width="332" height="461" border="0" align="left" style="padding-right: 20px" />
     <p><span class="boldsubtitle">Chakra Healing Therapy: Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></p>
     <h6>Inner Traditions 2020</h6>
     <p>In this in-depth guide to working with the chakras, author Glen Park draws on her decades of experience as a Chakra Therapist to explain how the chakras can be understood as an embodied map of the psyche, with each chakra representing a dif¬ferent stage of development from infancy and childhood through adulthood, with the Heart Chakra playing a central role in awakening the spiritual potential of the upper chakras. She examines each chakra individually on the physical, psychologi¬cal, psychic, and spiritual level, as well as through the lens of the solar (masculine) and lunar (feminine) channels. She shows how the connections between the chakras and developmental stages are paralleled in the findings of Western psychology and neuroscience and how our collective expressions of the chakras influence cultural trends in society.</p>

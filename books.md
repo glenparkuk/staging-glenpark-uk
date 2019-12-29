@@ -19,6 +19,7 @@ header_slider:
 ---
 
 <div class="content-block">
+    <a name="touchingthesoul" id="touchingthesoul"></a>
     <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
     <p>&nbsp;</p>
     <div class="clear"></div>
@@ -29,7 +30,6 @@ header_slider:
     <p>The author’s system of Chakra Therapy integrates healing touch with guided chakra visualizations, offering practical exercises to nourish and balance each chakra so it can be integrated and in harmony with the entire chakra system. She explores how to work with the Heart Chakra for deep transformation and self-healing, includ¬ing healing emotional wounds from childhood and enabling the psychic and spiritual levels of the Throat and Eye Chakras to develop, with the potential of opening to the divine realm of the Crown Chakra. Sharing case studies from her Chakra Therapy practice, she shows how we gain a richer understanding of ourselves both mentally and physically by working with the chakras, opening ourselves to the potential for deep soul growth and transformation.</p>
 
 <p><span class="pitalic">Chakra Healing Therapy</span> is due to be published by Destiny Books in October 2020.</p>
-<a name="touchingthesoul" id="touchingthesoul"></a>
 <p>&nbsp;</p>
 <div class="clear"></div>
 <a href="mailto:{{ site.email }}" target="_blank" class="tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">

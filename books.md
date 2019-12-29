@@ -18,9 +18,29 @@ header_slider:
   credit_class: quotecreditwhite
 ---
 
-<!-- .content-block 1 begins -->
 <div class="content-block">
     <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
+    <p>&nbsp;</p>
+    <div class="clear"></div>
+    <img src="{{ '/images/aocbookmodel.png' | relative_url }}" alt="Chakra Healing Therapy by Glen Park" width="332" height="461" border="0" align="left" />
+    <p><span class="boldsubtitle">Chakra Healing Therapy: Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></p>
+    <h6>Inner Traditions 2020</h6>
+    <p>In this in-depth guide to working with the chakras, author Glen Park draws on her decades of experience as a Chakra Therapist to explain how the chakras can be understood as an embodied map of the psyche, with each chakra representing a dif¬ferent stage of development from infancy and childhood through adulthood, with the Heart Chakra playing a central role in awakening the spiritual potential of the upper chakras. She examines each chakra individually on the physical, psychologi¬cal, psychic, and spiritual level, as well as through the lens of the solar (masculine) and lunar (feminine) channels. She shows how the connections between the chakras and developmental stages are paralleled in the findings of Western psychology and neuroscience and how our collective expressions of the chakras influence cultural trends in society.</p>
+    <p>The author’s system of Chakra Therapy integrates healing touch with guided chakra visualizations, offering practical exercises to nourish and balance each chakra so it can be integrated and in harmony with the entire chakra system. She explores how to work with the Heart Chakra for deep transformation and self-healing, includ¬ing healing emotional wounds from childhood and enabling the psychic and spiritual levels of the Throat and Eye Chakras to develop, with the potential of opening to the divine realm of the Crown Chakra. Sharing case studies from her Chakra Therapy practice, she shows how we gain a richer understanding of ourselves both mentally and physically by working with the chakras, opening ourselves to the potential for deep soul growth and transformation.</p>
+
+<p><span class="pitalic">Chakra Healing Therapy</span> is due to be published by Destiny Books in October 2020.</p>
+<a name="touchingthesoul" id="touchingthesoul"></a>
+<p>&nbsp;</p>
+<div class="clear"></div>
+<a href="mailto:{{ site.email }}" target="_blank" class="tooltip" title="Click here to request email notification of the publication of Touching The Soul">
+                <span class="notificationbtn"></span> 
+            </a>
+            <div class="clear"></div>
+<p>&nbsp;</p>
+</div>
+
+<!-- .content-block 1 begins -->
+<div class="content-block">
     <a name="theartofchanging" id="theartofchanging"></a>
     <p>&nbsp;</p>
     <div class="clear"></div>
@@ -247,27 +267,6 @@ Select Country
         <div class="clear"></div>
         <p class="form-error-contact">Having trouble using this form? Please <a href="mailto:{{ site.email }}" title="Let us know">let us know</a>.</p>
         <hr>
-        <div class="clear"></div>
-        <a name="touchingthesoul" id="touchingthesoul"></a>
-        <div class="clear"></div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <!-- .content-block 4 begins -->
-        <div class="content-block">
-            <p><span class="boldsubtitle">Touching the Soul</span><span class="italicsubtitle"> by Glen Park</span>
-                <br />
-            </p>
-            <p>&#40;Coming soon&#41;</p>
-            <img src="{{ '/images/ttsspacer.png' | relative_url }}" width="400" height="400" border="0" align="right" />
-            <p>Life has evolved through touch. Embryologically, it is the first sense to come into being. Our sensitivity to touch is profound. It can stimulate our earliest, largely unconscious memories and our primitive responses. Touch reaches deep into our psyches. When the touch is sufficiently sensitive and aware it can induce deep relaxation, healing, heightened awareness and a powerful connection to our experience of soul or spirit.</p>
-            <p>In this book Glen explains how the chakras can be understood as a developmental map of the psyche, covering stages of development including infancy, childhood, adulthood and maturity. She looks in depth at these developmental stages and how they are paralleled in the findings of western developmental psychology and neuroscience. Using this understanding of the multi-layered psyche as expressed through the chakras, she offers practical exercises which can help to bring awareness to each of our individual ‘small minds’ so that they can be integrated and in harmony with each other.</p>
-            <p>She then explains her system of Chakra Therapy which combines the practical exercises used in the book with the deep healing hands-on work offered by practitioners of the Alexander Technique who have also completed an additional training in Chakra Therapy. Bringing healing touch together with increased self-awareness of the rich multi-faceted nature of who we are creates a potent combination which can facilitate deep change. By creating a synthesis between Eastern traditions and Western research we gain a richer understanding of ourselves both mentally and physically and by working with conscious healing touch there is the potential for deep soul growth and transformation.</p>
-            <p>Touching The Soul is not yet available. If you would like to be notified of its publication please click the button below to email Glen Park:</p>
-            <a href="mailto:{{ site.email }}" target="_blank" class="tooltip" title="Click here to request email notification<br />of the publication of Touching The Soul">
-                <div class="notificationbtn"></div> 
-            </a>
-        </div>
-        <!-- .content-block 4 ends -->
         <div class="clear"></div>
         <p>&nbsp;</p>
         <p>&nbsp;</p>

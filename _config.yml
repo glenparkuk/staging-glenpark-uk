@@ -18,7 +18,7 @@ email: contact@glenpark.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Glen Park is a highly esteemed Alexander Technique and Chakra Therapy practitioner
   and tutor based in West Sussex, UK. Glen Park provides workshops and courses
-  and is the author of The Art of Changing and Touching the Soul
+  and is the author of The Art of Changing and Chakra Healing Therapy
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # intentionally left blank (Github Pages and Jekyll Serve overwrite this value)
 production_url: "https://glenpark.uk" # where the production version of this site is accessed
@@ -26,7 +26,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 facebook_username: "glenpark.alexanderteacher"
 google_tag_manager: GTM-TP6H8BZ
-keywords: Glen Park, The Art of Changing, Touching the Soul, Psychophysical Integration, Alexander Technique, books, courses, CDs, workshops
+keywords: Glen Park, The Art of Changing, Chakra Therapy, Chakra Healing Therapy, Alexander Technique, books, courses, CDs, workshops
 author: Glen Park
 # Default slides for header slider in case of fallback
 header_slider:

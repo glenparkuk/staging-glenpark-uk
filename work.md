@@ -45,34 +45,23 @@ header_slider:
 <div class="content-block">
     <a name="workshops" id="workshops"></a>
     <div class="two-thirds">
-        <h6>Workshops for both teachers and students</h6>
-        <p class="boldp"><span class="runinheading">Workshops &amp; Courses&hellip;</span> Working in groups gives us a chance to learn from each other as well as working on ourselves. The theoretical principles are taught through experiential exercises and discussion.</p>
-    </div>
-    <div class="two-thirds">
-        <p class="boldp"><span class="runinheading" style="font-size:28px;line-height:30px;">Breaking News:<br>South East Alexander School</span> </p>
-        <p class="boldp">A professional Alexander Technique teacher-training course, beginning September 2017 in Forest Row, East Sussex.</p>
-        <p class="boldsubtitle14blue">Director of Training: Delia Rosenboom</p>
-        <p class="boldsubtitle14blue">Assistant teachers: Glen Park, Ruth Polden</p>
-        <p>This unique, professional training course offers students the opportunity to study in-depth the work of F.M. Alexander- his principles of inhibition, direction and means to psycho-physical re-education, how to apply these to oneself and how to effectively teach these to others. This rich area of study will be approached creatively, holistically and in a variety of ways, enabling students to grow, develop and change on all levels. Whilst this training primarily focuses on learning to work on oneself,
-            <br>it will simultaneously equip students with the tools and
-            <br>skills to teach the Alexander Technique professionally.</p>
-        <p>This training recognises that physical change comes
-            <br>hand in hand with emotional, psychological and
-            <br>energetic change, and both honours and welcomes
-            <br>these inevitable changes as an integral part of
-            <br>the training process.</p>
-        <p>For more information <a href="http://www.deliarosenboom.co.uk/professional-alexander-teacher-training">click here</a> or go to
-            <br><a href="http://www.deliarosenboom.co.uk/professional-alexander-teacher-training">www.deliarosenboom.co.uk/<br>professional-alexander-teacher-training</a></p>
+    <h6>Workshops for Alexander Teachers</h6>
+        <p class="boldp"><span class="runinheading" style="font-size:28px;line-height:30px;">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</span></p>
+        <p class="boldsubtitle14blue">Introductory One Day Workshop</p>
+        <p class="boldsubtitle14blue">Postgraduate Training: 8 weekend workshops over 9 months</p>
+        <!-- <p class="boldsubtitle14blue">Assistant teachers: Glen Park, Ruth Polden</p> -->
+        <p>These courses offer a way of understanding psychological and spiritual development, which is based on both Western researches into psychology and Eastern Spiritual traditions. Participants will learn to work with a model of the chakras in which they represent the developmental unfolding of consciousness from the infant to the adult and beyond. This conceptual framework is supported by research from Western theorists. In addition we will learn a way of hands-on working which enables us to consider the whole self in all its aspects, physical, emotional, mental, and spiritual. This framework will be used for work on the self, as well as for hands-on work with others.</p>
     </div>
     <div class="one-third last">
-        <p class="subheadingblue">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</p>
-        <p class="boldsubtitle14blue"><span class="bulletblue">&bull;</span> Introductory One Day Workshop</p>
-        <p class="boldsubtitle14blue"><span class="bulletblue">&bull;</span> Postgraduate Training
-            <br />&nbsp;&nbsp;&#40;8 weekend workshops over 9 months&#41;</p>
-        <p>These courses offer a way of understanding psychological and spiritual development, which is based on both Western researches into psychology and Eastern Spiritual traditions. Participants will learn to work with a model of the chakras in which they represent the developmental unfolding of consciousness from the infant to the adult and beyond. This conceptual framework is supported by research from Western theorists. In addition we will learn a way of hands-on working which enables us to consider the whole self in all its aspects, physical, emotional, mental, and spiritual. This framework will be used for work on the self, as well as for hands-on work with others.</p>
     </div>
 </div>
 <!-- .content-block 2 ends -->
 <div class="clear"></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

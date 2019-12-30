@@ -45,7 +45,7 @@ header_slider:
 <div class="content-block">
     <a name="workshops" id="workshops"></a>
     <div class="two-thirds">
-    <h6>Workshops for teachers</h6>
+    <h6>Workshops for Alexander Teachers</h6>
         <p class="boldp"><span class="runinheading" style="font-size:28px;line-height:30px;">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</span></p>
         <p class="boldsubtitle14blue">Introductory One Day Workshop</p>
         <p class="boldsubtitle14blue">Postgraduate Training: 8 weekend workshops over 9 months</p>

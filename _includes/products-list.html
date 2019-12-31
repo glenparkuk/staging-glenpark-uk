@@ -1,0 +1,16 @@
+<div class="product-list">
+
+    <div class="content-block product-list__title">
+        <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
+        <p>&nbsp;</p>
+    </div>
+
+    <div class="product-list__listing">
+        {%- for products in site.data.products -%}
+
+                {%- include product-card.html -%}
+                
+        {%- endfor -%}
+    </div>
+            
+</div>

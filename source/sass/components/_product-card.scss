@@ -1,0 +1,35 @@
+.product-card {
+
+    display: flex;
+
+    &__image {
+        width: calc(34% - 10px);
+        padding-right: 10px;
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 332px;
+        }
+    }
+
+    &__info {
+        width: 66%;
+    }
+
+    &__title {
+        font-weight: 700; // .boldsubtitle
+        font-family: inherit; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
+        text-shadow: none; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
+        font-style: normal; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
+    }
+
+    // TODO these styles could be imroved
+    &__buy_now_btn {
+        width: 100%;
+        display: flex !important; // override paypalbtn styles
+        align-items: center;
+        input {
+            margin: 0 10px
+        }
+    }
+}

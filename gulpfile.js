@@ -109,6 +109,7 @@ gulp.task('styles', ['clean-styles'], function() {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(paths.css.dest))
         .pipe(gulp.dest(paths.css.jekyll))
+        .pipe(browserSync.stream());
 });
 
 // gulp.task('styles', () => {
@@ -267,6 +268,10 @@ gulp.task('jekyll', () => {
   jekyll.stderr.on('data', jekyllLogger);
 });
 
+gulp.task('reload', function(){
+  browserSync.reload({stream:true});
+});
+
 gulp.task('serve', () => {
   browserSync.init({
     /*
@@ -294,10 +299,10 @@ gulp.task("default",
     'serve'
   ], function() {
 
-	gulp.watch(paths.css.src + '/**/*.scss', ['styles']);
-	gulp.watch(paths.ts.src + '/**/*.ts', ['typescript', 'scripts']);
+	gulp.watch(paths.css.src + '/**/*.scss', ['styles', 'reload']);
+	gulp.watch(paths.ts.src + '/**/*.ts', ['typescript', 'scripts', 'reload']);
 	gulp.watch(paths.js.src + '/**/*.js', ['hint']);
-	gulp.watch(paths.js.src + '/**/*.js', ['scripts',]);
+	gulp.watch(paths.js.src + '/**/*.js', ['scripts', 'reload']);
 	gulp.watch(paths.svgs.src + '/**/*.svg', ['svg']);
 	gulp.watch(paths.images.src + '/**/*.{png,jpeg,jpg,svg,gif}', ['images']);
   //gulp.watch(['./*.{html,md}', './{_includes,_layouts,_posts,_pages,_drafts,assets,images}/**'], ['jekyll']);

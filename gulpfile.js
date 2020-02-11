@@ -279,8 +279,7 @@ gulp.task('serve', () => {
     * issue: https://github.com/BrowserSync/browser-sync/issues/1536#issuecomment-383719320
     * if browsersync refreshes are required set files to watch source files instead
     */
-    //files: [siteRoot + '/**'],
-    port: 4000,
+
     server: {
       baseDir: siteRoot
     }

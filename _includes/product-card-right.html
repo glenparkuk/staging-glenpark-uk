@@ -1,0 +1,64 @@
+<div class="content-block product-card">
+        
+    {% if product.id %}
+        <a name="{{ product.id }}" id="{{ product.id }}"></a>
+    {%- endif -%}
+
+    {% if product.image.src %}
+        <div class="product-card__image">
+            <img    src="{{ product.image.src | relative_url }}"
+                    alt="{{product.image.alt}}"
+            >
+        </div>
+    {%- endif -%}
+
+    <div class="product-card__info">
+
+        {% if product.title %}
+            <h2 class="boldsubtitle product-card__title">{{ product.title }}:</h2>
+        {%- endif -%}
+
+        {% if product.subtitle %}
+            <h3><span class="subtitle">Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></h3>
+        {%- endif -%}
+
+        {% if product.publication_date %}
+            <h6>{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
+        {%- endif -%}
+
+        {% if product.description.size > 1 %}
+            <div class="product-card__desc">
+                {%- for description_peice in product.description -%}
+                    {{ description_peice }}
+                {%- endfor -%}
+            </div>
+        {%- endif -%}
+
+        {% if product.price %}
+            <p class="product-card__price">
+                <strong>Price: £{{ product.price }}</strong>
+            </p>
+        {%- endif -%}
+
+        {% if product.display_buy_now_button %}
+        <div class="paypalbtn product-card__buy_now_btn">
+            <h4 style="float:left">
+                <strong>Buy <em>{% if product.title %}{{ product.title }}{%- endif -%}</em></strong>
+            </h4>
+
+            <input class="submit-btn scroll-buy-now" id="{{ product.buy_now_id }}" type="submit" value="Buy Now" />
+
+        </div>
+        {%- endif -%}
+
+        {% if product.note %}
+            {{ product.note }}
+        {%- endif -%}
+
+        {% if product.display_email_signup %}
+            <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
+                <span class="notificationbtn"></span> 
+            </a>
+        {%- endif -%}
+    </div>
+</div>

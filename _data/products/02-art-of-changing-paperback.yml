@@ -17,3 +17,4 @@ price: "12.50"
 display_buy_now_button: true
 buy_now_id: buynowAOCPaperback
 note: <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils <br>please <a href="mailto:{{ site.email }}" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+align: right

@@ -1,4 +1,4 @@
-<div class="content-block product-card">
+<div class="content-block product-card {% if product.align and product.align == 'right' %}product-card-right{%- endif -%}">
         
     {% if product.id %}
         <a name="{{ product.id }}" id="{{ product.id }}"></a>
@@ -7,7 +7,9 @@
     {% if product.image.src %}
         <div class="product-card__image">
             <img    src="{{ product.image.src | relative_url }}"
-                    alt="{{product.image.alt}}"
+                    {% if product.image.alt %}
+                        alt="{{product.image.alt}}"
+                    {% endif %}
             >
         </div>
     {%- endif -%}
@@ -15,15 +17,15 @@
     <div class="product-card__info">
 
         {% if product.title %}
-            <h2 class="boldsubtitle product-card__title">{{ product.title }}:</h2>
+            <h2 class="boldsubtitle product-card__title">{{ product.title }}{% if product.subtitle == Nil or product.subtitle.length == 0 %} <span class="italicsubtitle">by {{ product.author }}</span>{%- endif -%}</h2>
         {%- endif -%}
 
         {% if product.subtitle %}
-            <h3><span class="subtitle">Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></h3>
+            <h3><span class="subtitle">{{ product.subtitle }}</span>{% if product.author %} <span class="italicsubtitle">by {{ product.author }}{%- endif -%}</span></h3>
         {%- endif -%}
 
         {% if product.publication_date %}
-            <h6>{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
+            <h6 class="product-card__info__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
         {%- endif -%}
 
         {% if product.description.size > 1 %}

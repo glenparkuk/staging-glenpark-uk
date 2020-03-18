@@ -1,61 +1,63 @@
-<div class="content-block product-card">
+<div class="content-block product-card {% if product.align and product.align == 'right' %}product-card-right{%- endif -%}">
         
-    {% if products[1].id %}
-        <a name="{{ products[1].id }}" id="{{ products[1].id }}"></a>
+    {% if product.id %}
+        <a name="{{ product.id }}" id="{{ product.id }}"></a>
     {%- endif -%}
 
-    {% if products[1].image.src %}
+    {% if product.image.src %}
         <div class="product-card__image">
-            <img    src="{{ products[1].image.src | relative_url }}"
-                    alt="{{products[1].image.alt}}"
+            <img    src="{{ product.image.src | relative_url }}"
+                    {% if product.image.alt %}
+                        alt="{{product.image.alt}}"
+                    {% endif %}
             >
         </div>
     {%- endif -%}
 
     <div class="product-card__info">
 
-        {% if products[1].title %}
-            <h2 class="boldsubtitle product-card__title">{{ products[1].title }}:</h2>
+        {% if product.title %}
+            <h2 class="boldsubtitle product-card__title">{{ product.title }}{% if product.subtitle == Nil or product.subtitle.length == 0 %} <span class="italicsubtitle">by {{ product.author }}</span>{%- endif -%}</h2>
         {%- endif -%}
 
-        {% if products[1].subtitle %}
-            <h3><span class="subtitle">Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></h3>
+        {% if product.subtitle %}
+            <h3><span class="subtitle">{{ product.subtitle }}</span>{% if product.author %} <span class="italicsubtitle">by {{ product.author }}{%- endif -%}</span></h3>
         {%- endif -%}
 
-        {% if products[1].publication_date %}
-            <h6>{{ products[1].imprint }} {{products[1].publication_date}} &nbsp; ISBN {{ products[1].isbn }}</h6>
+        {% if product.publication_date %}
+            <h6 class="product-card__info__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
         {%- endif -%}
 
-        {% if products[1].description.size > 1 %}
+        {% if product.description.size > 1 %}
             <div class="product-card__desc">
-                {%- for description_peice in products[1].description -%}
+                {%- for description_peice in product.description -%}
                     {{ description_peice }}
                 {%- endfor -%}
             </div>
         {%- endif -%}
 
-        {% if products[1].price %}
+        {% if product.price %}
             <p class="product-card__price">
-                <strong>Price: £{{ products[1].price }}</strong>
+                <strong>Price: £{{ product.price }}</strong>
             </p>
         {%- endif -%}
 
-        {% if products[1].display_buy_now_button %}
+        {% if product.display_buy_now_button %}
         <div class="paypalbtn product-card__buy_now_btn">
             <h4 style="float:left">
-                <strong>Buy <em>{% if products[1].title %}{{ products[1].title }}{%- endif -%}</em></strong>
+                <strong>Buy <em>{% if product.title %}{{ product.title }}{%- endif -%}</em></strong>
             </h4>
 
-            <input class="submit-btn scroll-buy-now" id="{{ products[1].buy_now_id }}" type="submit" value="Buy Now" />
+            <input class="submit-btn scroll-buy-now" id="{{ product.buy_now_id }}" type="submit" value="Buy Now" />
 
         </div>
         {%- endif -%}
 
-        {% if products[1].note %}
-            {{ products[1].note }}
+        {% if product.note %}
+            {{ product.note }}
         {%- endif -%}
 
-        {% if products[1].display_email_signup %}
+        {% if product.display_email_signup %}
             <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
                 <span class="notificationbtn"></span> 
             </a>

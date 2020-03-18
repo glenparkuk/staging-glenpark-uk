@@ -33,3 +33,27 @@
         }
     }
 }
+
+.product-card-right {
+
+    .product-card {
+        
+        &__image {
+            
+            padding-right: 0;
+            padding-left: 10px;
+            order: 2;
+
+        }
+
+        &__info {
+            &__isbn {
+
+                margin: 25px -60px 25px 0 !important;
+                
+            }
+        }
+
+    }
+
+}

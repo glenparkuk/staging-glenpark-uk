@@ -6,7 +6,8 @@
     </div>
 
     <div class="product-list__listing">
-        {%- for products in site.data.products -%}
+        {%- for product_hash in site.data.products -%}
+        {%- assign product = product_hash[1] -%}
 
                 {%- include product-card.html -%}
                 

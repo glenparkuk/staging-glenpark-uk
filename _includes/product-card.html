@@ -33,7 +33,7 @@
         {%- endif -%}
 
         {% if product.publication_date %}
-            <h6 class="product-card__info__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
+            <h6 class="product-card__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
         {%- endif -%}
 
         {% if product.description.size > 1 %}

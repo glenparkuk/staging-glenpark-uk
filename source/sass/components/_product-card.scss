@@ -1,15 +1,18 @@
 .product-card {
+    margin-bottom: 50px;
 
     display: flex;
 
-    &__image {
+    &__image-wrapper {
         width: calc(34% - 10px);
         padding-right: 10px;
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 332px;
-        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        max-width: 332px;
+        margin-bottom: 25px;
     }
 
     &__info {
@@ -32,28 +35,29 @@
             margin: 0 10px
         }
     }
-}
+    &--right {
+        flex-direction: row-reverse;
 
-.product-card-right {
-
-    .product-card {
-        
-        &__image {
+        .product-card {
             
-            padding-right: 0;
-            padding-left: 10px;
-            order: 2;
-
-        }
-
-        &__info {
-            &__isbn {
-
-                margin: 25px -60px 25px 0 !important;
+            &__image {
                 
+                padding-right: 0;
+                padding-left: 10px;
+                order: 2;
+    
             }
+    
+            &__info {
+                &__isbn {
+    
+                    margin: 25px -60px 25px 0 !important;
+                    
+                }
+            }
+    
         }
-
+    
     }
 
 }

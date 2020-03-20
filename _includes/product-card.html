@@ -4,15 +4,23 @@
         <a name="{{ product.id }}" id="{{ product.id }}"></a>
     {%- endif -%}
 
-    {% if product.image.src %}
-        <div class="product-card__image">
-            <img    src="{{ product.image.src | relative_url }}"
-                    {% if product.image.alt %}
-                        alt="{{product.image.alt}}"
-                    {% endif %}
+    <div class="product-card__image-wrapper">
+
+        {% if product.image.src %}
+            <img src="{{ product.image.src | relative_url }}"
+            class="product-card__image"
+                {% if product.image.alt %}
+                    alt="{{product.image.alt}}"
+                {% endif %}
             >
-        </div>
-    {%- endif -%}
+        {%- endif -%}
+
+        {% if product.display_email_signup %}
+            <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
+                <span class="notificationbtn"></span> 
+            </a>
+        {%- endif -%}
+    </div>
 
     <div class="product-card__info">
 
@@ -57,10 +65,6 @@
             {{ product.note }}
         {%- endif -%}
 
-        {% if product.display_email_signup %}
-            <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
-                <span class="notificationbtn"></span> 
-            </a>
-        {%- endif -%}
     </div>
+
 </div>

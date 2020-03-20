@@ -1,15 +1,18 @@
 .product-card {
+    margin-bottom: 50px;
 
     display: flex;
 
-    &__image {
+    &__image-wrapper {
         width: calc(34% - 10px);
         padding-right: 10px;
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 332px;
-        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        max-width: 332px;
+        margin-bottom: 25px;
     }
 
     &__info {

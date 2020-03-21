@@ -25,11 +25,11 @@
     <div class="product-card__info">
 
         {% if product.title %}
-            <h2 class="boldsubtitle product-card__title">{{ product.title }}{% if product.subtitle == Nil or product.subtitle.length == 0 %} <span class="italicsubtitle">by {{ product.author }}</span>{%- endif -%}</h2>
+            <h2 class="boldsubtitle product-card__title">{{ product.title }}{%- if product.subtitle == Nil or product.subtitle.length == 0 -%}<span class="italicsubtitle"> by {{ product.author }}</span>{%- endif -%}</h2>
         {%- endif -%}
 
-        {% if product.subtitle %}
-            <h3><span class="subtitle">{{ product.subtitle }}</span>{% if product.author %} <span class="italicsubtitle">by {{ product.author }}{%- endif -%}</span></h3>
+        {%- if product.subtitle -%}
+            <h3 class="product-card__subtitle"><span class="subtitle">: {{ product.subtitle }}</span>{% if product.author %} <span class="italicsubtitle">by {{ product.author }}{%- endif -%}</span></h3>
         {%- endif -%}
 
         {% if product.publication_date %}

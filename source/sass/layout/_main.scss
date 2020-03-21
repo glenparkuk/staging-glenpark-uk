@@ -18,21 +18,8 @@ body {
   * THESE STYLES SEEM VERY SPECIFIC...?
   * We should look into removing them if possible
   **/
-  
-  img {
-    border:none;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-  }
-  
-  a img, a:active, a:focus, a:hover, a img.preview {
-    border: none;
-    text-decoration: none;
-    padding: 0;
-    outline:none;
-  }
-  
+
+  // this effects product description content on the product listing layout
   .content-block li {
     list-style: none;
     font-size: 13px;

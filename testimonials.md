@@ -3,8 +3,6 @@ layout: default
 title: Testimonials&hellip;
 permalink: /testimonials/
 id: testimonials
-redirect_from:
-  - testimonials.html/
 header_slider:
 - quote: There is no such thing as a right position but there is such a thing as a right direction
   credit: FM Alexander

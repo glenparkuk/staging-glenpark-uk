@@ -1,0 +1,10 @@
+.product-list {
+    display: flex;
+    flex-direction: column;
+
+    &__listing {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

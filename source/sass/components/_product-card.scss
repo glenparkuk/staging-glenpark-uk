@@ -40,6 +40,12 @@
             margin: 0 10px
         }
     }
+
+    &__retailers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &--right {
         flex-direction: row-reverse;
 

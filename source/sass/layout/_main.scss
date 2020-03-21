@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;
+    font-weight: normal;
+    background-color: #ffffff;
+  }
+  
+  .wrapper {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+
+  /**
+  * THESE STYLES SEEM VERY SPECIFIC...?
+  * We should look into removing them if possible
+  **/
+  
+  img {
+    border:none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+  a img, a:active, a:focus, a:hover, a img.preview {
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    outline:none;
+  }
+  
+  .content-block li {
+    list-style: none;
+    font-size: 13px;
+    line-height:150%;
+  }

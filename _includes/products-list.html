@@ -1,0 +1,18 @@
+<div class="product-list">
+
+    <div class="content-block product-list__title">
+        <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
+        <p>&nbsp;</p>
+    </div>
+
+    <div class="product-list__listing">
+    	{%- assign products = site.data.products | sort -%}
+        {%- for product_hash in products -%}
+        {%- assign product = product_hash[1] -%}
+
+                {%- include product-card.html -%}
+                
+        {%- endfor -%}
+    </div>
+            
+</div>

@@ -18,55 +18,10 @@ header_slider:
   credit_class: quotecreditwhite
 ---
 
-<div class="content-block">
-    <a name="touchingthesoul" id="touchingthesoul"></a>
-    <p class="runinheading">Books &amp; CD&#39;s&hellip;</p>
-    <p>&nbsp;</p>
-    <div class="clear"></div>
-    <img src="{{ '/images/chakra-healing-therapy-cover.jpg' | relative_url }}" alt="Chakra Healing Therapy by Glen Park" border="0" align="left" style="padding-right: 20px; max-width: 332px; height: auto;" />
-    <p><span class="boldsubtitle">Chakra Healing Therapy:</span> <span class="subtitle">Awaken Spiritual Energies and Heal Emotional Wounds</span> <span class="italicsubtitle">by Glen Park</span></p>
-    <h6>Destiny Books 2020 &nbsp; ISBN 978-1-64411-049-2</h6>
-    <p>In this in-depth guide to working with the chakras, author Glen Park draws on her decades of experience as a Chakra Therapist to explain how the chakras can be understood as an embodied map of the psyche, with each chakra representing a different stage of development from infancy and childhood through adulthood, with the Heart Chakra playing a central role in awakening the spiritual potential of the upper chakras. She examines each chakra individually on the physical, psychological, psychic, and spiritual level, as well as through the lens of the solar (masculine) and lunar (feminine) channels. She shows how the connections between the chakras and developmental stages are paralleled in the findings of Western psychology and neuroscience and how our collective expressions of the chakras influence cultural trends in society.</p>
-    <p>The author’s system of Chakra Therapy integrates healing touch with guided chakra visualizations, offering practical exercises to nourish and balance each chakra so it can be integrated and in harmony with the entire chakra system. She explores how to work with the Heart Chakra for deep transformation and self-healing, including healing emotional wounds from childhood and enabling the psychic and spiritual levels of the Throat and Eye Chakras to develop, with the potential of opening to the divine realm of the Crown Chakra. Sharing case studies from her Chakra Therapy practice, she shows how we gain a richer understanding of ourselves both mentally and physically by working with the chakras, opening ourselves to the potential for deep soul growth and transformation.</p>
+{% if site.data.products.size > 1 %}
+    {%- include products-list.html -%}
+{%- endif -%}
 
-<p><span class="pitalic">Chakra Healing Therapy</span> is due to be published by Destiny Books in October 2020.</p>
-<p>&nbsp;</p>
-<div class="clear"></div>
-<a href="mailto:{{ site.email }}" target="_blank" class="tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
-                <span class="notificationbtn"></span> 
-            </a>
-            <div class="clear"></div>
-<p>&nbsp;</p>
-</div>
-
-<!-- .content-block 1 begins -->
-<div class="content-block">
-    <a name="theartofchanging" id="theartofchanging"></a>
-    <p>&nbsp;</p>
-    <div class="clear"></div>
-    <img src="{{ '/images/aocbookmodel.png' | relative_url }}" alt="The Art of Changing by Glen Park" width="332" height="461" border="0" align="right" />
-    <p><span class="boldsubtitle">The Art of Changing</span> <span class="italicsubtitle">by Glen Park</span></p>
-    <h6>Ashgrove Publishing 1989&frasl;2000 &nbsp; &nbsp; ISBN 1-85398-130-3</h6>
-    <p><span class="pitalic">The Art of Changing</span> has established a fine reputation twice over as one of the very best introductions to the <a href="#" data-featherlight="#about-alexander" class="lightbox">Alexander Technique</a> and as a unique exploration into applying the principles of the Alexander Technique to psychological and energetic patterns of behaviour.</p>
-    <div class="blockquotelime">An admirable and important book, the implications
-        <br />are profound <span class="quotecreditinline"> &#126; Sir George Trevelyan</span></div>
-    <p>Part One of the book is an excellent introduction to the Alexander Technique. The basic principles are explained clearly with the help of pictures, line drawings and observational exercises.</p>
-    <p>Part Two of <span class="pitalic">The Art of Changing</span> Glen Park looks at how the Alexander principles can be applied to our psychological habits, our patterns of thoughts and feelings. It then goes on to look at the body as an energy system, working with the Hindu philosophy of the <a href="#" data-featherlight="#about-chakras" class="lightbox">Chakras</a> which explores the relationship between mind and body in some depth. Combining this wisdom with the Alexander principles can help us gain new insights into our psychological make-up with the potential to identify and transform unwanted patterns.</p>
-    <br>
-    <p><strong>Price: £12.50</strong></p>
-    <!-- <p><em>If purchasing from outside the UK please email <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a> for details of oversees postage</em></p> -->
-    <!--<a href="http://www.amazon.co.uk/Art-Changing-Exploring-Alexander-Relationship/dp/1853981303/ref=sr_1_12?s=books&ie=UTF8&qid=1302001289&sr=1-12" target="_blank" class="tooltip" title="Buy The Art of Changing<br />online from Amazon.co.uk"><div class="buybookbtn"></div></a>-->
-    <div class="paypalbtn">
-        <h4 style="float:left"><strong>Buy <em>The Art of Changing</em></strong></h4>
-        <div style="float:left;padding:10px 0 0 20px;">
-            <input class="submit-btn scroll-buy-now" id="buynowAOCPaperback" type="submit" value="Buy Now" />
-        </div>
-    </div>
-</div>
-<div class="clear"></div>
-<br>
-<p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils
-    <br>please <a href="mailto:{{ site.email }}" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
 <!-- <p>Buy multiple items and save on postage - <a href="#multiple-items">see below</a></p> -->
 <!-- .content-block 1 ends -->
 <a name="theartofchangingcd" id="theartofchangingcd"></a>

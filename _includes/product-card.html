@@ -65,6 +65,38 @@
             {{ product.note }}
         {%- endif -%}
 
+        {% if product.retailers %}
+
+        <div class="product-card__retailers">
+
+            {%- for retailer_hash in product.retailers -%}
+
+            {%- assign retailer = retailer_hash -%}
+
+            
+            <!-- {{ retailer.url | inspect }} -->
+
+            <!-- TODO improve check - can't seem to check if url == nil -->
+            <!-- if retailer.type == 'null -->
+            <!-- break loop if required data is missing -->
+            {% if retailer.type == 'barnes-and-nobile' %} 
+                {% continue %}
+            {% endif %}
+        
+
+            <a  class="retailer-button" 
+                href="{{ retailer.url | relative_url }}"
+                title="{{retailer.title}}"
+                style="background-image: url({{ retailer.type | prepend: '/images/retailers/' | append: '.png'| relative_url }})"
+                data-type="{{ retailer.type }}"
+            >
+            </a >
+                    
+            {%- endfor -%}
+
+        </div>
+        {%- endif -%}
+
     </div>
 
 </div>

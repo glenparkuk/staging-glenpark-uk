@@ -67,22 +67,28 @@
 
         {% if product.retailers %}
 
-        <div class="product-card__retailers">
+        <hr>
+
+        <!-- TODO move product retailers to seperate includes file -->
+        <div class="product-card__retailers product-retailers">
+
+            <p class="product-retailers__title pitalic">Pre-Order now from the following retailers</p>
+
+            <div class="product-retailers__retailer-buttons">
 
             {%- for retailer_hash in product.retailers -%}
 
             {%- assign retailer = retailer_hash -%}
 
             
-            <!-- {{ retailer.url | inspect }} -->
+            <!-- {{ retailer | inspect }} -->
 
             <!-- TODO improve check - can't seem to check if url == nil -->
             <!-- if retailer.type == 'null -->
             <!-- break loop if required data is missing -->
-            {% if retailer.type == 'barnes-and-nobile' %} 
+            {% if retailer.type == 'inner-traditions' %} 
                 {% continue %}
-            {% endif %}
-        
+            {% endif %}        
 
             <a  class="retailer-button" 
                 href="{{ retailer.url | relative_url }}"
@@ -94,6 +100,8 @@
             </a >
                     
             {%- endfor -%}
+
+            </div>
 
         </div>
         {%- endif -%}

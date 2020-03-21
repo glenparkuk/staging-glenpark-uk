@@ -18,7 +18,7 @@ retailers:
   - type: indie-bound 
     url: https://www.indiebound.org/book/9781644110492
     title: Indie Bound
-  - type: barnes-and-nobile  
+  - type: barnes-and-noble  
     url: https://www.barnesandnoble.com/w/chakra-healing-therapy-glen-park/1136153624
     title: Barnes and Noble
   - type: inner-traditions 

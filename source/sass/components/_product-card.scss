@@ -41,10 +41,7 @@
         }
     }
 
-    &__retailers {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    // &__retailers {}
 
     &--right {
         flex-direction: row-reverse;

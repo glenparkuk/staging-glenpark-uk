@@ -1,6 +1,5 @@
 .retailer-button {
-    width: 33%;
-    height: 45px;
+    width: calc(33% - 20px);
     display: block;
     background-image: url();
     background-repeat: no-repeat;
@@ -9,9 +8,10 @@
     border: 1px solid transparent;
     border-radius: 5px;
     margin: 10px;
-    padding: 10px;
+    padding-top: 10%;
     transition: all 0.3s;
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
+
     &:hover {
         box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.45);
     }
@@ -20,8 +20,6 @@
         background-color: $inner-traditions-color
     }
 
-    // &[data-type="indie-bound"] {
-    //     background-position: 40% center;
-    // }
+    // &[data-type="indie-bound"] {}
     
 }

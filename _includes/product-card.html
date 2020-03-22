@@ -80,15 +80,12 @@
 
             {%- assign retailer = retailer_hash -%}
 
-            
-            <!-- {{ retailer | inspect }} -->
-
             <!-- TODO improve check - can't seem to check if url == nil -->
-            <!-- if retailer.type == 'null -->
+            <!-- {{ retailer | inspect }} -->
             <!-- break loop if required data is missing -->
-            {% if retailer.type == 'inner-traditions' %} 
+            <!-- {% if retailer.url == nill %} 
                 {% continue %}
-            {% endif %}        
+            {% endif %}         -->
 
             <a  class="retailer-button" 
                 href="{{ retailer.url | relative_url }}"

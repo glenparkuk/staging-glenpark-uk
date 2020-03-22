@@ -22,7 +22,7 @@ retailers:
     url: https://www.barnesandnoble.com/w/chakra-healing-therapy-glen-park/1136153624
     title: Barnes and Noble
   - type: inner-traditions 
-    # url: null
+    url: https://www.innertraditions.com/books/chakra-healing-therapy
     title: Inner Traditions
   - type: amazon 
     url: https://www.amazon.com/exec/obidos/ASIN/1644110490

@@ -15,11 +15,13 @@
             >
         {%- endif -%}
 
+        {% comment %}
         {% if product.display_email_signup %}
             <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
                 <span class="notificationbtn"></span> 
             </a>
         {%- endif -%}
+        {% endcomment %}
     </div>
 
     <div class="product-card__info">
@@ -65,39 +67,58 @@
             {{ product.note }}
         {%- endif -%}
 
-        {% if product.retailers %}
+    </div>
 
-        <div class="product-card__retailers">
+</div>
 
-            {%- for retailer_hash in product.retailers -%}
+{% if product.retailers %}
 
-            {%- assign retailer = retailer_hash -%}
+<div class="content-block product-retailers">
 
-            
-            <!-- {{ retailer.url | inspect }} -->
-
-            <!-- TODO improve check - can't seem to check if url == nil -->
-            <!-- if retailer.type == 'null -->
-            <!-- break loop if required data is missing -->
-            {% if retailer.type == 'barnes-and-nobile' %} 
-                {% continue %}
-            {% endif %}
+    {%- if product.retailers_cta -%}
+    
+    <div class="product-retailers__cta">
         
+        <span>{{ product.retailers_cta }}</span>
 
-            <a  class="retailer-button" 
-                href="{{ retailer.url | relative_url }}"
-                title="{{retailer.title}}"
-                style="background-image: url({{ retailer.type | prepend: '/images/retailers/' | append: '.png'| relative_url }})"
-                data-type="{{ retailer.type }}"
-                target="_blank"
-            >
-            </a >
-                    
-            {%- endfor -%}
+    </div>
+
+    {%- endif -%}
+
+    <div class="product-retailers__links">
+
+        {%- for retailer_hash in product.retailers | sort -%}
+
+        {%- assign retailer = retailer_hash -%}
+
+        {%- if retailer.id -%}
+
+        <div class="retailer-link__wrapper">
+
+            {%- capture retailer-img -%}<img class="retailer-link__logo" src="{{ retailer.id | prepend: '/images/retailers/' | append: '-400x210.png'| relative_url }}">{%- endcapture -%}
+
+            {%- if retailer.url -%}
+    
+            <a href="{{ retailer.url | relative_url }}" {% if retailer.title %}title="{{retailer.title}}"{% endif %} target="_blank">
+
+                {{ retailer-img }}
+
+            </a>
+
+            {%- else -%}
+
+            {{ retailer-img }}
+
+            {%- endif -%}
 
         </div>
+
         {%- endif -%}
+                
+        {%- endfor -%}
 
     </div>
 
 </div>
+
+{%- endif -%}

@@ -1,6 +1,4 @@
 .product-card {
-    margin-bottom: 50px;
-
     display: flex;
 
     &__image-wrapper {
@@ -39,11 +37,6 @@
         input {
             margin: 0 10px
         }
-    }
-
-    &__retailers {
-        display: flex;
-        flex-wrap: wrap;
     }
 
     &--right {

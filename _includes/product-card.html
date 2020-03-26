@@ -15,11 +15,13 @@
             >
         {%- endif -%}
 
+        {% comment %}
         {% if product.display_email_signup %}
             <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
                 <span class="notificationbtn"></span> 
             </a>
         {%- endif -%}
+        {% endcomment %}
     </div>
 
     <div class="product-card__info">
@@ -68,3 +70,55 @@
     </div>
 
 </div>
+
+{% if product.retailers %}
+
+<div class="content-block product-retailers">
+
+    {%- if product.retailers_cta -%}
+    
+    <div class="product-retailers__cta">
+        
+        <span>{{ product.retailers_cta }}</span>
+
+    </div>
+
+    {%- endif -%}
+
+    <div class="product-retailers__links">
+
+        {%- for retailer_hash in product.retailers | sort -%}
+
+        {%- assign retailer = retailer_hash -%}
+
+        {%- if retailer.id -%}
+
+        <div class="retailer-link__wrapper">
+
+            {%- capture retailer-img -%}<img class="retailer-link__logo" src="{{ retailer.id | prepend: '/images/retailers/' | append: '-400x210.png'| relative_url }}">{%- endcapture -%}
+
+            {%- if retailer.url -%}
+    
+            <a href="{{ retailer.url | relative_url }}" {% if retailer.title %}title="{{retailer.title}}"{% endif %} target="_blank">
+
+                {{ retailer-img }}
+
+            </a>
+
+            {%- else -%}
+
+            {{ retailer-img }}
+
+            {%- endif -%}
+
+        </div>
+
+        {%- endif -%}
+                
+        {%- endfor -%}
+
+    </div>
+
+</div>
+
+{%- endif -%}

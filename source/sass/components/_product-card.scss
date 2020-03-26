@@ -1,6 +1,4 @@
 .product-card {
-    margin-bottom: 50px;
-
     display: flex;
 
     &__image-wrapper {
@@ -40,6 +38,7 @@
             margin: 0 10px
         }
     }
+
     &--right {
         flex-direction: row-reverse;
 

@@ -1,0 +1,42 @@
+.product-retailers {
+
+    margin-bottom: 50px;
+
+    &__cta {
+        color: #779d1e;
+        font-family: Georgia,Times New Roman,Times,serif;
+        font-style: italic;
+        font-size: 20px;
+        letter-spacing: normal;
+        line-height: 110%;
+        font-weight: 700;
+        margin: 1em 0;
+
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+}
+
+.retailer-link {
+
+    &__wrapper {
+        box-sizing: border-box;
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    &__logo {
+        width: 100%;
+        display: block;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border: 1px #ddd solid;
+        border-radius: 5px;
+    }
+
+}

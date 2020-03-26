@@ -15,15 +15,16 @@ publication_date: 2020
 price: 
 display_email_signup: true
 retailers: 
-  - type: indie-bound 
-    url: https://www.indiebound.org/book/9781644110492
-    title: Indie Bound
-  - type: barnes-and-noble  
-    url: https://www.barnesandnoble.com/w/chakra-healing-therapy-glen-park/1136153624
-    title: Barnes and Noble
-  - type: inner-traditions 
-    url: https://www.innertraditions.com/books/chakra-healing-therapy
+  - id: inner-traditions 
+    url:
     title: Inner Traditions
-  - type: amazon 
+  - id: amazon
     url: https://www.amazon.com/exec/obidos/ASIN/1644110490
     title: Amazon
+  - id: barnes-&-noble  
+    url: https://www.barnesandnoble.com/w/chakra-healing-therapy-glen-park/1136153624
+    title: Barnes and Noble
+  - id: indie-bound 
+    url: https://www.indiebound.org/book/9781644110492
+    title: Indie Bound
+retailers_cta: "Pre-order Chakra Healing Therapy now from the following retailers:"

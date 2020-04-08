@@ -60,7 +60,7 @@ header_slider:
         <br />
         <!-- <p>Buy multiple items and save on postage - <a href="#multiple-items">see below</a></p> -->
         <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils please <a href="mailto:{{ site.email }}" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
-        <p>Because of our current Coronavirus crisis, which means no-one can have Alexander Technique lessons and we can only work on ourselves, we have put a link to the guided visualisations on my audio CD. You can listen to them for free <a href="https://glenpark.uk/download/art-of-changing-cd" title="Listen to The Art of Changing CD on Soundcloud">, while you are lying in semi-supine. I hope you like them and you manage to stay well.</p>
+        <p>Because of our current Coronavirus crisis, which means no-one can have Alexander Technique lessons and we can only work on ourselves, we have put a link to the guided visualisations on my audio CD. You can listen to them for free <a href="https://glenpark.uk/download/art-of-changing-cd" title="Listen to The Art of Changing CD on Soundcloud">here</a>, while you are lying in semi-supine. I hope you like them and you manage to stay well.</p>
     </div>
     <!-- .content-block 2 ends -->
     <a name="peggywilliams" id="peggywilliams"></a>

@@ -34,7 +34,7 @@ header_slider:
         <br />
     </p>
     <h6>Ashgrove Publishing  &nbsp; &nbsp; ISBN 1-85398-130-3 &nbsp; &nbsp; CD Published 2005</h6>
-    <img src="{{ '/images/aoccdmodel.jpg' | relative_url }}" alt="The Art of Changing audio CD by Glen Park" style="padding-bottom:160px;" width="489" height="353" border="0" align="left" />
+    <img src="{{ '/images/aoccdmodel.jpg' | relative_url }}" alt="The Art of Changing audio CD by Glen Park" style="padding-bottom:220px;" width="489" height="353" border="0" align="left" />
     <p>This CD complements Glen Park's book of the same name and contains audio tracks designed to be listened to while lying in semi-supine position. It has a four page insert illustrating the semi-supine position.</p>
     <p> The CD has a short introduction followed by four twenty minute guided visualisations.</p>
     <ul>
@@ -60,12 +60,12 @@ header_slider:
         <br />
         <!-- <p>Buy multiple items and save on postage - <a href="#multiple-items">see below</a></p> -->
         <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils please <a href="mailto:{{ site.email }}" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+        <h3><strong>Free access to audio during Coronavirus crisis</strong></h3>
         <p>Because of our current Coronavirus crisis, which means no-one can have Alexander Technique lessons and we can only work on ourselves, we have put a link to the guided visualisations on my audio CD. You can listen to them for free <a href="https://glenpark.uk/download/art-of-changing-cd" title="Listen to The Art of Changing CD on Soundcloud">here</a>, while you are lying in semi-supine. I hope you like them and you manage to stay well.</p>
     </div>
     <!-- .content-block 2 ends -->
     <a name="peggywilliams" id="peggywilliams"></a>
     <div class="clear"></div>
-    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <!-- .content-block 3 begins -->
     <div class="content-block">

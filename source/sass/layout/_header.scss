@@ -1,4 +1,4 @@
-#header {
+.header {
   color: #ffffff;
   width: 100%;
   height: 500px;
@@ -10,13 +10,13 @@
   margin: 0 auto;
 }
 
-#header a {
-  color: #ffffff;
-  position: relative;
-}
-#header a:hover { color: #424242; }
+// .header a {
+//   color: #ffffff;
+//   position: relative;
+// }
+// .header a:hover { color: #424242; }
 
-#header-border {
+.header-border {
   height: 3px;
   overflow: hidden;
   width: 100%;
@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-#header .wrapper {
+.header .wrapper {
   padding-top: 0px;
   position: relative;
   z-index: 2;

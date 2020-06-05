@@ -1,0 +1,201 @@
+.main-navigation {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	top: 400px;
+    z-index: 1;
+    background-color: #745ba7; // TODO make dynamic per page
+    position: absolute;
+
+    @include breakpoint(small-tablet-landscape) {
+        flex-direction: row;
+        height: 100px;
+    }
+
+    &__list-item {
+        width: 100%;
+
+        @include breakpoint(small-tablet-landscape) {
+            float: left;
+            position: relative;
+            width: 192px;
+        }
+
+        // TODO I think spans are being added in JS - remove this stupid logic
+        span {
+            width: 100%;
+            @include breakpoint(small-tablet-landscape) {
+                background: #424242;
+                height: 100px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 192px;
+                z-index: 5;
+            }
+
+            &:hover {
+                width: 100%;
+                @include breakpoint(small-tablet-landscape) {
+                    display: none;
+                    height: 100px;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 192px;
+                    z-index: 5;
+                }
+
+            }
+        }
+
+        &.current {
+            span {
+                &:hover { display: block;  }
+            }
+        }
+    }
+
+    &__link {
+        width: 100%;
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        padding: 40px 0 20px 20px;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 10;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+
+        &:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    &__sub-menu {
+        display: none;
+       
+        list-style: none;
+        padding: 0;
+        top: 100px;
+        margin: 0;
+
+        @include breakpoint(small-tablet-landscape) {
+            position: absolute;
+        }
+
+        // TODO use something like $this to reference main-navigation 
+        .main-navigation__menu-item {
+            height: 70px;
+            overflow: hidden;
+            position: relative;
+
+            span { display: none; }
+
+        }
+
+        .main-navigation__link {
+            font-size: 11px;
+	        padding: 30px 0 20px 20px;
+        }
+    }
+}
+
+
+
+
+
+.submenutextitalic {
+	color: #ffffff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-size: 20px;
+	font-weight:lighter;
+	line-height: 40px;
+}
+
+
+#smalliconscontainer {
+	height: 40px;
+	width: 360px;
+	position:absolute;
+	left: 0px;
+	top:0px;
+	padding: 0;
+	margin: 0;
+}
+
+.emailicon{
+	height: 40px;
+	width: 33px;
+	overflow: hidden;
+	display: block;
+	background-image: url($site-url + $images + 'emailicon.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top: 0px;
+	left: 16px;
+	}
+
+.emailicon:hover{
+	background-position: center bottom;
+	}
+
+.infoicon {
+	height: 40px;
+	width: 33px;
+	overflow: hidden;
+	display: block;
+	background-image: url($site-url + $images + 'infoicon.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top: 0px;
+	left: 49px;
+	}
+
+.infoicon:hover{
+	background-position: center bottom;
+	}
+
+.homeicon {
+	height: 40px;
+	width: 33px;
+	overflow: hidden;
+	display: block;
+	background-image: url($site-url + $images + 'homeicon.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top: 0px;
+	left: 82px;
+	}
+
+.homeicon:hover{
+	background-position: center bottom;
+	}
+
+.facebookicon {
+	height: 40px;
+	width: 33px;
+	overflow: hidden;
+	display: block;
+	background-image: url($site-url + $images + 'facebookicon.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top: 0px;
+	left: 115px;
+	}
+
+.facebookicon:hover{
+	background-position: center bottom;
+	}

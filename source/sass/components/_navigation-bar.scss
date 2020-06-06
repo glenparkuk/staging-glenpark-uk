@@ -1,28 +1,12 @@
 .navigation-bar {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 0 auto rem(20px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto rem(20px);
       
     @include breakpoint(small-tablet-landscape) {
         margin-top: -92px;
-    }
-
-      .submenutextitalic {
-        color: #ffffff;
-        font-family:Georgia, "Times New Roman", Times, serif;
-        font-style:italic;
-        font-size: 20px;
-        font-weight:lighter;
-        line-height: 40px;
-        margin: 0;
-        display: none;
-
-        @include breakpoint(small-tablet-landscape) {
-            display: inline-block
-        }
-
     }
 
     &__navigation {
@@ -49,6 +33,21 @@
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             order: 2;
+        }
+    }
+
+    &__tagline {
+        color: #ffffff;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        font-style:italic;
+        font-size: 20px;
+        font-weight:lighter;
+        line-height: 40px;
+        margin: 0;
+        display: none;
+
+        @include breakpoint(small-tablet-landscape) {
+            display: inline-block
         }
     }
 }

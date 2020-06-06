@@ -30,37 +30,11 @@
             background-color: $daisy;
         }
 
-        // TODO I think spans are being added in JS - remove this stupid logic
-        span {
-            width: 100%;
-            @include breakpoint(small-tablet-landscape) {
-                background: #424242;
-                height: 100px;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: 192px;
-                z-index: 5;
-            }
-
-            &:hover {
-                width: 100%;
-                @include breakpoint(small-tablet-landscape) {
-                    display: none;
-                    height: 100px;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 192px;
-                    z-index: 5;
-                }
-
-            }
-        }
-
         &.current {
-            span {
-                &:hover { display: block;  }
+            background-color: rgba($daisy, 0.6);
+            
+            &:hover {
+                background-color: $daisy;
             }
         }
     }

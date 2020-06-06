@@ -7,21 +7,21 @@
 	margin: 0 auto;
 	padding: 0;
     z-index: 1;
+    background-color: $daisy;
 
     @include breakpoint(small-tablet-landscape) {
         flex-direction: row;
         height: 100px;
+        background-color: transparent;
     }
 
     &__list-item {
         width: 100%;
-        // work out a way to make manage the background colors in the same way between mobile/desktop
+
         background-color: rgba($kimberly, 0.5);
         transition: all .3s ease-in-out;
 
         @include breakpoint(small-tablet-landscape) {
-            // background: inherit;
-            float: left;
             position: relative;
             width: 192px;
         }
@@ -78,11 +78,10 @@
 
         // TODO use something like $this to reference main-navigation 
         .main-navigation__list-item {
-            height: 70px;
-            overflow: hidden;
-            position: relative;
-
-            span { display: none; }
+          
+            @include breakpoint(small-tablet-landscape) {
+                height: 70px;
+            }
 
             &:hover {
                 background-color: $pink-chalk !important; // TODO remove important...

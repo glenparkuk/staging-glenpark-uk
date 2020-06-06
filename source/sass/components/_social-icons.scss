@@ -3,73 +3,46 @@
     width: auto;
     padding: 0;
     margin: 0;
-    position: relative;
+    display: flex;
+    margin-left: rem(10px);
+
+    &__icon {
+        height: 40px;
+        width: 33px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        &:hover{
+            background-position: center bottom;
+        }
+
+        &--email-icon {
+            background-image: url($site-url + $images + 'emailicon.png');
+            top: 0px;
+            left: 16px;
+        }
+        
+        
+        &--info-icon {
+            background-image: url($site-url + $images + 'infoicon.png');
+            top: 0px;
+            left: 49px;
+        }
+        
+        &--home-icon {
+            background-image: url($site-url + $images + 'homeicon.png');
+            top: 0px;
+            left: 82px;
+        }
+        
+        &--facebook-icon {
+            background-image: url($site-url + $images + 'facebookicon.png');
+            top: 0px;
+            left: 115px;
+        }
+
+    }
+
 }
 
-.emailicon{
-    height: 40px;
-    width: 33px;
-    overflow: hidden;
-    display: block;
-    background-image: url($site-url + $images + 'emailicon.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    top: 0px;
-    left: 16px;
-    }
-
-.emailicon:hover{
-    background-position: center bottom;
-    }
-
-.infoicon {
-    height: 40px;
-    width: 33px;
-    overflow: hidden;
-    display: block;
-    background-image: url($site-url + $images + 'infoicon.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    top: 0px;
-    left: 49px;
-    }
-
-.infoicon:hover{
-    background-position: center bottom;
-    }
-
-.homeicon {
-    height: 40px;
-    width: 33px;
-    overflow: hidden;
-    display: block;
-    background-image: url($site-url + $images + 'homeicon.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    top: 0px;
-    left: 82px;
-    }
-
-.homeicon:hover{
-    background-position: center bottom;
-    }
-
-.facebookicon {
-    height: 40px;
-    width: 33px;
-    overflow: hidden;
-    display: block;
-    background-image: url($site-url + $images + 'facebookicon.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    top: 0px;
-    left: 115px;
-    }
-
-.facebookicon:hover{
-    background-position: center bottom;
-    }

@@ -10,6 +10,7 @@
     </li>
     <li class="main-navigation__list-item js-menu-item {{work_is_current}}">
         <a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
+        {% include hamburger.html %}
         <ul class="main-navigation__sub-menu js-sub-menu-item">
             <li class="main-navigation__list-item js-menu-item">
                 <a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a>
@@ -21,6 +22,7 @@
     </li>
     <li class="main-navigation__list-item js-menu-item {{books_is_current}}">
         <a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
+        {% include hamburger.html %}
         <ul class="main-navigation__sub-menu js-sub-menu-item">
             <li class="main-navigation__list-item">
                 <a class="main-navigation__link js-menu-item" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a>

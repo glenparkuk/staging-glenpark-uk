@@ -21,18 +21,17 @@
         overflow: visible;
     }
 
-    &.is-active {
+    &.is-open {
         height: auto;
     }
 
     &__list-item {
         width: 100%;
-
+        position: relative;
         background-color: rgba($kimberly, 0.5);
         transition: all .3s ease-in-out;
 
         @include breakpoint(small-tablet-landscape) {
-            position: relative;
             width: 192px;
         }
 
@@ -47,6 +46,14 @@
                 background-color: $daisy;
             }
         }
+
+        .hamburger {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+
     }
 
     &__link {
@@ -77,13 +84,14 @@
         height: 0;
         list-style: none;
         padding: 0;
-        top: 92px;
         margin: 0;
         overflow: hidden;
         opacity: 0;
+        position: relative;
 
         @include breakpoint(small-tablet-landscape) {
             position: absolute;
+            top: 92px;
         }
 
         // TODO use something like $this to reference main-navigation 
@@ -108,7 +116,7 @@
 
         }
 
-        &.is-active {
+        &.is-open {
             height: auto;
             opacity: 1;
         }

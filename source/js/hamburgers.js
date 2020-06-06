@@ -1,7 +1,7 @@
 (function ($) { // reference query
     $(function () { // shorthand for onLoad()
 
-        var $hamburgers = $('.hamburger');
+        var $hamburgers = $('.js-hamburger');
         
         $hamburgers.each(function(key, hamburger) {
 
@@ -10,11 +10,6 @@
                 var $this = $(this);
 
                 $this.toggleClass('is-active');
-
-                // enable main naviation
-                if ($this.data('control') === 'main-navigation') {
-                    $('.js-main-navigation').toggleClass('is-active');
-                }
 
             });
 

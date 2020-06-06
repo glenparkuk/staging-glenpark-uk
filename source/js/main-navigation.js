@@ -1,32 +1,98 @@
 (function ($) { // reference query
     $(function () { // shorthand for onLoad()
 
+        var MainNavigation = function() {
 
-        var $menuItems = $('.js-menu-item');
+            this.navigationClass = 'js-main-navigation';
+            this.navigationToggleClass = 'js-navigation-toggle';
+            this.menuItemClass = 'js-menu-item';
+            this.subMenuClass = 'js-sub-menu-item';
+            this.menuItems = $('.js-main-navigation .' + this.menuItemClass);
 
-        $menuItems.each(function(key, menuItem) {
+            this.isMobile = function() {
 
-            var $menuItem = $(menuItem);
+                if ($( window ).width() < 960) return true;
 
-            if ($menuItem.length === 0) return;
+                return false;
 
-            $menuItem.on('mouseenter', function() {
+            };
 
-                $subMenuItem = $menuItem.find('.js-sub-menu-item');
 
-                $subMenuItem.addClass('is-active');
+            this.setupMainNavigationToggle = function() {
 
-            });
+                var $navigationToggle = $('.' + this.navigationToggleClass);
 
-            $menuItem.on('mouseleave', function() {
+                if ($navigationToggle.length === 0) return;
 
-                $subMenuItem = $menuItem.find('.js-sub-menu-item');
+                var $mainNavigation = this;
 
-                $subMenuItem.removeClass('is-active');
+                $navigationToggle.on('click', function() {
 
-            });
+                    $('.' + $mainNavigation.navigationClass).toggleClass('is-open');
 
-        });
+                });
+            };          
+
+            this.setupDesktopEvents = function($menuItem) {
+
+                if (this.isMobile() === true) return;
+
+                var $mainNavigation = this;
+
+                $menuItem.on('mouseenter mouseleave', function() {
+
+                    $subMenuItem = $menuItem.find('.' + $mainNavigation.subMenuClass);
+    
+                    $subMenuItem.toggleClass('is-open');
+    
+                });
+
+            };
+            
+            this.setupMobileEvents = function($menuItem) {
+
+                if (this.isMobile() === false) return;
+
+                var $mainNavigation = this;
+
+                var $hamburger = $menuItem.find('.hamburger');
+
+                $hamburger.on('click', function() {
+        
+                    $subMenuItem = $menuItem.find('.' + $mainNavigation.subMenuClass);
+    
+                    $subMenuItem.toggleClass('is-open');
+    
+                });
+
+            };
+
+            this.setupEvents = function() {
+
+                this.setupMainNavigationToggle();
+
+                if (this.menuItems.length === 0) return;
+
+                var $mainNavigation = this;
+
+                this.menuItems.each(function(key, menuItem) {
+
+                    var $menuItem = $(menuItem);
+        
+                    if ($menuItem.length === 0) return;
+
+                    $mainNavigation.setupDesktopEvents($menuItem);
+
+                    $mainNavigation.setupMobileEvents($menuItem);
+    
+                });
+        
+            };
+
+        };
+
+    var mainNavigation = new MainNavigation();
+    mainNavigation.setupEvents();
 
     });
 })(jQuery);

@@ -8,11 +8,21 @@
 	padding: 0;
     z-index: 1;
     background-color: $daisy;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
 
     @include breakpoint(small-tablet-landscape) {
         flex-direction: row;
         height: 100px;
         background-color: transparent;
+        height: auto;
+        overflow: visible;
+    }
+
+    &.is-active {
+        height: auto;
     }
 
     &__list-item {
@@ -67,7 +77,7 @@
         height: 0;
         list-style: none;
         padding: 0;
-        top: 100px;
+        top: 92px;
         margin: 0;
         overflow: hidden;
         opacity: 0;

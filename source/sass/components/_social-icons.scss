@@ -1,0 +1,75 @@
+.social-icons {
+    height: 40px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.emailicon{
+    height: 40px;
+    width: 33px;
+    overflow: hidden;
+    display: block;
+    background-image: url($site-url + $images + 'emailicon.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    }
+
+.emailicon:hover{
+    background-position: center bottom;
+    }
+
+.infoicon {
+    height: 40px;
+    width: 33px;
+    overflow: hidden;
+    display: block;
+    background-image: url($site-url + $images + 'infoicon.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0px;
+    left: 49px;
+    }
+
+.infoicon:hover{
+    background-position: center bottom;
+    }
+
+.homeicon {
+    height: 40px;
+    width: 33px;
+    overflow: hidden;
+    display: block;
+    background-image: url($site-url + $images + 'homeicon.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0px;
+    left: 82px;
+    }
+
+.homeicon:hover{
+    background-position: center bottom;
+    }
+
+.facebookicon {
+    height: 40px;
+    width: 33px;
+    overflow: hidden;
+    display: block;
+    background-image: url($site-url + $images + 'facebookicon.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    }
+
+.facebookicon:hover{
+    background-position: center bottom;
+    }

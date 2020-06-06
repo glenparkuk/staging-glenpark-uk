@@ -45,6 +45,15 @@
 <!-- header ends -->
 
 <nav class="navigation-bar">
-    {% include main-navigation.html %}
-    {% include submenu-bar.html %}
+
+    <div class="navigation-bar__navigation">
+        {% include main-navigation.html %}
+    </div>
+
+    <div class="navigation-bar__info" id="submenustrip">
+        {% include submenu-bar.html %}
+        <p class="submenutextitalic">&hellip; bringing together the Alexander Technique and Chakra Therapy</p>
+        {% include hamburger.html %}
+    </div>
+    
 </nav>

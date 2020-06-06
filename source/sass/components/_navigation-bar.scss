@@ -3,7 +3,11 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: -100px;
+      margin: 0 auto rem(20px);
+      
+    @include breakpoint(small-tablet-landscape) {
+        margin-top: -92px;
+    }
 
       .submenutextitalic {
         color: #ffffff;
@@ -13,86 +17,39 @@
         font-weight:lighter;
         line-height: 40px;
         margin: 0;
-    }
-    
-    
-    #smalliconscontainer {
-        height: 40px;
-        width: 360px;
-        position:absolute;
-        left: 0px;
-        top:0px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .emailicon{
-        height: 40px;
-        width: 33px;
-        overflow: hidden;
-        display: block;
-        background-image: url($site-url + $images + 'emailicon.png');
-        background-repeat: no-repeat;
-        background-position: center top;
-        position: absolute;
-        top: 0px;
-        left: 16px;
-        }
-    
-    .emailicon:hover{
-        background-position: center bottom;
-        }
-    
-    .infoicon {
-        height: 40px;
-        width: 33px;
-        overflow: hidden;
-        display: block;
-        background-image: url($site-url + $images + 'infoicon.png');
-        background-repeat: no-repeat;
-        background-position: center top;
-        position: absolute;
-        top: 0px;
-        left: 49px;
-        }
-    
-    .infoicon:hover{
-        background-position: center bottom;
-        }
-    
-    .homeicon {
-        height: 40px;
-        width: 33px;
-        overflow: hidden;
-        display: block;
-        background-image: url($site-url + $images + 'homeicon.png');
-        background-repeat: no-repeat;
-        background-position: center top;
-        position: absolute;
-        top: 0px;
-        left: 82px;
-        }
-    
-    .homeicon:hover{
-        background-position: center bottom;
-        }
-    
-    .facebookicon {
-        height: 40px;
-        width: 33px;
-        overflow: hidden;
-        display: block;
-        background-image: url($site-url + $images + 'facebookicon.png');
-        background-repeat: no-repeat;
-        background-position: center top;
-        position: absolute;
-        top: 0px;
-        left: 115px;
-        }
-    
-    .facebookicon:hover{
-        background-position: center bottom;
+        display: none;
+
+        @include breakpoint(small-tablet-landscape) {
+            display: inline-block
         }
 
-  }
+    }
+
+    &__navigation {
+        order: 2;
+        z-index: 1;
+        @include breakpoint(small-tablet-landscape) {
+            order: 1;
+        }
+    }
+
+    &__info {
+        order: 1;
+        width: 100%;
+        max-width: 940px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0 20px 0 0;
+        height: 40px;
+        background-color: #745ba7;
+        text-align: right;
+
+        @include breakpoint(small-tablet-landscape) {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            order: 2;
+        }
+    }
+}
 

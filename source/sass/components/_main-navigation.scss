@@ -16,11 +16,19 @@
 
     &__list-item {
         width: 100%;
+        // work out a way to make manage the background colors in the same way between mobile/desktop
+        background: #424242;
 
         @include breakpoint(small-tablet-landscape) {
+            background: inherit;
             float: left;
             position: relative;
             width: 192px;
+        }
+
+        &:hover {
+            // work out a way to make manage the background colors in the same way between mobile/desktop
+            background: #745ba7;
         }
 
         // TODO I think spans are being added in JS - remove this stupid logic
@@ -63,7 +71,7 @@
         color: #fff;
         display: block;
         font-size: 14px;
-        padding: 40px 0 20px 20px;
+        padding: 10px 0 10px 20px;
         position: relative;
         text-transform: uppercase;
         z-index: 10;
@@ -75,6 +83,10 @@
             font-weight: lighter;
             color: #ffffff;
             text-decoration: none;
+        }
+
+        @include breakpoint(small-tablet-landscape) {
+            padding: 40px 0 20px 20px;
         }
     }
     &__sub-menu {
@@ -101,7 +113,12 @@
 
         .main-navigation__link {
             font-size: 11px;
-	        padding: 30px 0 20px 20px;
+            padding: 10px 0 10px 20px;
+            
+            @include breakpoint(small-tablet-landscape) {
+                padding: 30px 0 20px 20px;
+            }
+
         }
     }
 }

@@ -1,45 +1,34 @@
-{% capture home_is_current %}{% if page.id == 'home' %}current{% endif %}{% endcapture %}
-{% capture work_is_current %}{% if page.id == 'work' %}current{% endif %}{% endcapture %}
-{% capture books_is_current %}{% if page.id == 'books' %}current{% endif %}{% endcapture %}
-{% capture testimonials_is_current %}{% if page.id == 'testimonials' %}current{% endif %}{% endcapture %}
-{% capture contact_is_current %}{% if page.id == 'contact' %}current{% endif %}{% endcapture %}
-
 <ul id="menu" class="main-navigation js-main-navigation">
-    <li class="main-navigation__list-item js-menu-item {{home_is_current}}">
-        <a class="main-navigation__link" href="{% link index.md %}">Welcome</a>
+
+{% for item in site.navigation_header %}
+    {% capture link %}{% link index.md %}{% endcapture %}
+
+    {% if item.id == 'work' %}{% capture link %}{% link work.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'books' %}{% capture link %}{% link books.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'testimonials' %}{% capture link %}{% link testimonials.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'contact' %}{% capture link %}{% link contact.md %}{% endcapture %}{% endif %}
+
+    <li class="main-navigation__list-item js-menu-item{% if item.id == page.id %} current{% endif %}">
+        <a class="main-navigation__link" href="{{ link }}">{{ item.label | escape }}</a>
+
+        {% if item.sub_menu %}
+
+            <ul class="main-navigation__sub-menu js-sub-menu-item">
+            
+            {% for item_sm in item.sub_menu %}
+
+                <li class="main-navigation__list-item js-menu-item">
+                    <a class="main-navigation__link" href="{{ link | append: '#' | append: item_sm.id }}">{{ item_sm.label | escape }}</a>
+                </li>
+
+            {% endfor %}
+
+            </ul>
+
+        {% endif %}
+
     </li>
-    <li class="main-navigation__list-item js-menu-item {{work_is_current}}">
-        <a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
-        <ul class="main-navigation__sub-menu js-sub-menu-item">
-            <li class="main-navigation__list-item js-menu-item">
-                <a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a>
-            </li>
-            <li class="main-navigation__list-item js-menu-item">
-                <a class="main-navigation__link" href="{% link work.md %}#workshops">Workshops &amp; Courses</a>
-            </li>
-        </ul>
-    </li>
-    <li class="main-navigation__list-item js-menu-item {{books_is_current}}">
-        <a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
-        <ul class="main-navigation__sub-menu js-sub-menu-item">
-            <li class="main-navigation__list-item">
-                <a class="main-navigation__link js-menu-item" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a>
-            </li>
-            <li class="main-navigation__list-item js-menu-item">
-                <a class="main-navigation__link" href="{% link books.md %}#theartofchanging">The Art of Changing</a>
-            </li>
-            <li class="main-navigation__list-item js-menu-item">
-                <a class="main-navigation__link" href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a>
-            </li>
-            <li class="main-navigation__list-item js-menu-item">
-                <a class="main-navigation__link" href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a>
-            </li>
-        </ul>
-    </li>
-    <li class="main-navigation__list-item js-menu-item {{testimonials_is_current}}">
-        <a class="main-navigation__link" href="{% link testimonials.md %}">Testimonials</a>
-    </li>
-    <li class="main-navigation__list-item js-menu-item {{contact_is_current}}">
-        <a class="main-navigation__link" href="{% link contact.md %}">Contact Glen</a>
-    </li>
+
+{% endfor %}
+
 </ul>

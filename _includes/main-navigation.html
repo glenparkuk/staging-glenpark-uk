@@ -4,8 +4,7 @@
 {% capture testimonials_is_current %}{% if page.id == 'testimonials' %}current{% endif %}{% endcapture %}
 {% capture contact_is_current %}{% if page.id == 'contact' %}current{% endif %}{% endcapture %}
 
-
-<ul id="menu" class="main-navigation">
+<ul id="menu" class="main-navigation js-main-navigation">
     <li class="main-navigation__list-item js-menu-item {{home_is_current}}">
         <a class="main-navigation__link" href="{% link index.md %}">Welcome</a>
     </li>

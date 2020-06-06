@@ -9,6 +9,8 @@
             this.subMenuClass = 'js-sub-menu-item';
             this.menuItems = $('.js-main-navigation .' + this.menuItemClass);
 
+            // TODO remove this logic. makes debugging difficult.
+            // also if the user were to resize the window this would cause problems
             this.isMobile = function() {
 
                 if ($( window ).width() < 960) return true;

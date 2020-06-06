@@ -7,7 +7,6 @@
 	margin: 0 auto;
 	padding: 0;
     z-index: 1;
-    background-color: #745ba7; // TODO make dynamic per page
 
     @include breakpoint(small-tablet-landscape) {
         flex-direction: row;
@@ -17,18 +16,18 @@
     &__list-item {
         width: 100%;
         // work out a way to make manage the background colors in the same way between mobile/desktop
-        background: #424242;
+        background-color: rgba($kimberly, 0.5);
+        transition: all .3s ease-in-out;
 
         @include breakpoint(small-tablet-landscape) {
-            background: inherit;
+            // background: inherit;
             float: left;
             position: relative;
             width: 192px;
         }
 
         &:hover {
-            // work out a way to make manage the background colors in the same way between mobile/desktop
-            background: #745ba7;
+            background-color: $daisy;
         }
 
         // TODO I think spans are being added in JS - remove this stupid logic
@@ -90,25 +89,30 @@
         }
     }
     &__sub-menu {
-        display: none;
-       
+        transition: all .4s ease-in-out;
+        height: 0;
         list-style: none;
         padding: 0;
         top: 100px;
         margin: 0;
+        overflow: hidden;
+        opacity: 0;
 
         @include breakpoint(small-tablet-landscape) {
             position: absolute;
         }
 
         // TODO use something like $this to reference main-navigation 
-        .main-navigation__menu-item {
+        .main-navigation__list-item {
             height: 70px;
             overflow: hidden;
             position: relative;
 
             span { display: none; }
 
+            &:hover {
+                background-color: $pink-chalk !important; // TODO remove important...
+            }
         }
 
         .main-navigation__link {
@@ -120,5 +124,12 @@
             }
 
         }
+
+        &.is-active {
+            height: auto;
+            opacity: 1;
+        }
+
     }
+
 }

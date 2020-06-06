@@ -6,21 +6,41 @@
 
 
 <ul id="menu" class="main-navigation">
-    <li class="main-navigation__list-item {{home_is_current}}"><a class="main-navigation__link" href="{% link index.md %}">Welcome</a></li>
-    <li class="main-navigation__list-item {{work_is_current}}"><a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
-        <ul class="main-navigation__sub-menu">
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a></li>
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#workshops">Workshops &amp; Courses</a></li>
+    <li class="main-navigation__list-item js-menu-item {{home_is_current}}">
+        <a class="main-navigation__link" href="{% link index.md %}">Welcome</a>
+    </li>
+    <li class="main-navigation__list-item js-menu-item {{work_is_current}}">
+        <a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
+        <ul class="main-navigation__sub-menu js-sub-menu-item">
+            <li class="main-navigation__list-item js-menu-item">
+                <a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a>
+            </li>
+            <li class="main-navigation__list-item js-menu-item">
+                <a class="main-navigation__link" href="{% link work.md %}#workshops">Workshops &amp; Courses</a>
+            </li>
         </ul>
     </li>
-    <li class="main-navigation__list-item {{books_is_current}}"><a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
-        <ul class="main-navigation__sub-menu">
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a></li>
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchanging">The Art of Changing</a></li>
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a></li>
-            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a></li>
+    <li class="main-navigation__list-item js-menu-item {{books_is_current}}">
+        <a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
+        <ul class="main-navigation__sub-menu js-sub-menu-item">
+            <li class="main-navigation__list-item">
+                <a class="main-navigation__link js-menu-item" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a>
+            </li>
+            <li class="main-navigation__list-item js-menu-item">
+                <a class="main-navigation__link" href="{% link books.md %}#theartofchanging">The Art of Changing</a>
+            </li>
+            <li class="main-navigation__list-item js-menu-item">
+                <a class="main-navigation__link" href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a>
+            </li>
+            <li class="main-navigation__list-item js-menu-item">
+                <a class="main-navigation__link" href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a>
+            </li>
         </ul>
     </li>
-    <li class="main-navigation__list-item {{testimonials_is_current}}"><a class="main-navigation__link" href="{% link testimonials.md %}">Testimonials</a></li>
-    <li class="main-navigation__list-item {{contact_is_current}}"><a class="main-navigation__link" href="{% link contact.md %}">Contact Glen</a></li>
+    <li class="main-navigation__list-item js-menu-item {{testimonials_is_current}}">
+        <a class="main-navigation__link" href="{% link testimonials.md %}">Testimonials</a>
+    </li>
+    <li class="main-navigation__list-item js-menu-item {{contact_is_current}}">
+        <a class="main-navigation__link" href="{% link contact.md %}">Contact Glen</a>
+    </li>
 </ul>

@@ -1,0 +1,26 @@
+{% capture home_is_current %}{% if page.id == 'home' %}current{% endif %}{% endcapture %}
+{% capture work_is_current %}{% if page.id == 'work' %}current{% endif %}{% endcapture %}
+{% capture books_is_current %}{% if page.id == 'books' %}current{% endif %}{% endcapture %}
+{% capture testimonials_is_current %}{% if page.id == 'testimonials' %}current{% endif %}{% endcapture %}
+{% capture contact_is_current %}{% if page.id == 'contact' %}current{% endif %}{% endcapture %}
+
+
+<ul id="menu" class="main-navigation">
+    <li class="main-navigation__list-item {{home_is_current}}"><a class="main-navigation__link" href="{% link index.md %}">Welcome</a></li>
+    <li class="main-navigation__list-item {{work_is_current}}"><a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
+        <ul class="main-navigation__sub-menu">
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#workshops">Workshops &amp; Courses</a></li>
+        </ul>
+    </li>
+    <li class="main-navigation__list-item {{books_is_current}}"><a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
+        <ul class="main-navigation__sub-menu">
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchanging">The Art of Changing</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a></li>
+        </ul>
+    </li>
+    <li class="main-navigation__list-item {{testimonials_is_current}}"><a class="main-navigation__link" href="{% link testimonials.md %}">Testimonials</a></li>
+    <li class="main-navigation__list-item {{contact_is_current}}"><a class="main-navigation__link" href="{% link contact.md %}">Contact Glen</a></li>
+</ul>

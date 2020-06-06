@@ -41,56 +41,10 @@
     </div>
     {%- endif -%}
 
-    {% capture home_is_current %}{% if page.id == 'home' %}current{% endif %}{% endcapture %}
-    {% capture work_is_current %}{% if page.id == 'work' %}current{% endif %}{% endcapture %}
-    {% capture books_is_current %}{% if page.id == 'books' %}current{% endif %}{% endcapture %}
-    {% capture testimonials_is_current %}{% if page.id == 'testimonials' %}current{% endif %}{% endcapture %}
-    {% capture contact_is_current %}{% if page.id == 'contact' %}current{% endif %}{% endcapture %}
-
-    <div class="header__menu">
-        <ul id="menu" class="main-navigation">
-            <li class="main-navigation__list-item {{home_is_current}}"><a class="main-navigation__link" href="{% link index.md %}">Welcome</a></li>
-            <li class="main-navigation__list-item {{work_is_current}}"><a class="main-navigation__link" href="{% link work.md %}">Individual<br />&amp; Group Work</a>
-                <ul class="main-navigation__sub-menu">
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#sessions">Individual Sessions</a></li>
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link work.md %}#workshops">Workshops &amp; Courses</a></li>
-                </ul>
-            </li>
-            <li class="main-navigation__list-item {{books_is_current}}"><a class="main-navigation__link" href="{% link books.md %}">Books &amp; CD&#39;s</a>
-                <ul class="main-navigation__sub-menu">
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a></li>
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#theartofchanging">The Art of Changing</a></li>
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a></li>
-                    <li class="main-navigation__list-item"><a class="main-navigation__link" href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a></li>
-                </ul>
-            </li>
-            <li class="main-navigation__list-item {{testimonials_is_current}}"><a class="main-navigation__link" href="{% link testimonials.md %}">Testimonials</a></li>
-            <li class="main-navigation__list-item {{contact_is_current}}"><a class="main-navigation__link" href="{% link contact.md %}">Contact Glen</a></li>
-        </ul>
-    </div>
-
 </div>
 <!-- header ends -->
-<!-- submenustrip begins -->
-<div id="submenustrip">
-    <div id="smalliconscontainer">
-        {% if site.email %}
-        <a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">
-            <div class="emailicon"></div>
-        </a>
-        {% endif %}
-        <a href="#" data-featherlight="#about-alexander" class="lightbox tooltip" title="About Alexander Technique">
-            <div class="infoicon"></div>
-        </a>
-        <a href="{% link index.md %}" class="tooltip" title="Back to Homepage" target="_self">
-            <div class="homeicon"></div>
-        </a>
-        {% if site.facebook_username %}
-        <a href="https://www.facebook.com/{{ site.facebook_username }}" class="tooltip" title="Visit Glen on Facebook" target="_blank">
-            <div class="facebookicon"></div>
-        </a>
-        {% endif %}
-    </div>
-    <p class="submenutextitalic">&hellip; bringing together the Alexander Technique and Chakra Therapy</p>
-</div>
-<!-- submenustrip ends -->
+
+<nav class="navigation-bar">
+    {% include main-navigation.html %}
+    {% include submenu-bar.html %}
+</nav>

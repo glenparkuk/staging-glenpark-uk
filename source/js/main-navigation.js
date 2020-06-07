@@ -37,11 +37,11 @@
 
             this.setupDesktopEvents = function($menuItem) {
 
-                if (this.isMobile() === true) return;
-
                 var $mainNavigation = this;
 
                 $menuItem.on('mouseenter mouseleave', function() {
+
+                    if ($mainNavigation.isMobile() === true) return;
 
                     $subMenuItem = $menuItem.find('.' + $mainNavigation.subMenuClass);
     
@@ -52,8 +52,6 @@
             };
             
             this.setupMobileEvents = function($menuItem) {
-
-                if (this.isMobile() === false) return;
 
                 var $mainNavigation = this;
 

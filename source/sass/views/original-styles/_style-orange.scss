@@ -4,15 +4,24 @@
   background-position: center top;
 
   a {
-  	color: #e6930f;
+  	color: $testimonials-secondary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
   a:hover {
-  	color: #c66713;
+  	color: $testimonials-primary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
+
+	// TODO this could be improved - see mixin
+	@include main-navigation($testimonials-primary-color, $testimonials-secondary-color);
+	
+	.navigation-bar {
+		&__info {
+			background-color:$testimonials-secondary-color;
+		}
+	}
 
   .testimonialswrapper {
   	width: 960px;
@@ -93,14 +102,8 @@
   	background-color: #e6930f;
   	text-align: right;
   	top: -20px;
-  	-moz-border-radius-bottomright: 5px;
-  	-moz-border-radius-bottomleft: 5px;
-  	-webkit-border-bottom-right-radius: 5px;
-  	-webkit-border-bottom-left-radius: 4px;
   	border-radius-bottomright: 5px;
   	border-radius-bottomleft: 5px;
-  	-khtml-border-radius-bottomright: 5px;
-  	-khtml-border-radius-bottomleft: 5px;
   	}
 
 
@@ -133,24 +136,6 @@
 
 
 
-
-
-  #menu li span.hover {
-  background: #c66713;
-  }
-
-  #menu li ul li {
-  background: #c66713;
-  }
-
-  #menu li ul li span {
-  	display: none;
-  	background: #e6930f;
-  	}
-
-
-
-
   .pitalictestimonial {
   	font-family:Georgia, "Times New Roman", Times, serif;
   	font-size: 16px;
@@ -179,53 +164,7 @@
   	line-height: 130%;
   }
 
-  #socialmediacontainer {
-  	height: 70px;
-  	width: 250px;
-  	padding-top: 10px;
-  	background-image: url($site-url + $images + 'socialmediacontainerbg.png');
-  	background-repeat: repeat-y;
-  	background-position: left top;
-  	padding-left: 10px;
-  	-moz-border-radius:5px;
-  	-khtml-border-radius:5px;
-  	-webkit-border-radius:5px;
-  	border-radius:5px;
-  }
-
-
-  .footertext {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #7a7a7a;
-  }
-  .footertext a {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #e6930f;
-  	font-weight: bold;
-  }
-  .footertext a:hover {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #c66713;
-  	font-weight: bold;
-  }
-
-  #footer2 {
-  	height: 60px !important;
-  	padding: 0px;
-  	width: 100%;
-  	float: left;
-  	background-color: #000000;
-  	border-top-width: 3px;
-  	border-top-style: solid;
-  	border-top-color: #e6930f;
-  }
+	#footer2 {
+		border-top-color: $testimonials-secondary-color;
+	}
 }

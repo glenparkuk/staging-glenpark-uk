@@ -3,16 +3,24 @@
     // background-repeat: no-repeat;
     // background-position: center top;
   a {
-  	color: #779d1e;
+  	color: $books-secondary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
   a:hover {
-  	color: #466b00;
+  	color: $books-primary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
 
+      // TODO this could be improved - see mixin
+	@include main-navigation($books-primary-color, $books-secondary-color);
+
+	.navigation-bar {
+		&__info {
+			background-color:$books-secondary-color;
+		}
+	}
 
   .padded {
   	font-family: Arial, Helvetica, sans-serif;
@@ -139,28 +147,6 @@
   }
 
 
-
-
-
-  #menu li span.hover {
-  background: #466b00;
-  }
-
-  #menu li ul li {
-  background: #466b00;
-  }
-
-  #menu li ul li span {
-  	display: none;
-  	background: #779d1e;
-  	}
-
-
-
-
-
-
-
   .blockquotelime {
   	color: #779d1e !important;
   	display: block;
@@ -173,54 +159,8 @@
   	line-height: 130%;
   }
 
-  #socialmediacontainer {
-  	height: 70px;
-  	width: 250px;
-  	padding-top: 10px;
-  	background-image: url($site-url + $images + 'socialmediacontainerbg.png');
-  	background-repeat: repeat-y;
-  	background-position: left top;
-  	padding-left: 10px;
-  	-moz-border-radius:5px;
-  	-khtml-border-radius:5px;
-  	-webkit-border-radius:5px;
-  	border-radius:5px;
-  }
-
-
-  .footertext {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #7a7a7a;
-  }
-  .footertext a {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #779d1e;
-  	font-weight: bold;
-  }
-  .footertext a:hover {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #466b00;
-  	font-weight: bold;
-  }
-
-  #footer2 {
-  	height: 60px !important;
-  	padding: 0px;
-  	width: 100%;
-  	float: left;
-  	background-color: #000000;
-  	border-top-width: 3px;
-  	border-top-style: solid;
-  	border-top-color: #779d1e;
-}
+	#footer2 {
+		border-top-color: $books-secondary-color;
+	}
 
 }

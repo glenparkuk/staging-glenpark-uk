@@ -4,16 +4,24 @@
   background-position: center top;
 
   a {
-  	color: #3583d5;
+  	color: $work-secondary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
   a:hover {
-  	color: #1c4575;
+  	color: $work-primary-color;
   	font-weight: bold;
   	letter-spacing: 0px;
   }
 
+    // TODO this could be improved - see mixin
+	@include main-navigation($work-primary-color, $work-secondary-color);
+
+	.navigation-bar {
+		&__info {
+			background-color:$work-primary-color;
+		}
+	}
 
   .padded {
   	font-family: Arial, Helvetica, sans-serif;
@@ -155,24 +163,6 @@
   }
 
 
-
-  #menu li span.hover {
-  background: #1c4575;
-  }
-
-  #menu li ul li {
-  background: #1c4575;
-  }
-
-  #menu li ul li span {
-  	display: none;
-  	background: #3583d5;
-  	}
-
-
-
-
-
   .blockquoteblue {
   	color: #3583d5 !important;
   	display: block;
@@ -185,53 +175,8 @@
   	line-height: 130%;
   }
 
-  #socialmediacontainer {
-  	height: 70px;
-  	width: 250px;
-  	padding-top: 10px;
-  	background-image: url($site-url + $images + 'socialmediacontainerbg.png');
-  	background-repeat: repeat-y;
-  	background-position: left top;
-  	padding-left: 10px;
-  	-moz-border-radius:5px;
-  	-khtml-border-radius:5px;
-  	-webkit-border-radius:5px;
-  	border-radius:5px;
-  }
+	#footer2 {
+		border-top-color: $work-primary-color;
+	}
 
-
-  .footertext {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #7a7a7a;
-  }
-  .footertext a {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #3583d5;
-  	font-weight: bold;
-  }
-  .footertext a:hover {
-  	font-size: 12px;
-  	font-weight: normal;
-  	letter-spacing:normal;
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #1c4575;
-  	font-weight: bold;
-  }
-
-  #footer2 {
-  	height: 60px !important;
-  	padding: 0px;
-  	width: 100%;
-  	float: left;
-  	background-color: #000000;
-  	border-top-width: 3px;
-  	border-top-style: solid;
-  	border-top-color: #3583d5;
-  }
 }

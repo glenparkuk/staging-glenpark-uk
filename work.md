@@ -21,7 +21,9 @@ header_slider:
 <!-- .content-block 1 begins -->
 <div class="content-block">
     <div class="two-thirds">
+    <div class="styled-tab">
         <h6>Individual Teaching and Therapy Sessions</h6>
+    </div>
         <p class="boldp"><span class="runinheading">Individual Sessions&hellip;</span> In these sessions I can give you personal attention and healing, focusing on your particular challenges and concerns. We begin by talking a little and then I will do practical hands-on work with you. Sessions last for about an hour and a quarter.</p>
     </div>
     <div class="one-third">
@@ -45,7 +47,9 @@ header_slider:
 <div class="content-block">
     <a name="workshops" id="workshops"></a>
     <div class="two-thirds">
-    <h6>Workshops for Alexander Teachers</h6>
+    <div class="styled-tab">
+        <h6>Workshops for Alexander Teachers</h6>
+    </div>
         <p class="boldp"><span class="runinheading" style="font-size:28px;line-height:30px;">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</span></p>
         <p class="boldsubtitle14blue">Introductory One Day Workshop</p>
         <p class="boldsubtitle14blue">Postgraduate Training: 8 weekend workshops over 9 months</p>

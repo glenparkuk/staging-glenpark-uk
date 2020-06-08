@@ -6,9 +6,12 @@ $images: 'images/';
 
 // primal colors
 $white: #ffffff;
+$white-smoke: #f1f1f1;
 $silver: #C0C0C0;
+$nobel: #999999;
 $grey: #7a7a7a;
 $charcoal: #424242;
+
 
 
 // custom colors
@@ -39,9 +42,11 @@ $testimonials-secondary-color: $gamboge;
 $contact-secondary-color: $mandy;
 
 // text colors:
-$text-grey: $grey;
+$text-grey: $grey; // remove one of these
+$text-light-grey: $nobel; // remove one of these
 
 // backgrounds
+$background-extra-light-grey: $white-smoke;
 $background-light-grey: $silver;
 $background-grey: $grey;
 $background-dark-grey: $charcoal;

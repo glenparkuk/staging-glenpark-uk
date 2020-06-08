@@ -41,50 +41,7 @@
     </div>
     {%- endif -%}
 
-    <div class="header__menu">
-        <ul id="menu">
-            <li {% if page.id == 'home' %} class="current" {% endif %}><a href="{% link index.md %}">Welcome</a></li>
-            <li {% if page.id == 'work' %} class="current" {% endif %}><a href="{% link work.md %}">Individual<br />&amp; Group Work</a>
-                <ul>
-                    <li><a href="{% link work.md %}#sessions">Individual Sessions</a></li>
-                    <li><a href="{% link work.md %}#workshops">Workshops &amp; Courses</a></li>
-                </ul>
-            </li>
-            <li {% if page.id == 'books' %} class="current" {% endif %}><a href="{% link books.md %}">Books &amp; CD&#39;s</a>
-                <ul>
-                    <li><a href="{% link books.md %}#touchingthesoul">Chakra Healing Therapy</a></li>
-                    <li><a href="{% link books.md %}#theartofchanging">The Art of Changing</a></li>
-                    <li><a href="{% link books.md %}#theartofchangingcd">The Art of Changing CD</a></li>
-                    <li><a href="{% link books.md %}#peggywilliams">Peggy Williams Pamphlet</a></li>
-                </ul>
-            </li>
-            <li {% if page.id == 'testimonials' %} class="current" {% endif %}><a href="{% link testimonials.md %}">Testimonials</a></li>
-            <li {% if page.id == 'contact' %} class="current" {% endif %}><a href="{% link contact.md %}">Contact Glen</a></li>
-        </ul>
-    </div>
-
 </div>
 <!-- header ends -->
-<!-- submenustrip begins -->
-<div id="submenustrip">
-    <div id="smalliconscontainer">
-        {% if site.email %}
-        <a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">
-            <div class="emailicon"></div>
-        </a>
-        {% endif %}
-        <a href="#" data-featherlight="#about-alexander" class="lightbox tooltip" title="About Alexander Technique">
-            <div class="infoicon"></div>
-        </a>
-        <a href="{% link index.md %}" class="tooltip" title="Back to Homepage" target="_self">
-            <div class="homeicon"></div>
-        </a>
-        {% if site.facebook_username %}
-        <a href="https://www.facebook.com/{{ site.facebook_username }}" class="tooltip" title="Visit Glen on Facebook" target="_blank">
-            <div class="facebookicon"></div>
-        </a>
-        {% endif %}
-    </div>
-    <p class="submenutextitalic">&hellip; bringing together the Alexander Technique and Chakra Therapy</p>
-</div>
-<!-- submenustrip ends -->
+
+{% include navigation-bar.html %}

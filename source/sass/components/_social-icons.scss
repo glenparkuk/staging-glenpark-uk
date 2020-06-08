@@ -1,0 +1,48 @@
+.social-icons {
+    height: 40px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: rem(10px);
+
+    &__icon {
+        height: 40px;
+        width: 33px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        &:hover{
+            background-position: center bottom;
+        }
+
+        &--email-icon {
+            background-image: url($site-url + $images + 'emailicon.png');
+            top: 0px;
+            left: 16px;
+        }
+        
+        
+        &--info-icon {
+            background-image: url($site-url + $images + 'infoicon.png');
+            top: 0px;
+            left: 49px;
+        }
+        
+        &--home-icon {
+            background-image: url($site-url + $images + 'homeicon.png');
+            top: 0px;
+            left: 82px;
+        }
+        
+        &--facebook-icon {
+            background-image: url($site-url + $images + 'facebookicon.png');
+            top: 0px;
+            left: 115px;
+        }
+
+    }
+
+}
+

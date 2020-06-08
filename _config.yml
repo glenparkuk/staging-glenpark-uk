@@ -42,6 +42,35 @@ header_slider:
   credit: FM Alexander
   img: bg2.jpg
   credit_class: quotecreditblack
+# Header navigation
+navigation_header: 
+ - label: Welcome
+   id: home
+   sub_menu: 
+ - label: Individual & Group Work
+   id: work
+   sub_menu:
+      - label: Individual Sessions
+        id: sessions
+      - label: Workshops & Courses
+        id: workshops
+ - label: Books & CD's
+   id: books
+   sub_menu:
+      - label: The Art of Changing CD
+        id: theartofchangingcd
+      - label: The Art of Changing
+        id: theartofchanging
+      - label: Peggy Williams Pamphlet
+        id: peggywilliams
+      - label: Chakra Healing Therapy
+        id: touchingthesoul
+ - label: Testimonials
+   id: testimonials
+   sub_menu:
+ - label: Contact Glen
+   id: contact
+   sub_menu:
 # Unnsupported meta tags
 # designer: Ian Forster,Graphic Alchemy
 # copyright: Glen Park 2018 

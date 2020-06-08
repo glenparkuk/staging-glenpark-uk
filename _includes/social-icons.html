@@ -1,0 +1,34 @@
+<div class="social-icons">
+
+    {% if site.email %}
+    <a  href="mailto:{{ site.email }}"
+        class="social-icons__icon-link tooltip"
+        title="Send a direct email to Glen">
+        <div class="social-icons__icon social-icons__icon--email-icon"></div>
+    </a>
+    {% endif %}
+
+    <a  href="#"
+        data-featherlight="#about-alexander"
+        class="social-icons__icon-link lightbox tooltip"
+        title="About Alexander Technique">
+        <div class="social-icons__icon social-icons__icon--info-icon"></div>
+    </a>
+
+    <a  href="{% link index.md %}"
+        class="social-icons__icon-link tooltip"
+        title="Back to Homepage"
+        target="_self">
+        <div class="social-icons__icon social-icons__icon--home-icon"></div>
+    </a>
+
+    {% if site.facebook_username %}
+    <a  href="https://www.facebook.com/{{ site.facebook_username }}"
+        class="social-icons__icon-link tooltip"
+        title="Visit Glen on Facebook"
+        target="_blank">
+        <div class="social-icons__icon social-icons__icon--facebook-icon"></div>
+    </a>
+    {% endif %}
+
+</div>

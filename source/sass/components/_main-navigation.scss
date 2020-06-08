@@ -1,0 +1,125 @@
+.main-navigation {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+    z-index: 1;
+    background-color: $background-grey;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(small-tablet-landscape) {
+        flex-direction: row;
+        height: 100px;
+        background-color: transparent;
+        height: auto;
+        overflow: visible;
+    }
+
+    &.is-open {
+        height: auto;
+    }
+
+    &__list-item {
+        width: 100%;
+        position: relative;
+        background-color: rgba($background-light-grey, 0.5);
+        transition: all .3s ease-in-out;
+
+        @include breakpoint(small-tablet-landscape) {
+            width: 192px;
+        }
+
+        &:hover {
+            background-color: $background-grey;
+        }
+
+        &.current {
+            background-color: rgba($background-grey, 0.6);
+            
+            &:hover {
+                background-color: $background-grey;
+            }
+        }
+
+        .hamburger {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+
+    }
+
+    &__link {
+        width: 100%;
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        padding: 10px 0 10px 20px;
+        position: relative;
+        text-transform: uppercase;
+        z-index: 10;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter !important; // TODO remove (layouts a tags are overrdding this...)
+
+        &:hover {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @include breakpoint(small-tablet-landscape) {
+            padding: 40px 0 20px 20px;
+        }
+    }
+    &__sub-menu {
+        transition: all .4s ease-in-out;
+        height: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        opacity: 0;
+        position: relative;
+
+        @include breakpoint(small-tablet-landscape) {
+            position: absolute;
+            top: 92px;
+        }
+
+        // TODO use something like $this to reference main-navigation 
+        .main-navigation__list-item {
+          
+            @include breakpoint(small-tablet-landscape) {
+                height: 70px;
+            }
+
+            &:hover {
+                background-color: $background-light-grey;
+            }
+        }
+
+        .main-navigation__link {
+            font-size: 11px;
+            padding: 10px 0 10px 20px;
+            
+            @include breakpoint(small-tablet-landscape) {
+                padding: 30px 0 20px 20px;
+            }
+
+        }
+
+        &.is-open {
+            height: auto;
+            opacity: 1;
+        }
+
+    }
+
+}

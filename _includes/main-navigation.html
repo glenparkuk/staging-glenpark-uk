@@ -1,0 +1,35 @@
+<ul id="menu" class="main-navigation js-main-navigation">
+{% for item in site.navigation_header %}
+    {% capture link %}{% link index.md %}{% endcapture %}
+
+    {% if item.id == 'work' %}{% capture link %}{% link work.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'books' %}{% capture link %}{% link books.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'testimonials' %}{% capture link %}{% link testimonials.md %}{% endcapture %}{% endif %}
+    {% if item.id == 'contact' %}{% capture link %}{% link contact.md %}{% endcapture %}{% endif %}
+
+    <li class="main-navigation__list-item js-menu-item{% if item.id == page.id %} current{% endif %}">
+        <a class="main-navigation__link" href="{{ link }}">{{ item.label | escape }}</a>
+
+        {% if item.sub_menu %}
+
+        {% include hamburger.html %}
+
+            <ul class="main-navigation__sub-menu js-sub-menu-item">
+            
+            {% for item_sm in item.sub_menu %}
+
+                <li class="main-navigation__list-item js-menu-item">
+                    <a class="main-navigation__link" href="{{ link | append: '#' | append: item_sm.id }}">{{ item_sm.label | escape }}</a>
+                </li>
+
+            {% endfor %}
+
+            </ul>
+
+        {% endif %}
+
+    </li>
+
+{% endfor %}
+
+</ul>

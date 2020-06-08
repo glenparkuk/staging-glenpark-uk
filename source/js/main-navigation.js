@@ -39,13 +39,23 @@
 
                 var $mainNavigation = this;
 
-                $menuItem.on('mouseenter mouseleave', function() {
+                $menuItem.on('mouseenter', function() {
 
                     if ($mainNavigation.isMobile() === true) return;
 
                     $subMenuItem = $menuItem.find('.' + $mainNavigation.subMenuClass);
     
-                    $subMenuItem.toggleClass('is-open');
+                    $subMenuItem.addClass('is-open');
+    
+                });
+
+                $menuItem.on('mouseleave', function() {
+
+                    if ($mainNavigation.isMobile() === true) return;
+
+                    $subMenuItem = $menuItem.find('.' + $mainNavigation.subMenuClass);
+    
+                    $subMenuItem.removeClass('is-open');
     
                 });
 

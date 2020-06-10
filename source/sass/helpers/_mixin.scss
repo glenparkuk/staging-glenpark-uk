@@ -9,6 +9,22 @@
 // .nav-item-bg {}
 // .sub-nav-item-bg {}
 
+@mixin main-navigation-list-item-ui($primary-color) {
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  &.current {
+    background-color: rgba($primary-color, .8);
+    
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+}
+
 @mixin main-navigation($primary-color, $secondary-color) {
 
 .main-navigation {
@@ -18,19 +34,32 @@
   }
 
   &__list-item {
-    background-color: rgba($background-dark-grey, 0.5);
 
-    &:hover {
-      background-color: $primary-color;
+    &:nth-child(1) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
     }
 
-    &.current {
-      background-color: rgba($primary-color, 0.6);
-      
-      &:hover {
-        background-color: $primary-color;
-      }
+    &:nth-child(2) {
+      background-color: rgba($background-dark-grey, 0.6);
+      @include main-navigation-list-item-ui($primary-color);
     }
+
+    &:nth-child(3) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(4) {
+      background-color: rgba($background-dark-grey, 0.6);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(5 ) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
   }
 
   &__sub-menu {

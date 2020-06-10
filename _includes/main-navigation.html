@@ -8,7 +8,7 @@
     {% if item.id == 'contact' %}{% capture link %}{% link contact.md %}{% endcapture %}{% endif %}
 
     <li class="main-navigation__list-item js-menu-item{% if item.id == page.id %} current{% endif %}">
-        <a class="main-navigation__link" href="{{ link }}">{{ item.label | escape }}</a>
+        <a class="main-navigation__link" href="{{ link }}">{{ item.label }}</a>
 
         {% if item.sub_menu %}
 
@@ -19,7 +19,7 @@
             {% for item_sm in item.sub_menu %}
 
                 <li class="main-navigation__list-item js-menu-item">
-                    <a class="main-navigation__link" href="{{ link | append: '#' | append: item_sm.id }}">{{ item_sm.label | escape }}</a>
+                    <a class="main-navigation__link" href="{{ link | append: '#' | append: item_sm.id }}">{{ item_sm.label }}</a>
                 </li>
 
             {% endfor %}

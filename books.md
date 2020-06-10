@@ -33,7 +33,9 @@ header_slider:
     <p><span class="boldsubtitle">The Art of Changing CD</span> &hellip; Four guided visualizations <span class="italicsubtitle"> by Glen Park</span>
         <br />
     </p>
-    <h6>Ashgrove Publishing  &nbsp; &nbsp; ISBN 1-85398-130-3 &nbsp; &nbsp; CD Published 2005</h6>
+    <div class="styled-tab">
+        <h6>Ashgrove Publishing  &nbsp; &nbsp; ISBN 1-85398-130-3 &nbsp; &nbsp; CD Published 2005</h6>
+    </div>
     <img src="{{ '/images/aoccdmodel.jpg' | relative_url }}" alt="The Art of Changing audio CD by Glen Park" style="padding-bottom:220px;" width="489" height="353" border="0" align="left" />
     <p>This CD complements Glen Park's book of the same name and contains audio tracks designed to be listened to while lying in semi-supine position. It has a four page insert illustrating the semi-supine position.</p>
     <p> The CD has a short introduction followed by four twenty minute guided visualisations.</p>

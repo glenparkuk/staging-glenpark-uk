@@ -27,7 +27,7 @@
     &__list-item {
         width: 100%;
         position: relative;
-        background-color: rgba($background-light-grey, 0.5);
+        background-color: rgba($background-light-grey, 0.75);
         transition: all .3s ease-in-out;
 
         @include breakpoint(small-tablet-landscape) {
@@ -67,16 +67,17 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: lighter !important; // TODO remove (layouts a tags are overrdding this...)
 
+        @include breakpoint(small-tablet-landscape) {
+            padding: 40px 0 28px 20px;
+        }
+
         &:hover {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: lighter;
             color: #ffffff;
             text-decoration: none;
         }
-
-        @include breakpoint(small-tablet-landscape) {
-            padding: 40px 0 20px 20px;
-        }
+        
     }
     &__sub-menu {
         transition: all .4s ease-in-out;
@@ -90,7 +91,7 @@
 
         @include breakpoint(small-tablet-landscape) {
             position: absolute;
-            top: 92px;
+            top: 100px;
         }
 
         // TODO use something like $this to reference main-navigation 

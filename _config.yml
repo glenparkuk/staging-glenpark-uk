@@ -47,7 +47,7 @@ navigation_header:
  - label: Welcome
    id: home
    sub_menu: 
- - label: Individual & Group Work
+ - label: Individual<br>& Group Work
    id: work
    sub_menu:
       - label: Individual Sessions

@@ -35,7 +35,9 @@
         {%- endif -%}
 
         {% if product.publication_date %}
+        <div class="styled-tab">
             <h6 class="product-card__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
+        </div>
         {%- endif -%}
 
         {% if product.description.size > 1 %}

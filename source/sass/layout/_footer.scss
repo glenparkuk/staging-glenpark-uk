@@ -1,0 +1,44 @@
+#socialmediacontainer {
+    height: 70px;
+    width: 250px;
+    padding-top: 10px;
+    background-image: url($site-url + $images + 'socialmediacontainerbg.png');
+    background-repeat: repeat-y;
+    background-position: left top;
+    padding-left: 10px;
+    border-radius:5px;
+}
+
+.footertext {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing:normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $text-grey;
+
+    a {
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing:normal;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #745ba7;
+        font-weight: bold;
+
+        &:hover {
+            color: #54388c;
+            font-weight: bold;
+        }
+    }
+
+}
+
+#footer2 {
+    height: 60px !important;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    background-color: #000000;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #745ba7;
+}

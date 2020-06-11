@@ -1,3 +1,13 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
+
 .site-bg {
     background-repeat: no-repeat;
     background-position: center top;

@@ -14,7 +14,11 @@
 				var target_top = target_offset.top;
 				//goto that anchor by setting the body scroll top to anchor top
 				$('html, body').animate({scrollTop:target_top}, 500);
-			});
+            });
+            
+
+           // TODO this is too specific
+           // we should create a re-usable bit of code for ths (maybe a link which tagets a data attribute or elsewhere on the page)
 		  $(".scroll-buy-now").click(function(event){
 		    //prevent the default action for the click event
 		    event.preventDefault();

@@ -237,3 +237,45 @@ blockquote {
 
 .list-icons { list-style: none; padding: 0; }
 .list-icons li { float: left; margin-right: 15px; }
+
+.quotecreditinline {
+	margin-left: 0px;
+	color: #999999;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 130%;
+}
+
+
+
+
+.quotecreditpopup {
+	margin-top: 20px;
+	margin-left: 0px;
+	display: block;
+	color: #7a7a7a;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.quotecreditblack {
+	display: block;
+	color: #000000;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.quotecreditwhite {
+	display: block;
+	color: #ffffff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.anchor-title { display: block; font: normal 18px/24px Arial, Helvetica, sans-serif; margin-bottom: .5em; }

@@ -1,7 +1,8 @@
 .home {
-	background-image: url($site-url + $images + 'bodybgimagepurple.jpg');
-	background-repeat: no-repeat;
-	background-position: center top;
+
+	&.site-bg {
+		background-image: url($site-url + $images + 'bodybgimagepurple.jpg');
+	}
 
 	a {
 		color: $home-secondary-color;

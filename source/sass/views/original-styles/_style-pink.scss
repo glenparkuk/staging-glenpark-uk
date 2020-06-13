@@ -1,7 +1,8 @@
 .contact {
-  background-image: url($site-url + $images + 'bodybgimagepink.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
+
+	&.site-bg {
+		background-image: url($site-url + $images + 'bodybgimagepink.jpg');
+	}
 
 
   a {

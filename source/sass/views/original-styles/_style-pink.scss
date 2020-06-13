@@ -4,17 +4,13 @@
 		background-image: url($site-url + $images + 'bodybgimagepink.jpg');
 	}
 
-
-  a {
-  	color: $contact-secondary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
-  a:hover {
-  	color: $contact-primary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
+	a {
+		color: $contact-secondary-color;
+		
+		&:hover {
+			color: $contact-primary-color;
+		}
+	}
 
   // TODO this could be improved - see mixin
 	@include main-navigation($contact-primary-color, $contact-secondary-color);

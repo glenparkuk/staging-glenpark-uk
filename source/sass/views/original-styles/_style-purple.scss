@@ -40,7 +40,13 @@
 		border-top-color: $home-secondary-color;
 	}
 
+	.blockquote {
+		color: #745ba7 !important;
+		border-left: 5px solid $home-secondary-color;
+	}
 
+
+	/* CUSTOM PURPLE STYLES */
 
 	// custom to the home page
 	.sidebar-itempurple {
@@ -59,12 +65,6 @@
 		margin-left: -35px;
 		padding: 0 0 10px 0;
 		outline: 0;
-	}
-
-
-	.blockquote {
-		color: #745ba7 !important;
-		border-left: 5px solid $home-secondary-color;
 	}
 
 }

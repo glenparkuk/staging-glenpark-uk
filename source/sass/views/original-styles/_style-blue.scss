@@ -22,7 +22,30 @@
 		}
 	}
 
-  
+	.runinheading {
+		color: #3583d5;
+	}
+
+	h1 {
+		color: #3583d5;
+	}
+
+	#header-border {
+		background: #000000 url($site-url + $images + 'blue/header-border.gif') repeat top left;
+	}
+
+	.blockquote {
+		color: #3583d5 !important;
+		border-left: 5px solid #3583d5;
+	}
+
+	#footer2 {
+		border-top-color: $work-primary-color;
+	}
+
+
+	
+  /* CUSTOM BLUE STYLES*/
 
   .boldsubtitle14blue{
   	padding-top: 10px;
@@ -39,8 +62,6 @@
   	color: #3583d5;
   }
 
-
-
   .subheadingblue {
   	font-family: Georgia, "Times New Roman", Times, serif;
   	font-style: italic;
@@ -53,29 +74,5 @@
   	font-weight: bold;
   	display: block;
   }
-
-  .runinheading {
-  	color: #3583d5;
-  }
-
-
-
-
-  h1 {
-  	color: #3583d5;
-  }
-
-  #header-border {
-  	background: #000000 url($site-url + $images + 'blue/header-border.gif') repeat top left;
-  }
-
-  .blockquote {
-  	color: #3583d5 !important;
-  	border-left: 5px solid #3583d5;
-  }
-
-	#footer2 {
-		border-top-color: $work-primary-color;
-	}
 
 }

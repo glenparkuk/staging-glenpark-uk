@@ -1,7 +1,9 @@
 .books {
-    // background-image: url($site-url + $images + 'bodybgimagelime.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center top;
+
+	// &.site-bg {
+	// 	background-image: url($site-url + $images + 'bodybgimagelime.jpg');
+	// }
+
   a {
   	color: $books-secondary-color;
   	font-weight: bold;

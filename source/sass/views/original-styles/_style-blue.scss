@@ -1,7 +1,9 @@
 .work {
-  background-image: url($site-url + $images + 'bodybgimageblue.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
+
+	&.site-bg {
+		background-image: url($site-url + $images + 'bodybgimageblue.jpg');
+	}
+
 
   a {
   	color: $work-secondary-color;

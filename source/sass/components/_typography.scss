@@ -67,9 +67,18 @@ p {
 
 p, ul, ol, blockquote { margin: 1em 0; }
 
-a:link, a:visited, a { text-decoration: none; }
-a:hover {
+a {
+  font-weight: bold;
+  letter-spacing: 0px;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:link, &:visited { 
+    text-decoration: none; 
+  }
 }
 
 

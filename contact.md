@@ -28,7 +28,7 @@ header_slider:
     </div>
     <p class="boldp">If you would like to know more about my work, would like to arrange an exploratory session or attend a workshop, or if you have questions about my books and CD, please contact me by clicking on the email link below.</p>
     <p>&nbsp;</p>
-    <div class="emaillinkbox">
+    <div class="email-link-box">
         <p class="pflat">Contact Glen by email&#58;
             <span class="large-italic"><a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">{{ site.email }}</a></span></p>
     </div>

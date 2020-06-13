@@ -21,10 +21,10 @@
 		}
 	}
 
-  .testimonialswrapper {
-  	width: 960px;
+  .testimonials-wrapper {
+	width: 100%;
+  	max-width: 960px;
   	margin: 0 auto;
-  	position: relative;
   	background-image: url($site-url + $images + 'topquotes.png');
   	background-repeat: no-repeat;
   	background-position: 0px 70px;

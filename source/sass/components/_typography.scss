@@ -320,3 +320,15 @@ blockquote {
   }
 
 }
+
+.light-italic {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing:normal;
+  font-style: italic;
+  color: #595959;
+  font-weight: lighter;
+  display: block;
+  padding: 30px 0px 0px 30px;
+}

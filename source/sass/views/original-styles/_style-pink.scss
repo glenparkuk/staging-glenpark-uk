@@ -21,89 +21,36 @@
 		}
 	}
 
-  a img, a img.preview {
-  	border: none;
-  	text-decoration: none;
-  	padding: 0;
-  	outline:none;
-  }
+	h1 {
+		color: #cc3e58;
+	}
 
+	#header-border {
+		background: #000000 url($site-url + $images + 'pink/header-border.gif') repeat top left;
+	}
 
-  img {
-  border:none;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  }
+	.runinheading {
+		color: #cc3e58;
+	}
 
+	.blockquote {
+		color: #cc3e58 !important;
+		border-left: 5px solid #cc3e58;
+	}
 
-  .predsmall {
-  	font-size: 11px;
-  	line-height: 120%;
-  	font-weight: normal;
-  	color: #830217;
-  	letter-spacing:normal;
-  	display: block;
-  	padding-top: 20px;
-  	padding-left: 60px;
-  }
+	#footer2 {
+		border-top-color: $contact-secondary-color;
+	}
 
+	.large-italic {
+		a {
+			color: #cc3e58;
 
-
-
-  .pemailitalic {
-  	font-family:Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	font-size: 18px;
-  	font-weight: bold;
-  	color: #7a7a7a;
-  	letter-spacing:normal;
-  	display: block;
-  	padding-top: 5px;
-  }
-
-  .pemailitalic a {
-  	font-family:Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	font-size: 18px;
-  	font-weight: bold;
-  	color: #cc3e58;
-  	letter-spacing:normal;
-  }
-
-  .pemailitalic a:hover {
-  	font-family:Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	font-size: 18px;
-  	font-weight: bold;
-  	color: #8f153e;
-  	letter-spacing:normal;
-  }
-
-  .runinheading {
-  	color: #cc3e58;
-  }
-
-
-
-
-
-
-  h1 {
-  	color: #cc3e58;
-  }
-
-  #header-border {
-  	background: #000000 url($site-url + $images + 'pink/header-border.gif') repeat top left;
-  }
-
-
-
-
-  .blockquote {
-  	color: #cc3e58 !important;
-  	border-left: 5px solid #cc3e58;
-  }
+			&:hover {
+				color: #8f153e;
+			}
+		}
+	}	
 
   .emaillinkbox {
   	display: block;
@@ -116,9 +63,5 @@
   	padding: 0px 0px 0px 120px;
   	margin-top: 15px;
   }
-
-  #footer2 {
-	border-top-color: $contact-secondary-color;
-}
 
 }

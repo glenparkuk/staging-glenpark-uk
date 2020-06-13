@@ -305,3 +305,18 @@ blockquote {
   font-weight: bold;
   font-size: 16px;
 }
+
+.large-italic {
+  display: block;
+  padding-top: 5px;
+
+  a {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing:normal;
+
+  }
+
+}

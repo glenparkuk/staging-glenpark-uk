@@ -40,11 +40,11 @@ header_slider:
     <p>This CD complements Glen Park's book of the same name and contains audio tracks designed to be listened to while lying in semi-supine position. It has a four page insert illustrating the semi-supine position.</p>
     <p> The CD has a short introduction followed by four twenty minute guided visualisations.</p>
     <ul>
-        <li><span class="bulletlime">&bull;</span> Introduction</li>
-        <li><span class="bulletlime">&bull;</span> Refining Self Awareness &#40;a body scan&#41;</li>
-        <li><span class="bulletlime">&bull;</span> Giving Alexander Directions</li>
-        <li><span class="bulletlime">&bull;</span> Working with Energy &#40;visualising energy flows to bring about the Alexander directions&#41;.</li>
-        <li><span class="bulletlime">&bull;</span> Energising the Chakras &#40;working with energy flows and the chakras&#41;.</li>
+        <li><span class="list-item-bullet">&bull;</span> Introduction</li>
+        <li><span class="list-item-bullet">&bull;</span> Refining Self Awareness &#40;a body scan&#41;</li>
+        <li><span class="list-item-bullet">&bull;</span> Giving Alexander Directions</li>
+        <li><span class="list-item-bullet">&bull;</span> Working with Energy &#40;visualising energy flows to bring about the Alexander directions&#41;.</li>
+        <li><span class="list-item-bullet">&bull;</span> Energising the Chakras &#40;working with energy flows and the chakras&#41;.</li>
     </ul>
     <p>The CD is professionally recorded and narrated by Glen Park.</p>
     <!--
@@ -79,7 +79,7 @@ header_slider:
         <p>This interview is compiled from discussions which took place during a series of lessons Glen Park had with Peggy during her training in November 1981, in which she tape-recorded their conversation. Peggy talks about her training and her early challenges as an Alexander teacher.</p>
         <p>There are only a few dozen left of these interviews which can now be bought through this website. The pamphlets are over thirty years old (almost antiques!) so there may be a little rust around the staples.</p>
         <div style="display:inline-block;overflow:auto;width:461px;">
-            <div class="blockquotelime">'An Interview with Peggy Williams' by Glen Park, is very helpful reading for all teacher-trainees<span style="text-align:right;float:right;" class="quotecreditinline"> &#126; John S Hunter,<br />Chairman 1990<br />Society of Teachers of the Alexander Technique</span></div>
+            <div class="blockquote">'An Interview with Peggy Williams' by Glen Park, is very helpful reading for all teacher-trainees<span style="text-align:right;float:right;" class="quotecreditinline"> &#126; John S Hunter,<br />Chairman 1990<br />Society of Teachers of the Alexander Technique</span></div>
             <br />
             <p><strong>Price: £2.50</strong></p>
             <div class="paypalbtn">

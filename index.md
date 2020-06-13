@@ -55,7 +55,7 @@ header_slider:
             <br/>
             <a href="#" data-featherlight="#about-glen" class="styled-link lightbox">Read more about Glen&hellip;</a>
             </p>
-        <blockquote class="blockquotepurple">Life is a continual process of change&hellip; Learning how to change and how to respond to change in a creative way is one of life’s most valuable skills</blockquote>
+        <blockquote class="blockquote">Life is a continual process of change&hellip; Learning how to change and how to respond to change in a creative way is one of life’s most valuable skills</blockquote>
         <p class="boldp">I offer <a href="{% link work.md %}#sessions" target="_self">Individual sessions</a> and <a href="{% link work.md %}#sessions" target="_self">Workshops</a> in both the Alexander Technique and Chakra Therapy and I also combine the two in Psychophysical Integration. I also offer training in Chakra Therapy for complementary health therapists and in Psychophysical Integration for Alexander Teachers.</p>
         <p>I have been teaching for over 25 years, including work in Australia, USA, Japan and Europe, and am a teaching member of <a href="http://www.ati-net.com" target="_blank">Alexander Technique International</a>, where I was delighted to give a keynote address at their conference in 2003.</p>
         <p class="boldp">If there are changes that you would like to make, from dealing with a painful physical problem to looking at more psychological and spiritual issues, I warmly invite you to explore the site and &frasl; or <a href="{% link contact.md %}" target="_self">contact me</a> to find out more.</p>

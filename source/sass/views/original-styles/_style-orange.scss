@@ -1,18 +1,16 @@
 .testimonials {
-  background-image: url($site-url + $images + 'bodybgimageorange.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
 
-  a {
-  	color: $testimonials-secondary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
-  a:hover {
-  	color: $testimonials-primary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
+	&.site-bg {
+		background-image: url($site-url + $images + 'bodybgimageorange.jpg');
+	}
+
+	a {
+		color: $testimonials-secondary-color;
+		
+		&:hover {
+			color: $testimonials-primary-color;
+		}
+	}
 
 	// TODO this could be improved - see mixin
 	@include main-navigation($testimonials-primary-color, $testimonials-secondary-color);
@@ -23,148 +21,39 @@
 		}
 	}
 
-  .testimonialswrapper {
-  	width: 960px;
-  	margin: 0 auto;
-  	position: relative;
-  	background-image: url($site-url + $images + 'topquotes.png');
-  	background-repeat: no-repeat;
-  	background-position: 0px 70px;
-  }
+	.runinheading {
+		color: #e6930f;
+	}
 
 
+	h1 {
+		color: #e6930f;
+	}
 
-  .padded {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #7a7a7a;
-  	font-size: 12px;
-  	padding: 1px 4px;
-  	display:block;
-  	margin-top: 20px;
-  	margin-left: -7px;
-  }
-
-  .padded a {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #ffffff;
-  	font-size: 12px;
-  	padding: 3px 5px;
-  	text-decoration: none;
-  	background-color: transparent;
-  	background-image: url($site-url + $images + 'textlinkbg.png');
-  	background-repeat: repeat;
-  	-moz-border-radius:4px;
-  	-khtml-border-radius:4px;
-  	-webkit-border-radius:4px;
-  	border-radius:4px;
-  }
-
-  .padded a:hover {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #ffffff;
-  	padding: 3px 5px;
-  	text-decoration: none;
-  	background-color: transparent;
-  	background-image: url($site-url + $images + 'textlinkbghover.png');
-  	background-repeat: repeat;
-  	-moz-border-radius:4px;
-  	-khtml-border-radius:4px;
-  	-webkit-border-radius:4px;
-  	border-radius:4px;
-  }
-
-  // p {
-  // 	font-size: 13px;
-  // 	line-height: 130%;
-  // 	font-weight: lighter;
-  // }
-
-  .runinheading {
-  	color: #e6930f;
-  	text-transform: lowercase;
-  	font-weight: bold;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	margin: 0;
-  	padding: 0;
-  	font-size: 2.2em;
-  }
+	#header-border {
+		background: #000000 url($site-url + $images + 'orange/header-border.gif') repeat top left;
+	}
 
 
-
-
-  #submenustrip {
-  	margin: 0px auto 20px auto;
-  	padding: 0 20px 0 0;
-  	position: relative;
-  	width: 940px;
-  	height: 40px;
-  	background-color: #e6930f;
-  	text-align: right;
-  	top: -20px;
-  	border-radius-bottomright: 5px;
-  	border-radius-bottomleft: 5px;
-  	}
-
-
-
-
-  h1 {
-  	color: #e6930f;
-  	text-transform: lowercase;
-  	font-weight: bold;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	margin: 0;
-  	padding: 0;
-  }
-
-  h1 a, .anchor-title { color: #e6930f !important; }
-  h1 a:hover, .anchor-title:hover { color: #c66713 !important; }
-
-  #header-border {
-  	background: #000000 url($site-url + $images + 'orange/header-border.gif') repeat top left;
-  }
-
-
-  #logoorange {
-  	margin: 0;
-  	position: relative;
-  	left: -20px;
-  	bottom: 60px;
-  }
-
-
-
-  .pitalictestimonial {
-  	font-family:Georgia, "Times New Roman", Times, serif;
-  	font-size: 16px;
-  	line-height: 150%;
-  	letter-spacing:normal;
-  	font-style: italic;
-  	color: #595959;
-  	font-weight: lighter;
-  	display: block;
-  	padding: 30px 0px 0px 30px;
-  }
-
-
-
-
-
-  .blockquoteorange {
-  	color: #e6930f !important;
-  	display: block;
-  	padding: 10px 30px 10px 15px;
-  	border-left: 5px solid #e6930f;
-  	margin: 30px 30px 30px 30px;
-  	font-style: italic;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-size: 20px;
-  	line-height: 130%;
-  }
+	.blockquote{
+		color: #e6930f !important;
+		border-left: 5px solid #e6930f;
+	}
 
 	#footer2 {
 		border-top-color: $testimonials-secondary-color;
 	}
+
+
+	/* CUSTOM ORANGE STYLES */
+
+	.testimonials-wrapper {
+		width: 100%;
+		  max-width: 960px;
+		  margin: 0 auto;
+		  background-image: url($site-url + $images + 'topquotes.png');
+		  background-repeat: no-repeat;
+		  background-position: 0px 70px;
+	  }
+
 }

@@ -1,0 +1,16 @@
+#tooltip{
+    position:absolute;
+    padding:5px 10px 5px 10px;
+    color:#ffffff;
+    display:none;
+    -moz-border-radius:4px;
+    -khtml-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    text-align: center;
+    line-height: 120%;
+    background-color: transparent;
+    background-image: url($site-url + $images + 'tooltipbg.png');
+    background-repeat: repeat;
+    font-size: 10px;
+}

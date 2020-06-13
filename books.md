@@ -40,11 +40,11 @@ header_slider:
     <p>This CD complements Glen Park's book of the same name and contains audio tracks designed to be listened to while lying in semi-supine position. It has a four page insert illustrating the semi-supine position.</p>
     <p> The CD has a short introduction followed by four twenty minute guided visualisations.</p>
     <ul>
-        <li><span class="bulletlime">&bull;</span> Introduction</li>
-        <li><span class="bulletlime">&bull;</span> Refining Self Awareness &#40;a body scan&#41;</li>
-        <li><span class="bulletlime">&bull;</span> Giving Alexander Directions</li>
-        <li><span class="bulletlime">&bull;</span> Working with Energy &#40;visualising energy flows to bring about the Alexander directions&#41;.</li>
-        <li><span class="bulletlime">&bull;</span> Energising the Chakras &#40;working with energy flows and the chakras&#41;.</li>
+        <li><span class="list-item-bullet">&bull;</span> Introduction</li>
+        <li><span class="list-item-bullet">&bull;</span> Refining Self Awareness &#40;a body scan&#41;</li>
+        <li><span class="list-item-bullet">&bull;</span> Giving Alexander Directions</li>
+        <li><span class="list-item-bullet">&bull;</span> Working with Energy &#40;visualising energy flows to bring about the Alexander directions&#41;.</li>
+        <li><span class="list-item-bullet">&bull;</span> Energising the Chakras &#40;working with energy flows and the chakras&#41;.</li>
     </ul>
     <p>The CD is professionally recorded and narrated by Glen Park.</p>
     <!--

@@ -71,16 +71,9 @@
   	background: #000000 url($site-url + $images + 'blue/header-border.gif') repeat top left;
   }
 
-  .blockquoteblue {
+  .blockquote {
   	color: #3583d5 !important;
-  	display: block;
-  	padding: 10px 30px 10px 15px;
   	border-left: 5px solid #3583d5;
-  	margin: 30px 30px 30px 30px;
-  	font-style: italic;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-size: 20px;
-  	line-height: 130%;
   }
 
 	#footer2 {

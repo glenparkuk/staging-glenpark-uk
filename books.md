@@ -79,7 +79,7 @@ header_slider:
         <p>This interview is compiled from discussions which took place during a series of lessons Glen Park had with Peggy during her training in November 1981, in which she tape-recorded their conversation. Peggy talks about her training and her early challenges as an Alexander teacher.</p>
         <p>There are only a few dozen left of these interviews which can now be bought through this website. The pamphlets are over thirty years old (almost antiques!) so there may be a little rust around the staples.</p>
         <div style="display:inline-block;overflow:auto;width:461px;">
-            <div class="blockquotelime">'An Interview with Peggy Williams' by Glen Park, is very helpful reading for all teacher-trainees<span style="text-align:right;float:right;" class="quotecreditinline"> &#126; John S Hunter,<br />Chairman 1990<br />Society of Teachers of the Alexander Technique</span></div>
+            <div class="blockquote">'An Interview with Peggy Williams' by Glen Park, is very helpful reading for all teacher-trainees<span style="text-align:right;float:right;" class="quotecreditinline"> &#126; John S Hunter,<br />Chairman 1990<br />Society of Teachers of the Alexander Technique</span></div>
             <br />
             <p><strong>Price: £2.50</strong></p>
             <div class="paypalbtn">

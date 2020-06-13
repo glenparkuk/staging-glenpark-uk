@@ -288,3 +288,15 @@ blockquote {
 }
 
 .anchor-title { display: block; font: normal 18px/24px Arial, Helvetica, sans-serif; margin-bottom: .5em; }
+
+.blockquote {
+  color: $grey;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  border-left: 5px solid $grey;
+  margin: 30px 30px 30px 30px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 130%;
+}

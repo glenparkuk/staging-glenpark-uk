@@ -30,7 +30,7 @@ header_slider:
     <p>&nbsp;</p>
     <div class="emaillinkbox">
         <p class="pflat">Contact Glen by email&#58;
-            <span class="pemailitalic"><a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">{{ site.email }}</a></span></p>
+            <span class="large-italic"><a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">{{ site.email }}</a></span></p>
     </div>
 </div>
 <!-- .content-block 1 ends -->

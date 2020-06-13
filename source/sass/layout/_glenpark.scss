@@ -15,21 +15,7 @@
 	}
 
 
-	.buycdbtn {
-	height: 28px;
-	width: 299px;
-	overflow: hidden;
-	display: block;
-	background-image: url($site-url + $images + 'buycdbtn.png');
-	background-repeat: no-repeat;
-	background-position: center top;
-	padding: 0;
-	margin: 20px 0px 20px 0px;
-	}
 
-.buycdbtn:hover{
-	background-position: center bottom;
-	}
 
 
 
@@ -61,35 +47,6 @@
 	float:left;
 	background-position: center bottom;
 	}
-
-
-
-
-
-.notificationbtn {
-	height: 66px;
-	width: 299px;
-	overflow: hidden;
-	display: block;
-	background-image: url($site-url + $images + 'notificationbtn.png');
-	background-repeat: no-repeat;
-	background-position: center top;
-	float:left;
-	padding: 0;
-	margin: 20px 0px 20px 0px;
-	}
-
-.notificationbtn:hover{
-	float:left;
-	background-position: center bottom;
-	}
-
-
-
-
-
-
-
 
 
 

@@ -57,3 +57,38 @@
     }
 
 }
+
+// TODO add to current clas structure or move somewhere more generic (class currently not in use)
+.notificationbtn {
+    height: 66px;
+    width: 299px;
+    overflow: hidden;
+    display: block;
+    background-image: url($site-url + $images + 'notificationbtn.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    float:left;
+    padding: 0;
+    margin: 20px 0px 20px 0px;
+    &:hover{
+        float:left;
+        background-position: center bottom;
+    }
+}
+
+
+
+.buycdbtn {
+	height: 28px;
+	width: 299px;
+	overflow: hidden;
+	display: block;
+	background-image: url($site-url + $images + 'buycdbtn.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 0;
+	margin: 20px 0px 20px 0px;
+	&:hover{
+		background-position: center bottom;
+	}
+}

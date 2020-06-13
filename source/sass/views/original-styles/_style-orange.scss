@@ -21,30 +21,40 @@
 		}
 	}
 
-  .testimonials-wrapper {
-	width: 100%;
-  	max-width: 960px;
-  	margin: 0 auto;
-  	background-image: url($site-url + $images + 'topquotes.png');
-  	background-repeat: no-repeat;
-  	background-position: 0px 70px;
-  }
+	.runinheading {
+		color: #e6930f;
+	}
 
 
-  .runinheading {
-  	color: #e6930f;
-  }
+	h1 {
+		color: #e6930f;
+	}
+
+	#header-border {
+		background: #000000 url($site-url + $images + 'orange/header-border.gif') repeat top left;
+	}
 
 
-  h1 {
-  	color: #e6930f;
-  }
+	.blockquote{
+		color: #e6930f !important;
+		border-left: 5px solid #e6930f;
+	}
 
-  #header-border {
-  	background: #000000 url($site-url + $images + 'orange/header-border.gif') repeat top left;
-  }
+	#footer2 {
+		border-top-color: $testimonials-secondary-color;
+	}
 
 
+	/* CUSTOM ORANGE STYLES */
+
+	.testimonials-wrapper {
+		width: 100%;
+		  max-width: 960px;
+		  margin: 0 auto;
+		  background-image: url($site-url + $images + 'topquotes.png');
+		  background-repeat: no-repeat;
+		  background-position: 0px 70px;
+	  }
 
   .pitalictestimonial {
   	font-family:Georgia, "Times New Roman", Times, serif;
@@ -58,16 +68,4 @@
   	padding: 30px 0px 0px 30px;
   }
 
-
-
-
-
-  .blockquote{
-  	color: #e6930f !important;
-  	border-left: 5px solid #e6930f;
-  }
-
-	#footer2 {
-		border-top-color: $testimonials-secondary-color;
-	}
 }

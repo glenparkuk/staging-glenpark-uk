@@ -4,123 +4,126 @@
         <a name="{{ product.id }}" id="{{ product.id }}"></a>
     {%- endif -%}
 
-    <div class="product-card__image-wrapper">
-
-        {% if product.image.src %}
-            <img src="{{ product.image.src | relative_url }}"
-            class="product-card__image"
-                {% if product.image.alt %}
-                    alt="{{product.image.alt}}"
-                {% endif %}
-            >
-        {%- endif -%}
-
-        {% comment %}
-        {% if product.display_email_signup %}
-            <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
-                <span class="notificationbtn"></span> 
-            </a>
-        {%- endif -%}
-        {% endcomment %}
+    {% if product.title_top == true%}
+    <div class="product-cart__top">
+        {%- include product-card-title.html -%}
     </div>
-
-    <div class="product-card__info">
-
-        {% if product.title %}
-            <h2 class="boldsubtitle product-card__title">{{ product.title }}{%- if product.subtitle == Nil or product.subtitle.length == 0 -%}<span class="italicsubtitle"> by {{ product.author }}</span>{%- endif -%}</h2>
-        {%- endif -%}
-
-        {%- if product.subtitle -%}
-            <h3 class="product-card__subtitle"><span class="subtitle">: {{ product.subtitle }}</span>{% if product.author %} <span class="italicsubtitle">by {{ product.author }}{%- endif -%}</span></h3>
-        {%- endif -%}
-
-        {% if product.publication_date %}
-        <div class="styled-tab">
-            <h6 class="product-card__isbn">{{ product.imprint }} {{product.publication_date}} &nbsp; ISBN {{ product.isbn }}</h6>
-        </div>
-        {%- endif -%}
-
-        {% if product.description.size > 1 %}
-            <div class="product-card__desc">
-                {%- for description_peice in product.description -%}
-                    {{ description_peice }}
-                {%- endfor -%}
-            </div>
-        {%- endif -%}
-
-        {% if product.price %}
-            <p class="product-card__price">
-                <strong>Price: £{{ product.price }}</strong>
-            </p>
-        {%- endif -%}
-
-        {% if product.display_buy_now_button %}
-        <div class="paypalbtn product-card__buy_now_btn">
-            <h4 style="float:left">
-                <strong>Buy <em>{% if product.title %}{{ product.title }}{%- endif -%}</em></strong>
-            </h4>
-
-            <input class="submit-btn scroll-buy-now" id="{{ product.buy_now_id }}" type="submit" value="Buy Now" />
-
-        </div>
-        {%- endif -%}
-
-        {% if product.note %}
-            {{ product.note }}
-        {%- endif -%}
-
-    </div>
-
-</div>
-
-{% if product.retailers %}
-
-<div class="content-block product-retailers">
-
-    {%- if product.retailers_cta -%}
-    
-    <div class="product-retailers__cta">
-        
-        <span>{{ product.retailers_cta }}</span>
-
-    </div>
-
     {%- endif -%}
 
-    <div class="product-retailers__links">
+    <div class="product-card__content">
 
-        {%- for retailer_hash in product.retailers | sort -%}
+        {% if product.image_size == 'large' %}
+        {% capture image-wrapper-modifier %} product-card__image-wrapper--large {% endcapture %}
+        {% endif %}
 
-        {%- assign retailer = retailer_hash -%}
+        <div class="product-card__image-wrapper {{ image-wrapper-modifier }}">
 
-        {%- if retailer.id -%}
+            {% if product.image.src %}
+                <img src="{{ product.image.src | relative_url }}"
+                class="product-card__image"
+                    {% if product.image.alt %}
+                        alt="{{product.image.alt}}"
+                    {% endif %}
+                >
+            {%- endif -%}
 
-        <div class="retailer-link__wrapper">
+            {% comment %}
+            {% if product.display_email_signup %}
+                <a href="mailto:{{ site.email }}" target="_blank" class="product-card__btn tooltip" title="Click here to request email notification of the publication of Chakra Healing Therapy">
+                    <span class="notificationbtn"></span> 
+                </a>
+            {%- endif -%}
+            {% endcomment %}
+        </div>
 
-            {%- capture retailer-img -%}<img class="retailer-link__logo" src="{{ retailer.id | prepend: '/images/retailers/' | append: '-400x210.png'| relative_url }}">{%- endcapture -%}
+        <div class="product-card__info">
 
-            {%- if retailer.url -%}
-    
-            <a href="{{ retailer.url | relative_url }}" {% if retailer.title %}title="{{retailer.title}}"{% endif %} target="_blank">
+            {% if product.title_top != true%}
+                {%- include product-card-title.html -%}
+            {%- endif -%}
 
-                {{ retailer-img }}
+            {% if product.description.size > 1 %}
+                <div class="product-card__desc">
+                    {%- for description_peice in product.description -%}
+                        {{ description_peice }}
+                    {%- endfor -%}
+                </div>
+            {%- endif -%}
 
-            </a>
+            {% if product.price %}
+                <p class="product-card__price">
+                    <strong>Price: £{{ product.price }}</strong>
+                </p>
+            {%- endif -%}
 
-            {%- else -%}
+            {% if product.display_buy_now_button %}
+            <div class="paypalbtn product-card__buy_now_btn">
+                <h4 style="float:left">
+                    <strong>Buy <em>{% if product.title %}{{ product.title }}{%- endif -%}</em></strong>
+                </h4>
 
-            {{ retailer-img }}
+                <input class="submit-btn scroll-buy-now" id="{{ product.buy_now_id }}" type="submit" value="Buy Now" />
 
+            </div>
+            {%- endif -%}
+
+            {% if product.note %}
+                {{ product.note }}
             {%- endif -%}
 
         </div>
-
-        {%- endif -%}
-                
-        {%- endfor -%}
-
     </div>
 
-</div>
+    {% if product.retailers %}
 
-{%- endif -%}
+    <div class="content-block product-retailers">
+    
+        {%- if product.retailers_cta -%}
+        
+        <div class="product-retailers__cta">
+            
+            <span>{{ product.retailers_cta }}</span>
+    
+        </div>
+    
+        {%- endif -%}
+    
+        <div class="product-retailers__links">
+    
+            {%- for retailer_hash in product.retailers | sort -%}
+    
+            {%- assign retailer = retailer_hash -%}
+    
+            {%- if retailer.id -%}
+    
+            <div class="retailer-link__wrapper">
+    
+                {%- capture retailer-img -%}<img class="retailer-link__logo" src="{{ retailer.id | prepend: '/images/retailers/' | append: '-400x210.png'| relative_url }}">{%- endcapture -%}
+    
+                {%- if retailer.url -%}
+        
+                <a href="{{ retailer.url | relative_url }}" {% if retailer.title %}title="{{retailer.title}}"{% endif %} target="_blank">
+    
+                    {{ retailer-img }}
+    
+                </a>
+    
+                {%- else -%}
+    
+                {{ retailer-img }}
+    
+                {%- endif -%}
+    
+            </div>
+    
+            {%- endif -%}
+                    
+            {%- endfor -%}
+    
+        </div>
+    
+    </div>
+    
+    {%- endif -%}
+
+</div>

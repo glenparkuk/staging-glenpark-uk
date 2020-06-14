@@ -28,7 +28,7 @@ header_slider:
 <div class="clear"></div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<!-- .content-block 2 begins -->
+
 <div class="content-block">
         <!-- .content-block 3 ends -->
         <div class="clear"></div>
@@ -150,12 +150,7 @@ header_slider:
 <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>-->
-        </div>
-        <!-- <div style="float:left;padding:10px 0 0 40px;">
-
-Select Country
-
-</div> -->
+        <!-- <div style="float:left;padding:10px 0 0 40px;">-->
         <div class="clear"></div>
         <p class="form-error-contact">Having trouble using this form? Please <a href="mailto:{{ site.email }}" title="Let us know">let us know</a>.</p>
         <hr>

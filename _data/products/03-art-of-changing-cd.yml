@@ -1,0 +1,39 @@
+id: theartofchangingcd
+image:
+  src: /images/aoccdmodel.jpg
+  alt: The Art of Changing audio CD by Glen Park
+title: The Art of Changing CD
+subtitle: Four guided visualizations by Glen Park
+description: 
+  <p>This CD complements Glen Park's book of the same name and contains audio tracks designed to be listened to while lying in semi-supine position. It has a four page insert illustrating the semi-supine position.</p>
+  <p> The CD has a short introduction followed by four twenty minute guided visualisations.</p>
+  <ul>
+      <li>• Introduction</li>
+      <li>• Refining Self Awareness (a body scan)</li>
+      <li>• Giving Alexander Directions</li>
+      <li>• Working with Energy (visualising energy flows to bring about the Alexander directions).</li>
+      <li>• Energising the Chakras (working with energy flows and the chakras).</li>
+  </ul>
+  <p>The CD is professionally recorded and narrated by Glen Park.</p>
+author: Glen Park
+imprint: Ashgrove Publishing
+isbn: 1-85398-130-3
+publication_date: 2005
+price: "10.00"
+display_buy_now_button: true
+buy_now_id: buynowAOCAudioCD
+note: 
+  <p>If you are an Alexander Teacher and would like to buy 6+ copies for your pupils please <a href="mailto:contact@glenpark.uk" target="_blank" alt="Contact Glen Park">contact Glen Park</a> for a discount.</p>
+  <h3><strong>Free access to audio during Coronavirus crisis</strong></h3>
+  <p>Because of our current Coronavirus crisis, which means no-one can have Alexander Technique lessons and we can only work on ourselves, we have put a link to the guided visualisations on my audio CD. You can listen to them for free <a href="https://glenpark.uk/download/art-of-changing-cd" title="Listen to The Art of Changing CD on Soundcloud">here</a>, while you are lying in semi-supine. I hope you like them and you manage to stay well.</p>
+align: left
+retailers: 
+  - id: audible 
+    url: https://www.audible.co.uk/pd/The-Art-of-Changing-Audiobook/B08963LZNM
+    title: Audible
+  - id: amazon
+    url: https://www.amazon.co.uk/Art-Changing-Exploring-Alexander-Relationship/dp/1853981486/
+    title: Amazon
+retailers_cta: "Buy The Art of Changing audio CD now from the following retailers:"
+title_top: true
+image_size: large

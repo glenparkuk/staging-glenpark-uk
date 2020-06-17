@@ -1,15 +1,22 @@
 .product-card {
-    display: flex;
+    margin-bottom: rem(80px);
+
+    &__content {
+        display: flex;
+    }
 
     &__image-wrapper {
         width: calc(34% - 10px);
         padding-right: 10px;
+
+        &--large {
+            width: calc(75% - 10px);
+        }
     }
 
     &__image {
         width: 100%;
         height: auto;
-        max-width: 332px;
         margin-bottom: 25px;
     }
 
@@ -17,16 +24,22 @@
         width: 66%;
     }
 
+    &__title-wrapper {
+        margin-bottom: rem(25px);
+    }
+
     &__title {
         font-weight: 700; // .boldsubtitle
         font-family: inherit; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
         text-shadow: none; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
         font-style: normal; // TODO overriding h3 font styles - potentially remove once fonts have been reviewed
+        margin: 0;
         display: inline;
     }
 
     &__subtitle {
         display: inline;
+        margin: 0;
     }
 
     // TODO these styles could be imroved

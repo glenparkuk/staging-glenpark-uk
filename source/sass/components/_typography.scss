@@ -23,7 +23,7 @@ h2 {
   font-style: italic;
   font-weight: lighter;
   line-height: 120%;
-  left: 0p/x;
+  left: 0px;
   text-shadow: 2px 2px 2px #424242;
 }
 h3 {
@@ -41,8 +41,8 @@ h5 {
 h6 {
   font-size: 0.5em;
   margin: 5px 0px 0px 0px;
+  text-transform: uppercase;
 }
-
 
 ul { list-style: circle; padding-left: 40px; }
 ol { list-style: decimal; padding-left: 40px; }
@@ -67,9 +67,18 @@ p {
 
 p, ul, ol, blockquote { margin: 1em 0; }
 
-a:link, a:visited, a { text-decoration: none; }
-a:hover {
+a {
+  font-weight: bold;
+  letter-spacing: 0px;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:link, &:visited { 
+    text-decoration: none; 
+  }
 }
 
 
@@ -233,4 +242,93 @@ blockquote {
   margin: 0;
   padding: 0;
   font-size: 2.2em;
+}
+
+.list-icons { list-style: none; padding: 0; }
+.list-icons li { float: left; margin-right: 15px; }
+
+.quotecreditinline {
+	margin-left: 0px;
+	color: #999999;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 130%;
+}
+
+
+
+
+.quotecreditpopup {
+	margin-top: 20px;
+	margin-left: 0px;
+	display: block;
+	color: #7a7a7a;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.quotecreditblack {
+	display: block;
+	color: #000000;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.quotecreditwhite {
+	display: block;
+	color: #ffffff;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.anchor-title { display: block; font: normal 18px/24px Arial, Helvetica, sans-serif; margin-bottom: .5em; }
+
+.blockquote {
+  color: $grey;
+  display: block;
+  padding: 10px 30px 10px 15px;
+  border-left: 5px solid $grey;
+  margin: 30px 30px 30px 30px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.list-item-bullet {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.large-italic {
+  display: block;
+  padding-top: 5px;
+
+  a {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing:normal;
+
+  }
+
+}
+
+.light-italic {
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing:normal;
+  font-style: italic;
+  color: #595959;
+  font-weight: lighter;
+  display: block;
+  padding: 30px 0px 0px 30px;
 }

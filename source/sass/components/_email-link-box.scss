@@ -1,0 +1,11 @@
+.email-link-box {
+    display: block;
+    width: 280px;
+    height: 128px;
+    float: left;
+    background-image: url($site-url + $images + 'emailenvelope.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 0px 0px 0px 120px;
+    margin-top: 15px;
+}

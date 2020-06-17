@@ -1,18 +1,17 @@
 .work {
-  background-image: url($site-url + $images + 'bodybgimageblue.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
 
-  a {
-  	color: $work-secondary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
-  a:hover {
-  	color: $work-primary-color;
-  	font-weight: bold;
-  	letter-spacing: 0px;
-  }
+	&.site-bg {
+		background-image: url($site-url + $images + 'bodybgimageblue.jpg');
+	}
+
+
+	a {
+		color: $work-secondary-color;
+		
+		&:hover {
+			color: $work-primary-color;
+		}
+	}
 
     // TODO this could be improved - see mixin
 	@include main-navigation($work-primary-color, $work-secondary-color);
@@ -23,51 +22,35 @@
 		}
 	}
 
-  .padded {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #7a7a7a;
-  	font-size: 12px;
-  	padding: 1px 4px;
-  	display:block;
-  	margin-top: 20px;
-  	margin-left: -7px;
-  }
+	.runinheading {
+		color: #3583d5;
+	}
 
-  .padded a {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #ffffff;
-  	font-size: 12px;
-  	padding: 3px 5px;
-  	text-decoration: none;
-  	background-color: transparent;
-  	background-image: url($site-url + $images + 'textlinkbg.png');
-  	background-repeat: repeat;
-  	-moz-border-radius:4px;
-  	-khtml-border-radius:4px;
-  	-webkit-border-radius:4px;
-  	border-radius:4px;
-  }
+	h1 {
+		color: #3583d5;
+	}
 
-  .padded a:hover {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: #ffffff;
-  	padding: 3px 5px;
-  	text-decoration: none;
-  	background-color: transparent;
-  	background-image: url($site-url + $images + 'textlinkbghover.png');
-  	background-repeat: repeat;
-  	-moz-border-radius:4px;
-  	-khtml-border-radius:4px;
-  	-webkit-border-radius:4px;
-  	border-radius:4px;
-  }
+	#header-border {
+		background: #000000 url($site-url + $images + 'blue/header-border.gif') repeat top left;
+	}
+
+	.blockquote {
+		color: #3583d5 !important;
+		border-left: 5px solid #3583d5;
+	}
+
+	#footer2 {
+		border-top-color: $work-primary-color;
+	}
+
+	.list-item-bullet {
+		color: #3583d5;
+	}
+  
 
 
-  // p {
-  // 	font-size: 13px;
-  // 	line-height: 130%;
-  // 	font-weight: lighter;
-  // }
+
+  /* CUSTOM BLUE STYLES*/
 
   .boldsubtitle14blue{
   	padding-top: 10px;
@@ -78,15 +61,6 @@
   	line-height: 110%;
   	display: block;
   }
-
-
-  .bulletblue {
-  	color: #3583d5;
-  	font-weight: bold;
-  	font-size: 18px;
-  }
-
-
 
   .subheadingblue {
   	font-family: Georgia, "Times New Roman", Times, serif;
@@ -100,83 +74,5 @@
   	font-weight: bold;
   	display: block;
   }
-
-  .runinheading {
-  	color: #3583d5;
-  	text-transform: lowercase;
-  	font-weight: bold;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	margin: 0;
-  	padding: 0;
-  	font-size: 2.2em;
-  }
-
-
-
-
-  #submenustrip {
-  	margin: 0px auto 20px auto;
-  	padding: 0 20px 0 0;
-  	position: relative;
-  	width: 940px;
-  	height: 40px;
-  	background-color: #3583d5;
-  	text-align: right;
-  	top: -20px;
-  	-moz-border-radius-bottomright: 5px;
-  	-moz-border-radius-bottomleft: 5px;
-  	-webkit-border-bottom-right-radius: 5px;
-  	-webkit-border-bottom-left-radius: 4px;
-  	border-radius-bottomright: 5px;
-  	border-radius-bottomleft: 5px;
-  	-khtml-border-radius-bottomright: 5px;
-  	-khtml-border-radius-bottomleft: 5px;
-  	}
-
-
-
-
-  h1 {
-  	color: #3583d5;
-  	text-transform: lowercase;
-  	font-weight: bold;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-style: italic;
-  	margin: 0;
-  	padding: 0;
-  }
-
-  h1 a, .anchor-title { color: #3583d5 !important; }
-  h1 a:hover, .anchor-title:hover { color: #1c4575 !important; }
-
-  #header-border {
-  	background: #000000 url($site-url + $images + 'blue/header-border.gif') repeat top left;
-  }
-
-
-  #logoblue {
-  	margin: 0;
-  	position: relative;
-  	left: -20px;
-  	bottom: 60px;
-  }
-
-
-  .blockquoteblue {
-  	color: #3583d5 !important;
-  	display: block;
-  	padding: 10px 30px 10px 15px;
-  	border-left: 5px solid #3583d5;
-  	margin: 30px 30px 30px 30px;
-  	font-style: italic;
-  	font-family: Georgia, "Times New Roman", Times, serif;
-  	font-size: 20px;
-  	line-height: 130%;
-  }
-
-	#footer2 {
-		border-top-color: $work-primary-color;
-	}
 
 }

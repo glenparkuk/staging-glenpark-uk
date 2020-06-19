@@ -34,6 +34,9 @@ retailers:
   - id: amazon
     url: https://www.amazon.co.uk/Art-Changing-Exploring-Alexander-Relationship/dp/1853981486/
     title: Amazon
+  - id: apple-books
+    url: https://books.apple.com/gb/audiobook/art-changing-exploring-alexander-technique-its-relationship/id1515834229
+    title: Apple Books
 retailers_cta: "Buy The Art of Changing audio CD now from the following retailers:"
 title_top: true
 image_size: large

@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body {% if page.id %} class="{{ page.id }}" {% endif %}>  
+  <body {% if page.id %} class="{{ page.id }} site-bg" {% endif %}>  
 
     {%- if jekyll.environment == 'production' and site.url == site.production_url and site.google_tag_manager -%}
       {%- include google-tag-manager-noscript.html -%}
@@ -15,7 +15,7 @@
 
         <!-- TODO: make testimonials conform standard structure of all other pages -->
         {%- if page.id == 'testimonials' -%}
-          <div class="testimonialswrapper">
+          <div class="testimonials-wrapper">
         {%- else -%}
           <div class="wrapper">
         {%- endif -%}

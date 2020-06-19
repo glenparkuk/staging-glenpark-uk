@@ -3,3 +3,5 @@
 @import 'slick-carousel/slick/slick-theme.scss';
 @import 'featherlight/src/featherlight';
 @import "mailchimp";
+@import "hamburgers-settings"; //overrides the hamburgers settings included in the parent theme
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";

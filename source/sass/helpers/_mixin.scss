@@ -1,3 +1,87 @@
 @function rem($px, $base-font-size: $base-font-size) {
   @return ($px / $base-font-size) * 1rem;
 }
+
+
+
+// TODO this class structure is duplicated with main navigation
+// replace main nav css overrride logic with utility classes
+// .nav-item-bg {}
+// .sub-nav-item-bg {}
+
+@mixin main-navigation-list-item-ui($primary-color) {
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  &.current {
+    background-color: rgba($primary-color, .8);
+    
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+
+}
+
+@mixin main-navigation($primary-color, $secondary-color) {
+
+.main-navigation {
+  background-color: $primary-color;
+  @include breakpoint(small-tablet-landscape) {
+    background-color: transparent;
+  }
+
+  &__list-item {
+
+    &:nth-child(1) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(2) {
+      background-color: rgba($background-dark-grey, 0.6);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(3) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(4) {
+      background-color: rgba($background-dark-grey, 0.6);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+    &:nth-child(5 ) {
+      background-color: rgba($background-dark-grey, 0.45);
+      @include main-navigation-list-item-ui($primary-color);
+    }
+
+  }
+
+  &__sub-menu {
+
+    .main-navigation__list-item {
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-weight: bold; // TODO would be goo dif this coud be removed
+    
+    &:hover {
+      color:$white;
+    }
+  };
+}
+
+}

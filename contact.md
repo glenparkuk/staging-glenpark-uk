@@ -23,12 +23,14 @@ header_slider:
     <p class="runinheading">get in touch&hellip;</p>
     <div class="clear"></div>
     <p>&nbsp;</p>
-    <h6>Contact Glen Park &#126; Author, Teacher and Therapist</h6>
+    <div class="styled-tab">
+      <h6>Contact Glen Park &#126; Author, Teacher and Therapist</h6>
+    </div>
     <p class="boldp">If you would like to know more about my work, would like to arrange an exploratory session or attend a workshop, or if you have questions about my books and CD, please contact me by clicking on the email link below.</p>
     <p>&nbsp;</p>
-    <div class="emaillinkbox">
+    <div class="email-link-box">
         <p class="pflat">Contact Glen by email&#58;
-            <span class="pemailitalic"><a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">{{ site.email }}</a></span></p>
+            <span class="large-italic"><a href="mailto:{{ site.email }}" class="tooltip" title="Send a direct email to Glen">{{ site.email }}</a></span></p>
     </div>
 </div>
 <!-- .content-block 1 ends -->

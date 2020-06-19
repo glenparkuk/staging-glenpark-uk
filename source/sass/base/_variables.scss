@@ -4,9 +4,53 @@ $max-width: 1180px;
 $site-url: 'https://glenpark.uk/';
 $images: 'images/';
 
+// primal colors
+$white: #ffffff;
+$white-smoke: #f1f1f1;
+$silver: #C0C0C0;
+$nobel: #999999;
+$grey: #7a7a7a;
+$charcoal: #424242;
 
-// COLORS
 
+
+// custom colors
 $maron: #5C020C;
+$daisy: #54388c;
+$pink-chalk: #7660a3; $scampi: #745ba7;
+$bahama-blue: #1C4575;
+$royal-blue: #3583d5;
+$christi: #779D1E;
+$olive: #466b00;
+$gamboge: #e6930f;
+$chocolate: #c66713;
+$mandy: #CC3E58;
+$falu-red: #8f153e;
 
+// primary view colors
+$home-primary-color: $daisy;
+$work-primary-color: $bahama-blue;
+$books-primary-color: $olive;
+$testimonials-primary-color: $chocolate;
+$contact-primary-color: $falu-red;
+
+// secondary view colors:
+$home-secondary-color: $scampi;
+$work-secondary-color: $royal-blue;
+$books-secondary-color: $christi;
+$testimonials-secondary-color: $gamboge;
+$contact-secondary-color: $mandy;
+
+// text colors:
+$text-grey: $grey; // remove one of these
+$text-light-grey: $nobel; // remove one of these
+
+// backgrounds
+$background-extra-light-grey: $white-smoke;
+$background-light-grey: $silver;
+$background-grey: $grey;
+$background-dark-grey: $charcoal;
+
+
+// brand colors
 $inner-traditions-color: $maron;

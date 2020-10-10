@@ -54,3 +54,11 @@ $background-dark-grey: $charcoal;
 
 // brand colors
 $inner-traditions-color: $maron;
+
+// override Boostrap defaults widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px // 1140px
+);

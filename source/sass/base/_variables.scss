@@ -10,7 +10,9 @@ $white-smoke: #f1f1f1;
 $silver: #C0C0C0;
 $nobel: #999999;
 $grey: #7a7a7a;
+$mortar: #595959;
 $charcoal: #424242;
+$black: #000000;
 
 
 
@@ -27,23 +29,32 @@ $chocolate: #c66713;
 $mandy: #CC3E58;
 $falu-red: #8f153e;
 
-// primary view colors
-$home-primary-color: $daisy;
-$work-primary-color: $bahama-blue;
-$books-primary-color: $olive;
-$testimonials-primary-color: $chocolate;
-$contact-primary-color: $falu-red;
+// Purple Colors
+$purplePrimary: $daisy;
+$purpleSecondary: $scampi;
 
-// secondary view colors:
-$home-secondary-color: $scampi;
-$work-secondary-color: $royal-blue;
-$books-secondary-color: $christi;
-$testimonials-secondary-color: $gamboge;
-$contact-secondary-color: $mandy;
+// Blue Colors
+$primaryBlue: $bahama-blue;
+$secondaryBlue: $royal-blue;
+
+// Green Colors
+$primaryGreen: $olive;
+$secondaryGreen: $christi;
+
+// Orange Colors
+$primaryGreen: $chocolate;
+$secondaryGreen: $gamboge;
+
+// Pink Colors
+$primaryPink: $falu-red;
+$secondaryPink: $mandy;
 
 // text colors:
+$textWhite: $white;
+$text-dark-grey: $mortar;
 $text-grey: $grey; // remove one of these
 $text-light-grey: $nobel; // remove one of these
+$textBlack: $black;
 
 // backgrounds
 $background-extra-light-grey: $white-smoke;
@@ -62,3 +73,23 @@ $container-max-widths: (
   lg: 960px,
   xl: 960px // 1140px
 );
+
+
+/**
+ * View Colors
+ * TODO: Potentailly could be good to delete these and just use the primary and secondary colors
+ */
+
+// primary view colors
+$home-primary-color: $purplePrimary;
+$work-primary-color: $primaryBlue;
+$books-primary-color: $primaryGreen;
+$testimonials-primary-color: $primaryGreen;
+$contact-primary-color: $primaryPink;
+
+// secondary view colors:
+$home-secondary-color: $purpleSecondary;
+$work-secondary-color: $secondaryBlue;
+$books-secondary-color: $secondaryGreen;
+$testimonials-secondary-color: $secondaryGreen;
+$contact-secondary-color: $secondaryPink;

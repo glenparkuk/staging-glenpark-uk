@@ -1,0 +1,22 @@
+/**
+ * buttons
+*/
+.button-purple {
+    @include button(purpleSecondary, $purplePrimary);
+}
+
+.button-blue {
+    @include button(blueSecondary, $bluePrimary);
+}
+
+.button-green {
+    @include button(greenSecondary, $greenPrimary);
+}
+
+.button-orange {
+    @include button(orangeSecondary, $orangeSecondary);
+}
+
+.button-pink {
+    @include button(pinkSecondary, $pinkSecondary);
+}

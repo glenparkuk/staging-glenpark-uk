@@ -85,3 +85,22 @@
 }
 
 }
+
+/**
+ * Based of of style-link class
+ * TODO: remove styled-link class + images used for styled-link class (where are images even used!?)
+ */
+@mixin button($background, $backgroundHover) {
+  background-color: $background;
+  font-family: $secondaryFont; // TODO this should probably be removed
+  color: $textWhite;
+  font-size: 12px; // TODO potentially remove?
+  padding: 3px 5px;
+  border-radius:4px;
+  display: inline-block;
+
+  &:hover {
+    background-color: $backgroundHover;
+    text-decoration: none;
+  }
+}

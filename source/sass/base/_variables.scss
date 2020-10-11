@@ -66,12 +66,20 @@ $background-dark-grey: $charcoal;
 // brand colors
 $inner-traditions-color: $maron;
 
-// override Boostrap defaults widths
+// override Boostrap defaults breakpoints ad container widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 960px // 1140px
+  sm: 600px, // 540px
+  md: 720px, // 720px
+  lg: 840px, // 960px
+  xl: 960px  // 1140px
+);
+
+$grid-breakpoints: (
+  xs: 0,	 // 0
+  sm: 600px, // 576px
+  md: 720px, // 768px
+  lg: 840px, // 992px
+  xl: 960px // 1200px
 );
 
 

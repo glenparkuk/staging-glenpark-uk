@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-size: $h2fontSize;
+  font-size: $h2FontSize;
   font-family: $primaryFont;
   font-style: italic;
   font-weight: lighter;
@@ -27,19 +27,19 @@ h2 {
   text-shadow: 2px 2px 2px #424242;
 }
 h3 {
-  font-size: $h3fontSize;
+  font-size: $h3FontSize;
   margin: 20px 0;
 }
 h4 {
-  font-size: $h4fontSize;
+  font-size: $h4FontSize;
   margin: 1.33em 0;
 }
 h5 {
-  font-size: $h5fontSize;
+  font-size: $h5FontSize;
   margin: 1.67em 0;
 }
 h6 {
-  font-size: $h6fontSize;
+  font-size: $h6FontSize;
   margin: 5px 0px 0px 0px;
   text-transform: uppercase;
 }

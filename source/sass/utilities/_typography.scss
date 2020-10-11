@@ -1,6 +1,18 @@
 /**
  * font sizes
 */
+.p-font-size {
+    font-size: $pFontSize;
+}
+
+.p-font-size-large {
+    font-size: $pFontSizeLarge;
+}
+
+.p-font-size-small {
+    font-size: $pFontSizeSmall;
+}
+
 .h1-font-size {
     font-size: $h1FontSize;
 }

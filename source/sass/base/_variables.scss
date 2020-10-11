@@ -34,20 +34,20 @@ $purplePrimary: $daisy;
 $purpleSecondary: $scampi;
 
 // Blue Colors
-$primaryBlue: $bahama-blue;
-$secondaryBlue: $royal-blue;
+$bluePrimary: $bahama-blue;
+$blueSecondary: $royal-blue;
 
 // Green Colors
-$primaryGreen: $olive;
-$secondaryGreen: $christi;
+$greenPrimary: $olive;
+$greenSecondary: $christi;
 
 // Orange Colors
-$primaryGreen: $chocolate;
-$secondaryGreen: $gamboge;
+$orangePrimary: $chocolate;
+$orangeSecondary: $gamboge;
 
 // Pink Colors
-$primaryPink: $falu-red;
-$secondaryPink: $mandy;
+$pinkPrimary: $falu-red;
+$pinkSecondary: $mandy;
 
 // text colors:
 $textWhite: $white;
@@ -90,14 +90,14 @@ $grid-breakpoints: (
 
 // primary view colors
 $home-primary-color: $purplePrimary;
-$work-primary-color: $primaryBlue;
-$books-primary-color: $primaryGreen;
-$testimonials-primary-color: $primaryGreen;
-$contact-primary-color: $primaryPink;
+$work-primary-color: $bluePrimary;
+$books-primary-color: $greenPrimary;
+$testimonials-primary-color: $orangePrimary;
+$contact-primary-color: $pinkPrimary;
 
 // secondary view colors:
 $home-secondary-color: $purpleSecondary;
-$work-secondary-color: $secondaryBlue;
-$books-secondary-color: $secondaryGreen;
-$testimonials-secondary-color: $secondaryGreen;
-$contact-secondary-color: $secondaryPink;
+$work-secondary-color: $blueSecondary;
+$books-secondary-color: $greenSecondary;
+$testimonials-secondary-color: $orangeSecondary;
+$contact-secondary-color: $pinkSecondary;

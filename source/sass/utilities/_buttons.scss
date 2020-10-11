@@ -6,17 +6,17 @@
 }
 
 .button-blue {
-    @include button(blueSecondary, $bluePrimary);
+    @include button($blueSecondary, $bluePrimary);
 }
 
 .button-green {
-    @include button(greenSecondary, $greenPrimary);
+    @include button($greenSecondary, $greenPrimary);
 }
 
 .button-orange {
-    @include button(orangeSecondary, $orangeSecondary);
+    @include button($orangeSecondary, $orangeSecondary);
 }
 
 .button-pink {
-    @include button(pinkSecondary, $pinkSecondary);
+    @include button($pinkSecondary, $pinkSecondary);
 }

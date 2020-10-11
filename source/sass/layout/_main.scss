@@ -41,3 +41,14 @@ body {
     font-size: 13px;
     line-height:150%;
   }
+
+
+  .image-overflow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+        z-index: -1;
+    }
+}

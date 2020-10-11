@@ -19,10 +19,10 @@ header_slider:
 <div class="row">
     <div class="col-lg-8" id="main-content">
         <main class="article-content">
-            <div class="d-none d-md-flex d-lg-flex" style="width:190px;height:285px;float:left;justify-content: center;">
-                <img src="{{ '/assets/img/glen-park-portrait.jpg' | relative_url }}" style="align-self: flex-start;z-index:-1">
+            <div class="d-none d-md-flex d-lg-flex float-left container-profile-glen">
+                <img src="{{ '/assets/img/glen-park-portrait.jpg' | relative_url }}">
             </div>
-            <p><span class="runinheading">Welcome&hellip;</span> I&#39;m Glen Park.
+            <p class="boldp"><span class="runinheading">Welcome&hellip;</span> I&#39;m Glen Park.
             <br />Are there changes you would like to make in your life&#63;
             <br />Some people want to achieve excellence in their chosen field such as sports, music or acting. Others want to make changes in their personal lives or may wish for more inward change, to be happier, more peaceful or loving. If we look closely at ourselves and at our lives, there is usually something we would like to change.</p>
             <p>I discovered the Alexander Technique when I was working in the Theatre as an actress and writer, suffering from chronic back pain and looking for how I could change that. It helped me develop a strong back and much more&#33; I was so enthusiastic about the principles and practice that I decided to become a teacher.</p>

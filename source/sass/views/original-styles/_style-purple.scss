@@ -51,19 +51,21 @@
 	// custom to the home page
 	.sidebar-itempurple {
 		float: left;
-		width: 230px;
+		width: 100%;
 		margin-bottom: 20px;
 		padding: 20px 35px 20px 35px;
-		background-image: url($site-url + $images + 'sidebarpurplebg.png');
-		background-repeat: repeat-y;
+		background: rgb(136,172,192);
+		background: linear-gradient(90deg, rgba(136,172,192,0.4920343137254902) 0%, rgba(107,50,149,1) 100%);
+		//background-image: url($site-url + $images + 'sidebarpurplebg.png');
+		//background-repeat: repeat-y;
+		//background-position: right top;
 		border-radius:5px;
-		background-position: right top;
 	}
 
 
 	.sidebartitleimagespurple {
 		margin-left: -35px;
-		padding: 0 0 10px 0;
+		//padding: 0 0 10px 0;
 		outline: 0;
 	}
 

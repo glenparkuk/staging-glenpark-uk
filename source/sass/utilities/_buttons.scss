@@ -2,7 +2,7 @@
  * buttons
 */
 .button-purple {
-    @include button(purpleSecondary, $purplePrimary);
+    @include button($purpleSecondary, $purplePrimary);
 }
 
 .button-blue {

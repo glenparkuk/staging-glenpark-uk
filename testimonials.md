@@ -18,7 +18,7 @@ header_slider:
   credit_class: quotecreditwhite
 ---
 
-<h2 class="runinheading">Testimonials&hellip;</h2>
+<h1 class="runinheading">Testimonials&hellip;</h1>
 <br>
 <div class="row decoration-quotes">
     <br>

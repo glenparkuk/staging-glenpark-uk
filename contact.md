@@ -19,7 +19,7 @@ header_slider:
 ---
 
 <main class="article-content">
-  <p class="runinheading">get in touch&hellip;</p>
+  <h1 class="runinheading">get in touch&hellip;</h1>
   <div class="clear"></div>
   <p>&nbsp;</p>
   <div class="styled-tab">

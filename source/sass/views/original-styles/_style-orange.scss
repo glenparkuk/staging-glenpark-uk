@@ -59,7 +59,7 @@
 }
 
 .decoration-quotes {
-	background: url($site-url + $images+ 'topquotes.png') no-repeat left top;
+	background: url($site-url + $images+ 'topquotes.png') no-repeat left 5px top 0;
 	padding-top:45px;
 	&:after {
 		content: "";
@@ -67,6 +67,6 @@
         min-height: 105px;
         display:block;
         width: 100%;
-		background: url($site-url + $images+ 'bottomquotes.png') no-repeat right top;
+		background: url($site-url + $images+ 'bottomquotes.png') no-repeat right 5px top 0;
 	}
 }

@@ -57,3 +57,16 @@
 	  }
 
 }
+
+.decoration-quotes {
+	background: url($site-url + $images+ 'topquotes.png') no-repeat left top;
+	padding-top:45px;
+	&:after {
+		content: "";
+        clear: both;
+        min-height: 105px;
+        display:block;
+        width: 100%;
+		background: url($site-url + $images+ 'bottomquotes.png') no-repeat right top;
+	}
+}

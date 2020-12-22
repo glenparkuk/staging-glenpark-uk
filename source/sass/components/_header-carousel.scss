@@ -2,6 +2,9 @@
  * Header Carousel Components
  */
 
+$navigationBreakpointSmall: "large-handset-landscape";
+$navigationBreakpointLarge: "small-tablet-landscape";
+
 .header-carousel {
   height: auto;
   background-color: black;
@@ -19,46 +22,77 @@
 
 
 .header-carousel-slide {
-  display: block;
-  height: auto;
-  margin: auto;
+  height: 100%;
+  position: relative;
 
-  &__wrapper {
-    position: relative;
-    max-width: 1300px;
-    margin: auto;
+  &__background {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
   &__background-image {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
   }
 
   &__content {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 1300px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right:0;
-
+    width: 100%;
+    max-width: rem(960px);
+    margin: rem(40px) auto;
+    padding: 0 rem(25px);
   }
 
-  &__site-logo {
-    margin-top: -60px;
-    padding-left: 150px;
+  &__site-logo-wrapper {
+    width: 30%;
+    display: none;
+
+    @include breakpoint($navigationBreakpointSmall) {
+      display: block;
+    }
+
+    @include breakpoint($navigationBreakpointLarge) {
+      width: 50%;
+      margin-right: -90px;
+      margin-top: -50px;
+    }
+  }
+
+  &__site-logo-link {}
+
+  &__site-logo-image {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    @include breakpoint($navigationBreakpointLarge) {
+      max-width: 500px;
+    }
   }
 
   &__quote {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: -100px;
-    margin-left: -120px;
-    z-index: 1;
-    max-width: 600px;
+    width: 100%;
+    @include breakpoint($navigationBreakpointSmall) {
+      width: 70%;
+    }
   }
 
 }

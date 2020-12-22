@@ -18,12 +18,14 @@
                     {%- for slide in slider -%}
 
                         <div class="header-carousel-slide">
-                            <div class="header-carousel-slide__wrapper">
+                            <div class="header-carousel-slide__background">
                                 <img class="header-carousel-slide__background-image" src="{{ slide.img | prepend: '/images/' | relative_url }}" title="{{ slide.quote }}">
+                            </div>
+                            <div class="header-carousel-slide__wrapper">
                                 <div class="header-carousel-slide__content">
-                                    <div class="header-carousel-slide__site-logo">
-                                        <a href="{% link index.md %}">
-                                            <img src="{{ '/images/chakraslogopurple.png' | relative_url }}" alt="" />
+                                    <div class="header-carousel-slide__site-logo-wrapper">
+                                        <a href="{% link index.md %}" class="header-carousel-slide__site-logo-link">
+                                            <img src="{{ '/images/chakraslogopurple.png' | relative_url }}" alt="" class="header-carousel-slide__site-logo-image"/>
                                         </a>
                                     </div>
                                     <div class="header-carousel-slide__quote">

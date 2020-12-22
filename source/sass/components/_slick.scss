@@ -1,0 +1,13 @@
+// make slick slides use height 100%
+.slick-track{
+    display: flex;
+
+    .slick-slide {
+      height: auto;
+
+      > div {
+        height: 100%;
+      }
+
+    }
+  }

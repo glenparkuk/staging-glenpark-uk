@@ -1,11 +1,8 @@
 <!-- start workshop script and mailchimp signup -->
-<div class="wrapper">
-    <div class="clear" style="padding-top:50px;"></div>
-    <div style="width:50%;float:left;">
-    </div>
-    <div style="width:50%;float:left;">
+<div class="container">
+    <div class="row">
         <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
+        <div id="mc_embed_signup" class="col-12 col-md-6">
             <form action="https://glenpark.us8.list-manage1.com/subscribe/post?u=bc000d7790b17065a89a93502&amp;id=cfcfd80cb3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <h2>Get Updates</h2>
                 <div class="mc-field-group">
@@ -78,7 +75,7 @@
         try {
             err_style = mc_custom_error_style;
         } catch (e) {
-            err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+            err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;} #mc_embed_signup {padding: 0 0 100px;}';
         }
         var head = document.getElementsByTagName('head')[0];
         var style = document.createElement('style');

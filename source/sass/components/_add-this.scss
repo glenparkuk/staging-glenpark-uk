@@ -1,10 +1,13 @@
-#socialmediacontainer {
-    height: 70px;
-    width: 250px;
-    padding-top: 10px;
-    background-image: url($site-url + $images + 'socialmediacontainerbg.png');
-    background-repeat: repeat-y;
-    background-position: left top;
-    padding-left: 10px;
+.add-this-icons {
+    background-color: rgba($background-dark-grey, .4);
+    padding: rem(10px);
+    color: $white;
     border-radius:5px;
+    margin-bottom: rem(20px);
+
+    &__text {
+        margin: 0;
+        font-style: italic;
+        font-family: $primaryFont;
+    }
 }

@@ -1,0 +1,142 @@
+/**
+ * font sizes
+*/
+.p-font-size {
+    font-size: $pFontSize;
+}
+
+.p-font-size-large {
+    font-size: $pFontSizeLarge;
+}
+
+.p-font-size-small {
+    font-size: $pFontSizeSmall;
+}
+
+.h1-font-size {
+    font-size: $h1FontSize;
+}
+
+.h2-font-size {
+    font-size: $h2FontSize;
+}
+
+.h3-font-size {
+    font-size: $h3FontSize;
+}
+
+.h4-font-size {
+    font-size: $h4FontSize;
+}
+
+.h5-font-size {
+    font-size: $h5FontSize;
+}
+
+.h6-font-size {
+    font-size: $h6FontSize;
+}
+
+
+/**
+ * font styles
+*/
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+
+/**
+ * text colors
+*/
+
+.text-white {
+    color: $textWhite;
+}
+
+// TODO remove usages of 2 out of 3 grey. try to have one text grey.
+
+.text-light-grey {
+    color: $text-grey;
+}
+
+.text-grey {
+    color: $text-grey;
+}
+
+.text-dark-grey {
+    color: $text-dark-grey;
+}
+
+.text-black {
+    color: $textBlack;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+.text-blue {
+    color: $bahama-blue;
+}
+
+.text-green {
+    color: $olive;
+}
+
+.text-orange {
+    color: $purple;
+}
+
+.text-pink {
+    color: $bahama-blue;
+}
+
+
+/**
+ * link colors
+*/
+.link-purple {
+    color: $purpleSecondary;
+    &:hover {
+        color: $purplePrimary;
+    }
+}
+
+.link-blue {
+    color: blueSecondary;
+    &:hover {
+        color: bluePrimary;
+    }
+}
+
+.link-green {
+    color: greenSecondary;
+    &:hover {
+        color: greenPrimary;
+    }
+}
+
+.link-orange {
+    color: orangeSecondary;
+    &:hover {
+        color: orangePrimary;
+    }
+}
+
+.link-pink {
+    color: pinkSecondary;
+    &:hover {
+        color: pinkPrimary;
+    }
+}
+
+
+.text-shadow {
+    text-shadow: 2px 2px 2px #424242;
+}

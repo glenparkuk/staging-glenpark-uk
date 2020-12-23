@@ -10,7 +10,9 @@ $white-smoke: #f1f1f1;
 $silver: #C0C0C0;
 $nobel: #999999;
 $grey: #7a7a7a;
+$mortar: #595959;
 $charcoal: #424242;
+$black: #000000;
 
 
 
@@ -27,23 +29,32 @@ $chocolate: #c66713;
 $mandy: #CC3E58;
 $falu-red: #8f153e;
 
-// primary view colors
-$home-primary-color: $daisy;
-$work-primary-color: $bahama-blue;
-$books-primary-color: $olive;
-$testimonials-primary-color: $chocolate;
-$contact-primary-color: $falu-red;
+// Purple Colors
+$purplePrimary: $daisy;
+$purpleSecondary: $scampi;
 
-// secondary view colors:
-$home-secondary-color: $scampi;
-$work-secondary-color: $royal-blue;
-$books-secondary-color: $christi;
-$testimonials-secondary-color: $gamboge;
-$contact-secondary-color: $mandy;
+// Blue Colors
+$bluePrimary: $bahama-blue;
+$blueSecondary: $royal-blue;
+
+// Green Colors
+$greenPrimary: $olive;
+$greenSecondary: $christi;
+
+// Orange Colors
+$orangePrimary: $chocolate;
+$orangeSecondary: $gamboge;
+
+// Pink Colors
+$pinkPrimary: $falu-red;
+$pinkSecondary: $mandy;
 
 // text colors:
+$textWhite: $white;
+$text-dark-grey: $mortar;
 $text-grey: $grey; // remove one of these
 $text-light-grey: $nobel; // remove one of these
+$textBlack: $black;
 
 // backgrounds
 $background-extra-light-grey: $white-smoke;
@@ -54,3 +65,39 @@ $background-dark-grey: $charcoal;
 
 // brand colors
 $inner-traditions-color: $maron;
+
+// override Boostrap defaults breakpoints ad container widths
+$container-max-widths: (
+  sm: 600px, // 540px
+  md: 720px, // 720px
+  lg: 840px, // 960px
+  xl: 960px  // 1140px
+);
+
+$grid-breakpoints: (
+  xs: 0,	 // 0
+  sm: 600px, // 576px
+  md: 720px, // 768px
+  lg: 840px, // 992px
+  xl: 960px // 1200px
+);
+
+
+/**
+ * View Colors
+ * TODO: Potentailly could be good to delete these and just use the primary and secondary colors
+ */
+
+// primary view colors
+$home-primary-color: $purplePrimary;
+$work-primary-color: $bluePrimary;
+$books-primary-color: $greenPrimary;
+$testimonials-primary-color: $orangePrimary;
+$contact-primary-color: $pinkPrimary;
+
+// secondary view colors:
+$home-secondary-color: $purpleSecondary;
+$work-secondary-color: $blueSecondary;
+$books-secondary-color: $greenSecondary;
+$testimonials-secondary-color: $orangeSecondary;
+$contact-secondary-color: $pinkSecondary;

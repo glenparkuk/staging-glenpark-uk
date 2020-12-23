@@ -1,7 +1,14 @@
 .featherlight {
 
-  .featherlight-close-icon {
-    right: 20px;
-  }
+	padding-right: 15px;
+    padding-left: 15px;
+
+	.featherlight-content {
+		@extend .container;
+	}
+
+  	.featherlight-close-icon {
+    	right: 20px;
+  	}
 
 }

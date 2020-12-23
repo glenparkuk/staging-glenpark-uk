@@ -40,10 +40,11 @@
 		border-left: 5px solid #e6930f;
 	}
 
-	#footer2 {
-		border-top-color: $testimonials-secondary-color;
+	.footer {
+		&__banner {
+			border-top-color: $testimonials-secondary-color;
+		}
 	}
-
 
 	/* CUSTOM ORANGE STYLES */
 

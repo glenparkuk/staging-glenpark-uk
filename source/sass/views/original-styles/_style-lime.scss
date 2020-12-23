@@ -34,10 +34,12 @@
 		border-left: 5px solid #779d1e;
 	}
 
-	#footer2 {
-		border-top-color: $books-secondary-color;
+	.footer {
+		&__banner {
+			border-top-color: $books-secondary-color;
+		}
 	}
-
+	
 	.list-item-bullet {
 		color:#779d1e;
 	}

@@ -40,6 +40,12 @@
 		border-top-color: $home-secondary-color;
 	}
 
+	.footer {
+		&__banner {
+			border-top-color: $home-secondary-color;
+		}
+	}
+
 	.blockquote {
 		color: #745ba7 !important;
 		border-left: 5px solid $home-secondary-color;

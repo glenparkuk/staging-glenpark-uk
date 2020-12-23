@@ -1,24 +1,36 @@
 <footer class="footer">
 
-    <div id="footer">
-        <div class="wrapper">
-            <div class="left">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md 5">
                 {% include add-this.html %}
             </div>
-            <div class="right">
+            <div class="col-12 col-md-7 text-right">
                 {% include footer-navigation.html %}
-                <p class="footertext">© Copyright 2011 Glen Park &#126; &lsquo;The Art of Changing&rsquo; </p>
+                <p>© Copyright 2011 Glen Park &#126; &lsquo;The Art of Changing&rsquo; </p>
             </div>
         </div>
     </div>
 
-    <div id="footer2">
-        <div class="wrapper">
-            <div id="toplinkcontainer"><a href="#top" class="scroll"><img src="{{ '/images/topicon.png' | relative_url }}" alt="" /></a></div>
-            <div class="atilogocontainer"><a href="http://www.ati-net.com" class="tooltip" target="_blank" title="Website of Alexander<br />Technique International"><img src="{{ '/images/atilogo.png' | relative_url }}" alt="Alexander Technique International" /></a></div>
-            <div class="gaswooshcontainer"><a href="http://www.graphicalchemy.co.uk" target="_blank"><img src="{{ '/images/gaswooshicon.png' | relative_url }}" width="50" height="30" alt="Graphic Alchemy" /></a></div>
-            <p class="footercredittext">Creative website and blog design by <a href="http://www.graphicalchemy.co.uk" class="tooltip" title="Graphic Alchemy website" target="_blank">Graphic Alchemy</a></p>
+    <br>
+    <br>
+
+    <div class="footer__banner background-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer__icons">
+                        <a class="footer__icon" href="#top" class="scroll"><img src="{{ '/images/topicon.png' | relative_url }}" alt="" /></a>
+                        <a class="footer__icon" href="http://www.ati-net.com" class="tooltip" target="_blank" title="Website of Alexander<br />Technique International"><img src="{{ '/images/atilogo.png' | relative_url }}" alt="Alexander Technique International" /></a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-8 d-flex justify-content-end align-items-center">
+                    <p class="p-font-size-small">Creative website and blog design by <a href="http://www.graphicalchemy.co.uk" class="tooltip" title="Graphic Alchemy website" target="_blank">Graphic Alchemy</a></p>
+                    <a class="" href="http://www.graphicalchemy.co.uk" target="_blank"><img src="{{ '/images/gaswooshicon.png' | relative_url }}" width="50" height="30" alt="Graphic Alchemy" /></a>
+                </div>
+            </div>
         </div>
     </div>
-    
+
 </footer>

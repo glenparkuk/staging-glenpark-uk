@@ -1,10 +1,5 @@
 .work {
 
-	&.site-bg {
-		background-image: url($site-url + $images + 'bodybgimageblue.jpg');
-	}
-
-
 	a {
 		color: $work-secondary-color;
 		
@@ -39,8 +34,14 @@
 		border-left: 5px solid #3583d5;
 	}
 
-	#footer2 {
-		border-top-color: $work-primary-color;
+	.footer {
+		&__banner {
+			border-top-color: $work-primary-color;
+		}
+
+		&:after {
+			filter: hue-rotate($blueHue);
+		}
 	}
 
 	.list-item-bullet {

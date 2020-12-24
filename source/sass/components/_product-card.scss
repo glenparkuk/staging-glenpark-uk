@@ -3,14 +3,21 @@
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
+        @include breakpoint(medium-handset-landscape) {
+            flex-wrap: nowrap;
+        }
     }
 
     &__image-wrapper {
-        width: calc(34% - 10px);
-        padding-right: 10px;
+        width: 100%;
+        @include breakpoint(medium-handset-landscape) {
+            width: calc(34% - 10px);
+            padding-right: 10px;
 
-        &--large {
-            width: calc(75% - 10px);
+            &--large {
+                width: calc(75% - 10px);
+            }
         }
     }
 
@@ -21,7 +28,10 @@
     }
 
     &__info {
-        width: 66%;
+        width: 100%;
+        @include breakpoint(medium-handset-landscape) {
+            width: 66%;
+        }
     }
 
     &__title-wrapper {

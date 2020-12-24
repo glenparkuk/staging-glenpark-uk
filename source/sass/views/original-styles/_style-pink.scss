@@ -1,9 +1,5 @@
 .contact {
 
-	&.site-bg {
-		background-image: url($site-url + $images + 'bodybgimagepink.jpg');
-	}
-
 	a {
 		color: $contact-secondary-color;
 		
@@ -38,8 +34,14 @@
 		border-left: 5px solid #cc3e58;
 	}
 
-	#footer2 {
-		border-top-color: $contact-secondary-color;
+	.footer {
+		&__banner {
+			border-top-color: $contact-secondary-color;
+		}
+
+		&:after {
+			filter: hue-rotate($pinkHue);
+		}
 	}
 
 	.large-italic {

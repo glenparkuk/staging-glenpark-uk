@@ -1,7 +1,12 @@
-.site-bg {
-    background-repeat: no-repeat;
-    background-position: center top;
+*, *:after, *:before {
+  box-sizing: border-box;
 }
+
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
 #content {
 	width: 100%;
@@ -26,6 +31,10 @@
 	width: 250px;
 	margin-bottom: 30px;
 	padding: 10px 25px 0 25px;
+}
+
+.max-width-none {
+  max-width: none;
 }
 
 

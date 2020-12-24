@@ -1,9 +1,5 @@
 .testimonials {
 
-	&.site-bg {
-		background-image: url($site-url + $images + 'bodybgimageorange.jpg');
-	}
-
 	a {
 		color: $testimonials-secondary-color;
 		
@@ -40,10 +36,15 @@
 		border-left: 5px solid #e6930f;
 	}
 
-	#footer2 {
-		border-top-color: $testimonials-secondary-color;
-	}
+	.footer {
+		&__banner {
+			border-top-color: $testimonials-secondary-color;
+		}
 
+		&:after {
+			filter: hue-rotate($orangeHue);
+		}
+	}
 
 	/* CUSTOM ORANGE STYLES */
 
@@ -56,4 +57,17 @@
 		  background-position: 0px 70px;
 	  }
 
+}
+
+.decoration-quotes {
+	background: url($site-url + $images+ 'topquotes.png') no-repeat left 5px top 0;
+	padding-top:45px;
+	&:after {
+		content: "";
+        clear: both;
+        min-height: 105px;
+        display:block;
+        width: 100%;
+		background: url($site-url + $images+ 'bottomquotes.png') no-repeat right 5px top 0;
+	}
 }

@@ -1,0 +1,13 @@
+.add-this-icons {
+    background-color: rgba($background-dark-grey, .4);
+    padding: rem(10px);
+    color: $white;
+    border-radius:5px;
+    margin-bottom: rem(20px);
+
+    &__text {
+        margin: 0;
+        font-style: italic;
+        font-family: $primaryFont;
+    }
+}

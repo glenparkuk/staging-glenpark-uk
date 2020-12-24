@@ -5,14 +5,35 @@ body {
     color: #7a7a7a;
     font-weight: normal;
     background-color: #ffffff;
+    box-sizing: border-box;  
   }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
   
   .wrapper {
     width: 960px;
     margin: 0 auto;
     position: relative;
+    
+
+    &--responsive {
+      width: 100%;
+      max-width: rem(960px);
+    }
+
   }
   
+  .content-block {
+    box-sizing: border-box;  
+    padding: 0 rem(20px);
+    @include  breakpoint(small-tablet-landscape) {
+      padding: 0;
+    }
+  }
+
 
   /**
   * THESE STYLES SEEM VERY SPECIFIC...?
@@ -25,3 +46,14 @@ body {
     font-size: 13px;
     line-height:150%;
   }
+
+
+  .image-overflow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+        z-index: -1;
+    }
+}

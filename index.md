@@ -20,7 +20,7 @@ header_slider:
     <div class="col-lg-8" id="main-content">
         <main class="article-content">
             <div class="d-none d-md-flex d-lg-flex float-left container-profile-glen">
-                <img src="{{ '/assets/img/glen-park-portrait.jpg' | relative_url }}">
+                <img src="{{ '/assets/img/glen-park-portrait.jpg' | relative_url }}" class="max-width-none">
             </div>
             <p class="boldp"><span class="runinheading">Welcome&hellip;</span> I&#39;m Glen Park.
             <br />Are there changes you would like to make in your life&#63;

@@ -52,4 +52,7 @@ header_slider:
         <br />
         <span class="quotecreditinline">&#126; Oliver Segal, barrister</span></p>
     </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="{{ '/assets/img/P1110540.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
+    </div>
 </div>

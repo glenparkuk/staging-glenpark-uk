@@ -17,16 +17,21 @@ header_slider:
   img: bg8.jpg
   credit_class: quotecreditwhite
 ---
+
 <div class="row">
   <div class="col-md-8">
     <div class="styled-tab">
-        <h6>Individual Teaching and Therapy Sessions</h6>
+      <h6>Individual Teaching and Therapy Sessions</h6>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 order-md-last">
+    <img src="{{ '/assets/img/P1110531.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
+  </div>
+  <div class="col-md-8">
     <h1>Individual Sessions&hellip;</h1>
     <p class="boldp">In these sessions I can give you personal attention and healing, focusing on your particular challenges and concerns. We begin by talking a little and then I will do practical hands-on work with you. Sessions last for about an hour and a quarter.</p>
-  </div>
-  <div class="col-md-4">
-    <!-- image -->
   </div>
 </div>
 <div class="row">
@@ -47,8 +52,15 @@ header_slider:
 <div class="row">
   <div class="col-md-8">
     <div class="styled-tab">
-        <h6>Workshops for Alexander Teachers</h6>
+      <h6>Workshops for Alexander Teachers</h6>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 order-md-last">
+    <img src="{{ '/assets/img/P1110555.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
+  </div>
+  <div class="col-md-8">
     <h1 class="h2-font-size">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</h1>
     <p class="boldsubtitle14blue">Introductory One Day Workshop</p>
     <p class="boldsubtitle14blue">Postgraduate Training: 8 weekend workshops over 9 months</p>

@@ -1,9 +1,5 @@
 .testimonials {
 
-	&.site-bg {
-		background-image: url($site-url + $images + 'bodybgimageorange.jpg');
-	}
-
 	a {
 		color: $testimonials-secondary-color;
 		
@@ -43,6 +39,10 @@
 	.footer {
 		&__banner {
 			border-top-color: $testimonials-secondary-color;
+		}
+
+		&:after {
+			filter: hue-rotate($orangeHue);
 		}
 	}
 

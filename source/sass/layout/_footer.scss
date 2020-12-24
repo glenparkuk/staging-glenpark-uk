@@ -1,10 +1,31 @@
 .footer {
+	position: relative;
+	overflow: visible;
     font-size: 12px;
     font-weight: normal;
     letter-spacing:normal;
     font-family: Arial, Helvetica, sans-serif;
 	color: $text-grey;
-	
+
+	&:after {
+		display: none;
+		content: '';
+		filter: hue-rotate($pinkHue);
+		opacity: 0.2;
+		background-image: url($site-url + $images + 'background-shell.png');
+		background-repeat: no-repeat;
+		bottom: 0;
+		right: 0;
+		width: 877px;
+		height: 559px;
+		position: absolute;
+		z-index: -1;
+
+		@include breakpoint(large-tablet) {
+			display: block;
+		}
+	}
+
 	&__banner {
 		padding-bottom: rem(20px);
 		border-top-width: 3px;

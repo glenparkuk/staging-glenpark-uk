@@ -1,9 +1,5 @@
 .books {
 
-	// &.site-bg {
-	// 	background-image: url($site-url + $images + 'bodybgimagelime.jpg');
-	// }
-
 	a {
 		color: $books-secondary-color;
 		
@@ -37,6 +33,10 @@
 	.footer {
 		&__banner {
 			border-top-color: $books-secondary-color;
+		}
+
+		&:after {
+			filter: hue-rotate($greenHue);
 		}
 	}
 	

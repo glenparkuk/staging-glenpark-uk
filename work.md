@@ -58,7 +58,7 @@ header_slider:
 </div>
 <div class="row">
   <div class="col-md-4 order-md-last">
-    <img src="{{ '/assets/img/P1110555.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
+    <img src="{{ '/assets/img/PICT0003.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
   </div>
   <div class="col-md-8">
     <h1 class="h2-font-size">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</h1>

@@ -8,6 +8,7 @@
 	color: $text-grey;
 
 	&:after {
+		display: none;
 		content: '';
 		background-image: url($site-url + $images + 'background-shell.png');
 		background-repeat: no-repeat;
@@ -19,6 +20,10 @@
 		height: 559px;
 		position: absolute;
 		z-index: -1;
+
+		@include breakpoint(large-tablet) {
+			display: block;
+		}
 	}
 
 	&__banner {

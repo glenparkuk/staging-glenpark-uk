@@ -44,6 +44,10 @@
 		&__banner {
 			border-top-color: $testimonials-secondary-color;
 		}
+
+		&:after {
+			filter: hue-rotate($orangeHue);
+		}
 	}
 
 	/* CUSTOM ORANGE STYLES */

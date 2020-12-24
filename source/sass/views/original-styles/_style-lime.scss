@@ -38,6 +38,10 @@
 		&__banner {
 			border-top-color: $books-secondary-color;
 		}
+
+		&:after {
+			filter: hue-rotate($greenHue);
+		}
 	}
 	
 	.list-item-bullet {

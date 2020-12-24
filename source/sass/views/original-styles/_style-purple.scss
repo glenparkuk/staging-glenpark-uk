@@ -44,6 +44,10 @@
 		&__banner {
 			border-top-color: $home-secondary-color;
 		}
+
+		&:after {
+			filter: hue-rotate($purpleHue);
+		}
 	}
 
 	.blockquote {

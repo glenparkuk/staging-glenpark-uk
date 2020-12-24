@@ -10,10 +10,10 @@
 	&:after {
 		display: none;
 		content: '';
+		filter: hue-rotate($pinkHue);
+		opacity: 0.2;
 		background-image: url($site-url + $images + 'background-shell.png');
 		background-repeat: no-repeat;
-		background-position: bottom right;
-		background-size: auto;
 		bottom: 0;
 		right: 0;
 		width: 877px;

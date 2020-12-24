@@ -43,6 +43,10 @@
 		&__banner {
 			border-top-color: $work-primary-color;
 		}
+
+		&:after {
+			filter: hue-rotate($blueHue);
+		}
 	}
 
 	.list-item-bullet {

@@ -42,6 +42,10 @@
 		&__banner {
 			border-top-color: $contact-secondary-color;
 		}
+
+		&:after {
+			filter: hue-rotate($pinkHue);
+		}
 	}
 
 	.large-italic {

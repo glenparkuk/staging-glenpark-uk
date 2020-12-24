@@ -25,9 +25,25 @@
 .retailer-link {
 
     &__wrapper {
-        box-sizing: border-box;
-        width: 25%;
-        padding: 0 15px;
+        width: 100%;
+        margin-bottom: rem(10px);
+
+        @include breakpoint(small-handset-landscape) {
+            width: calc(50% - 5px);
+
+            &:nth-child(odd) {
+                margin-right: 10px;
+            }
+
+        }
+        @include breakpoint(large-tablet) {
+            width: calc(25% - 7.5px);
+            margin-right: 10px;
+
+            &:last-child() {
+                margin-right: 0;
+            }
+        }
     }
 
     &__logo {

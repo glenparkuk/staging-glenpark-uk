@@ -1,99 +1,47 @@
-#socialmediacontainer {
-    height: 70px;
-    width: 250px;
-    padding-top: 10px;
-    background-image: url($site-url + $images + 'socialmediacontainerbg.png');
-    background-repeat: repeat-y;
-    background-position: left top;
-    padding-left: 10px;
-    border-radius:5px;
-}
-
-.footertext {
+.footer {
+	position: relative;
+	overflow: visible;
     font-size: 12px;
     font-weight: normal;
     letter-spacing:normal;
     font-family: Arial, Helvetica, sans-serif;
-    color: $text-grey;
+	color: $text-grey;
 
-    a {
-        font-size: 12px;
-        font-weight: normal;
-        letter-spacing:normal;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #745ba7;
-        font-weight: bold;
+	&:after {
+		display: none;
+		content: '';
+		filter: hue-rotate($pinkHue);
+		opacity: 0.2;
+		background-image: url($site-url + $images + 'background-shell.png');
+		background-repeat: no-repeat;
+		bottom: 0;
+		right: 0;
+		width: 877px;
+		height: 559px;
+		position: absolute;
+		z-index: -1;
 
-        &:hover {
-            color: #54388c;
-            font-weight: bold;
-        }
-    }
+		@include breakpoint(large-tablet) {
+			display: block;
+		}
+	}
 
-}
+	&__banner {
+		padding-bottom: rem(20px);
+		border-top-width: 3px;
+		border-top-style: solid;
+		border-top-color: $background-light-grey;
+	}
+	
 
-#footer {
-	height: 100px;
-	background: transparent;
-	padding: 100px 0px 30px 0px;
-	width: 100%;
-	float: left;
-}
+	// TODO convert to separate component file
+	&__icons {
+		display: flex;
+		margin-top: -10px;
+	}
 
+	&__icon {
+		padding-right: rem(20px);
+	}
 
-.footercredittext {
-	font-size: 11px;
-	font-weight: lighter;
-	letter-spacing:normal;
-	text-align: right;
-	margin-right: 50px;
-	line-height: 30px;
-}
-
-.gaswooshcontainer {
-	width: 50px;
-	height: 30px;
-	position: absolute;
-	display:block;
-	top: 0px;
-	right: 0px;
-}
-
-.atilogocontainer {
-	width: 85px;
-	height: 42px;
-	position: absolute;
-	display:block;
-	top: -30px;
-	left: 60px;
-}
-
-#toplinkcontainer {
-	height: 60px;
-	width: 40px;
-	position: absolute;
-	left: 0px;
-	top: -30px;
-}
-
-
-#footer .right {
-	text-align: right;
-	padding: 0;
-}
-
-#footer .left {
-    text-align: left;
-    padding: 0;
-}
-
-#footer2 {
-    height: 60px !important;
-    padding: 0px;
-    width: 100%;
-    float: left;
-    background-color: #000000;
-    border-top-width: 3px;
-    border-top-style: solid;
-    border-top-color: #745ba7;
 }

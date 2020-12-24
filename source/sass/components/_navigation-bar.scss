@@ -7,6 +7,10 @@
       
     @include breakpoint(small-tablet-landscape) {
         margin-top: -100px;
+        // Bootstrap .container styles
+        max-width: 960px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     &__navigation {
@@ -20,11 +24,11 @@
     &__info {
         order: 1;
         width: 100%;
-        max-width: 940px;
+        max-width: 960px;
         display: flex;
         justify-content: space-between;
         margin: auto;
-        padding: 0 20px 0 0;
+        padding: 0 20px;
         height: 40px;
         background-color: #745ba7;
         text-align: right;

@@ -61,7 +61,7 @@ header_slider:
     <img src="{{ '/assets/img/PICT0003.jpg' | relative_url }}" style="max-width:100%;height: auto;margin: auto;">
   </div>
   <div class="col-md-8">
-    <h1 class="h2-font-size">Postgraduate Courses for Alexander Teachers in Psychophysical Integration</h1>
+    <h1 class="h2-font-size">Postgraduate Courses for Alexander Teachers in Chakra Healing Therapy</h1>
     <p class="boldsubtitle14blue">Introductory One Day Workshop</p>
     <p class="boldsubtitle14blue">Postgraduate Training: 8 weekend workshops over 9 months</p>
     <p>These courses offer a way of understanding psychological and spiritual development, which is based on both Western researches into psychology and Eastern Spiritual traditions. Participants will learn to work with a model of the chakras in which they represent the developmental unfolding of consciousness from the infant to the adult and beyond. This conceptual framework is supported by research from Western theorists. In addition we will learn a way of hands-on working which enables us to consider the whole self in all its aspects, physical, emotional, mental, and spiritual. This framework will be used for work on the self, as well as for hands-on work with others.</p>

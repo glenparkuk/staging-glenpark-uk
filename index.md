@@ -32,7 +32,7 @@ header_slider:
             <p><a href="#" data-featherlight="#about-glen" class="styled-link lightbox">Read more about Glen&hellip;</a></p>
             <blockquote class="blockquote">Life is a continual process of change&hellip; Learning how to change and how to respond to change in a creative way is one of life’s most valuable skills</blockquote>
             <p>I offer <a href="{% link work.md %}#sessions" target="_self">Individual sessions</a> and <a href="{% link work.md %}#sessions" target="_self">Workshops</a> in both the Alexander Technique and Chakra Healing Therapy. I also offer training in Chakra Healing Therapy for Alexander Teachers and complementary health therapists.</p>
-            <p>I have been teaching for over 30 years, including work in the UK, Europe, United States, Australia and Japan and I am a teaching member of <a href="http://www.ati-net.com" target="_blank">Alexander Technique International</a>, where I was delighted to give a keynote address at their conference in 2003.</p>
+            <p>I have been teaching for over 30 years, including work in the UK, Europe, United States, Australia and Japan and I am a teaching member of <a href="https://www.alexandertechniqueinternational.com" target="_blank">Alexander Technique International</a>, where I was delighted to give a keynote address at their conference in 2003.</p>
             <p>If there are changes that you would like to make, from dealing with a painful physical problem to looking at more psychological and spiritual issues, I warmly invite you to explore the site and &frasl; or <a href="{% link contact.md %}" target="_self">contact me</a> to find out more.</p>
         </main>
     </div>
